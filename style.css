@@ -6,7 +6,7 @@ body {
 
 #header {
 	background-color: #212121;
-	&__button
+	#header__button
 	{
 		maring-left: 20px;
 		display: flex;
