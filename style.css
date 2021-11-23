@@ -6,13 +6,28 @@ body {
 
 .header {
 	background-color: #212121;
-	.header__button
-	{
-		maring-left: 20px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		box-sizing: border-box;
-		font-weight: bold;
-	}
+	width: 100%;
+	height: 70px;
+
+}
+
+.header__button
+{
+	margin-left: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	font-weight: bold;
+}
+
+.logo{
+	
+}
+.logo_picture{
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	width: 275px;
+	height: 275px;
 }
