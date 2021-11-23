@@ -4,9 +4,9 @@ body {
     font-family: sans-serif;
 }
 
-#header {
+.header {
 	background-color: #212121;
-	#header__button
+	.header__button
 	{
 		maring-left: 20px;
 		display: flex;
