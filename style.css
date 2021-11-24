@@ -63,9 +63,10 @@ body {
 }
 
 .main {
-	float: left;
-	width: 100%;
-	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	
 }
 
 .main .main_aboutme {
@@ -74,7 +75,7 @@ body {
 	height: 385px;
 	width: 400px;
 	background-color: white;
-	margin: 25px 25px 25px 25px;
+	margin: 25px 0px 25px 0px;
 }
 
 .main .main_aboutme1 {
@@ -110,11 +111,10 @@ body {
 .main .main_subscribe {
 	position: relative;
 	float: right;
-	clear: both;
 	height: 300px;
 	width: 400px;
 	background-color: orange;
-	margin: 0px 25px 25px 25px;
+	margin: 0px 0px 25px 0px;
 }
 
 .main .main_subscribe1 {
@@ -155,8 +155,7 @@ body {
 .main .main_ads {
 	position: relative;
 	float: right;
-	clear: both;
-	margin: 0px 25px 25px 25px;
+	margin: 0px 0px 25px 0px;
 	height: 420px;
 	width: 400px;
 	background-color: white;
@@ -178,5 +177,64 @@ body {
 	margin-right: auto;
 	width: 330px;
 	height: 321px;
+
+}
+/* TU ZACZYNA SIE MAIN POST */
+.mainpostdiv
+{
+	width: 600px;
+	float: left;
+	clear:both;
+	height: 770px;
+	background-color:white;
+	display: flex;
+	font-family: Roboto Condensed;
+	margin: 25px 0px 0px 85px;
+
+	
+
+	
+}
+.zdj1
+{
+	position: relative;
+}
+.text
+{
+	text-align: center;
+	color: grey;
+	margin: 10px;
+
+}
+.text1
+{
+	font-weight: 1500;
+	text-align: center;
+	margin:10px;
+}
+.text2
+{
+	text-align: center;
+	color: grey;
+	margin: 10px;	
+	
+}
+.text3
+{
+	text-align: center;
+	margin: 10px;
+	padding: 15px;
+}
+.stopka
+{
+	margin-top: 30px;
+	border-top: 2px dotted gray;
+	
+}
+.ikony
+{
+	font-size: 30px;
+	margin: 30px;
+	text-align: center;
 
 }
