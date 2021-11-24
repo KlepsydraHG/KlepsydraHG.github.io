@@ -1,27 +1,27 @@
 body {
-    background-color: #d9d9d9;
-    margin: 0px;
-    font-family: Roboto Condensed;
+	background-color: #d9d9d9;
+	margin: 0px;
+	font-family: Roboto Condensed;
 }
 
 .imgs .imgs_kafelek {
-	float: left; 
+	float: left;
 	width: 25%;
 	height: 550px;
 	background-color: white;
-	cursor: pointer;
 	position: relative;
-	display: grid; 
-	
+	display: grid;
+
 }
-.imgs .imgs_kafelek:hover
-{
-	cursor:pointer;
+
+.imgs .imgs_kafelek:hover {
+
 	background-color: orange;
 	color: white;
 }
-.imgs_border{
-	
+
+.imgs_border {
+
 	border-left: 1px solid #ededed;
 	border-right: 1px solid #ededed;
 	width: 100%;
@@ -30,14 +30,14 @@ body {
 	box-sizing: border-box;
 	position: relative;
 	padding-top: 15px;
-	
+
 	text-align: center;
 	justify-content: center;
 	font-weight: 600;
 	font-size: 170%;
 }
-.imgs_bottext
-{
+
+.imgs_bottext {
 	height: 40%;
 	width: 40%;
 	display: flex;
@@ -48,17 +48,16 @@ body {
 	font-size: 80%;
 	border-top: 1px solid red;
 }
-.imgs_border:hover > .imgs_bottext
-{
+
+.imgs_kafelek:hover>.imgs_border>.imgs_bottext {
 	border-top: 1px solid white;
 }
-.imgs_border:hover > .imgs_img
-{
-	border-top: 1px solid white;
-}
-.imgs_img
-{
+
+
+
+.imgs_img {
 	height: 400px;
 	object-fit: cover;
 	clip-path: polygon(50% 95%, 55% 100%, 100% 100%, 100% 0, 0 0, 0 100%, 45% 100%);
+	cursor: pointer;
 }
