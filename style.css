@@ -61,3 +61,122 @@ body {
 	clip-path: polygon(50% 95%, 55% 100%, 100% 100%, 100% 0, 0 0, 0 100%, 45% 100%);
 	cursor: pointer;
 }
+
+.main {
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+
+.main .main_aboutme {
+	position: relative;
+	float: right;
+	height: 385px;
+	width: 400px;
+	background-color: white;
+	margin: 25px 25px 25px 25px;
+}
+
+.main .main_aboutme1 {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	height: 25px;
+	width: 100px;
+	/*background-color: grey;*/
+	font-size: 120%;
+	font-weight: bold;
+	text-align: center;
+	border-bottom: 4px solid black;
+}
+
+.main .main_aboutme2 {
+	width: 330px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+
+.main .main_aboutme3 {
+	width: 285px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-style: italic;
+}
+
+.main .main_subscribe {
+	position: relative;
+	float: right;
+	clear: both;
+	height: 300px;
+	width: 400px;
+	background-color: orange;
+	margin: 0px 25px 25px 25px;
+}
+
+.main .main_subscribe1 {
+	width: 100px;
+	height: 25px;
+	/*background-color: red;*/
+	margin: 15px auto 20px auto;
+	font-size: 130%;
+	font-weight: bold;
+	text-align: center;
+	border-bottom: 4px solid white;
+	color: white;
+}
+
+.main .main_subscribe2 {
+	color: white;
+	font-size: 120%;
+	font-weight: bold;
+	width: 345px;
+	margin: 5px auto 10px auto;
+}
+
+.main .main_subscribe_email {
+	width: 345px;
+	height: 30px;
+	margin: auto;
+}
+
+/* TUTAJ MIEJSCE NA KAFELKI OD SUBSCRIBE, CONTACT I CATEGORY*/
+
+
+
+
+
+
+
+
+.main .main_ads {
+	position: relative;
+	float: right;
+	clear: both;
+	margin: 0px 25px 25px 25px;
+	height: 420px;
+	width: 400px;
+	background-color: white;
+
+}
+
+.main .main_ads1 {
+	margin: 15px auto 15px auto;
+	width: 85px;
+	height: 25px;
+	text-align: center;
+	border-bottom: 4px solid black;
+	font-size: 120%;
+	font-weight: bold;
+}
+
+.main .main_ads2 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 330px;
+	height: 321px;
+
+}
