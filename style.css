@@ -1,64 +1,328 @@
-header{
-    margin: 30px ;
-    font-size: 30;
-    text-align: center;
-font-family:fantasy;
+body {
+	background-color: #d9d9d9;
+	margin: 0px;
+	font-family: Oswald;
+}
+
+/*POCZĄTEK SEKCJI FIT*/
+.imgs .imgs_kafelek {
+	float: left;
+	width: 25%;
+	height: 550px;
+	background-color: white;
+	position: relative;
+	display: grid;
+	margin-bottom: 25px;
 
 }
 
-.zdjecia{
-    text-align: center;
+.imgs .imgs_kafelek:hover {
+
+	background-color: #fc7c57;
+	color: white;
 }
 
-img{
-    display: inline-block;
-    margin: 18px 15px;
-   
+.imgs_border {
+
+	border-left: 1px solid #ededed;
+	border-right: 1px solid #ededed;
+	width: 100%;
+	height: 150px;
+	cursor: pointer;
+	box-sizing: border-box;
+	position: relative;
+	padding-top: 15px;
+	text-align: center;
+	justify-content: center;
+	font-size: 170%;
 }
 
-hr{
-    margin-left: 0;
-    margin-right: 0;
-    width: 100% ;
+.imgs_bottext {
+	height: 40%;
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	/*margin-top: 35px;*/
+	font-size: 80%;
+	border-top: 1px solid red;
 }
 
-p{
-    font-size: 30;
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-   font-weight: bold;
+.imgs_kafelek:hover>.imgs_border>.imgs_bottext {
+	border-top: 1px solid white;
 }
-span.behance{
-    color: #fc7c57;
+
+
+
+.imgs_img {
+	height: 400px;
+	object-fit: cover;
+	clip-path: polygon(50% 95%, 55% 100%, 100% 100%, 100% 0, 0 0, 0 100%, 45% 100%);
+	cursor: pointer;
 }
-.button1{
-    display: inline-flex;
-border-color: none; 
-border-radius: 50px;
-border: none;
-padding: none;
-outline: none;
-overflow: hidden;
-font-weight: 0;
-margin:  8px;
+
+/*KONIEC SEKCJI FIT*/
+
+.main {
+	margin-left: auto;
+	margin-right: auto;
+	width: 78%;
+
 }
-.button1:hover{
-    background-color: #fc7c57;
-    color: white;
+
+.main .firstcolumn {
+	display: flex;
+	flex-direction: column;
+	float: left;
 }
-.button1:active{
-    background-color: green;
-    color: white;
+
+.main .secondcolumn {
+	display: flex;
+	flex-direction: column;
+	float: left;
 }
-.button__icon{
-    display: inline-flex;
- align-items: center;
-padding: 11px 7px;
-font-size: 22px;
+
+/*POCZĄTEK BOCZNYCH KAFELKÓW */
+.main .sidedivs {
+	width: 400px;
 }
-.buttonsy{
-    text-align: center;
+
+.main .aboutme {
+	position: relative;
+	float: left;
+	height: 385px;
+	width: 400px;
+	background-color: white;
+	margin: 25px 0px 25px 0px;
+	padding-bottom: 25px;
 }
-a{
-  all:unset;
+
+.main .aboutme_header {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	height: 25px;
+	width: 90px;
+	/*background-color: grey;*/
+	font-size: 120%;
+	font-weight: 600;
+	text-align: center;
+	border-bottom: 4px solid black;
 }
+
+.main .aboutme_main {
+	width: 330px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+
+.main .aboutme_footer {
+	width: 285px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-style: italic;
+}
+
+.main .subscribe {
+	position: relative;
+	float: left;
+	height: 270px;
+	width: 400px;
+	background-color: #fc7c57;
+	margin: 0px 0px 25px 0px;
+}
+
+.main .subscribe_header {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	padding-bottom: 5px;
+	height: 25px;
+	width: 100px;
+	/*background-color: grey;*/
+	font-size: 130%;
+	text-align: center;
+	border-bottom: 4px solid white;
+	color: white;
+}
+
+.main .subscribe_main {
+	width: 330px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	font-size: 130%;
+	color: white;
+	font-weight: 300;
+}
+
+.main .subscribe_mail_and_submit input,
+.main .subscribe_mail_and_submit textarea {
+	display: block;
+	width: 100%;
+	max-width: 315px;
+	padding: 5px;
+	font-size: 18px;
+	border: 1px solid gray;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+.main .subscribe_submit {
+	background-color: black;
+	color: white;
+	display: block;
+	width: 100%;
+	max-width: 327px;
+	padding: 10px;
+	border: 1px solid black;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	cursor: pointer;
+	font-weight: 600;
+	font-size: 110%;
+	font-family: Oswald;
+}
+
+.main .popularposts {
+	position: relative;
+	float: left;
+	height: 400px;
+	width: 400px;
+	background-color: white;
+	margin-bottom: 25px;
+
+}
+
+.main .popularposts_header {
+	text-align: center;
+	font-size: 120%;
+	width: 130px;
+	height: 25px;
+	display: block;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	border-bottom: 4px solid black;
+	font-weight: 600;
+}
+
+.main .popularposts_content {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: gray;
+	height: 300px;
+	width: 330px;
+}
+
+.main .popularposts_content .popularposts_img {
+	margin-right: 5px;
+	width: 330px;
+
+}
+
+.main .popularposts_content .popularposts_content_header {
+	display: block;
+	float: left;
+	font-size: 110%;
+	font-weight: 600;
+	width: 190px;
+
+}
+
+.main .slideads {
+	position: relative;
+	float: right;
+	margin: 0px 0px 25px 0px;
+	height: 425px;
+	width: 400px;
+	background-color: white;
+
+}
+
+.main .slideads_header {
+	margin: 15px auto 15px auto;
+	width: 95px;
+	height: 30px;
+	text-align: center;
+	border-bottom: 4px solid black;
+	font-size: 130%;
+	font-weight: bold;
+}
+
+.main .slideads_main {
+	margin-left: auto;
+	margin-right: auto;
+	width: 330px;
+	height: 320px;
+
+}
+
+
+/* KONIEC BOCZNYCH KAFELKOW */
+/* TU ZACZYNA SIE MAIN POST */
+.mainpostdiv {
+	width: 600px;
+
+	clear: both;
+	height: 770px;
+	background-color: white;
+	display: flex;
+	font-family: Oswald;
+	margin: 25px 25px 0px 25px;
+}
+
+.zdj1 {
+	position: relative;
+}
+
+.text {
+	text-align: center;
+	color: grey;
+	margin: 10px;
+
+}
+
+.text1 {
+	font-weight: 1500;
+	text-align: center;
+	margin: 10px;
+}
+
+.text2 {
+	text-align: center;
+	color: grey;
+	margin: 10px;
+
+}
+
+.text3 {
+	text-align: center;
+	margin: 10px;
+	padding: 15px;
+}
+
+.stopkapostu {
+
+	border-top: 2px dotted gray;
+
+}
+
+.ikony {
+	font-size: 30px;
+	margin: 30px;
+	text-align: center;
+
+}
+
+/* KONIEC MAINPOST */
