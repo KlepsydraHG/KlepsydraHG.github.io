@@ -1,9 +1,10 @@
 body {
 	background-color: #d9d9d9;
 	margin: 0px;
-	font-family: Roboto Condensed;
+	font-family: Oswald;
 }
 
+/*POCZĄTEK SEKCJI FIT*/
 .imgs .imgs_kafelek {
 	float: left;
 	width: 25%;
@@ -11,12 +12,13 @@ body {
 	background-color: white;
 	position: relative;
 	display: grid;
+	margin-bottom: 25px;
 
 }
 
 .imgs .imgs_kafelek:hover {
 
-	background-color: orange;
+	background-color: #fc7c57;
 	color: white;
 }
 
@@ -30,10 +32,8 @@ body {
 	box-sizing: border-box;
 	position: relative;
 	padding-top: 15px;
-
 	text-align: center;
 	justify-content: center;
-	font-weight: 600;
 	font-size: 170%;
 }
 
@@ -62,28 +62,48 @@ body {
 	cursor: pointer;
 }
 
+/*KONIEC SEKCJI FIT*/
+
 .main {
 	margin-left: auto;
 	margin-right: auto;
-	width: 60%;
-	
+	width: 78%;
+
 }
 
-.main .main_aboutme {
+.main .firstcolumn {
+	display: flex;
+	flex-direction: column;
+	float: left;
+}
+
+.main .secondcolumn {
+	display: flex;
+	flex-direction: column;
+	float: left;
+}
+
+/*POCZĄTEK BOCZNYCH KAFELKÓW */
+.main .sidedivs {
+	width: 400px;
+}
+
+.main .aboutme {
 	position: relative;
-	float: right;
+	float: left;
 	height: 385px;
 	width: 400px;
 	background-color: white;
 	margin: 25px 0px 25px 0px;
+	padding-bottom: 25px;
 }
 
-.main .main_aboutme1 {
+.main .aboutme_header {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 15px;
 	height: 25px;
-	width: 100px;
+	width: 90px;
 	/*background-color: grey;*/
 	font-size: 120%;
 	font-weight: bold;
@@ -91,14 +111,14 @@ body {
 	border-bottom: 4px solid black;
 }
 
-.main .main_aboutme2 {
+.main .aboutme_main {
 	width: 330px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 10px;
 }
 
-.main .main_aboutme3 {
+.main .aboutme_footer {
 	width: 285px;
 	margin-left: auto;
 	margin-right: auto;
@@ -108,133 +128,124 @@ body {
 	font-style: italic;
 }
 
-.main .main_subscribe {
+.main .subscribe {
 	position: relative;
-	float: right;
-	height: 300px;
+	float: left;
+	height: 270px;
 	width: 400px;
-	background-color: orange;
+	background-color: #fc7c57;
 	margin: 0px 0px 25px 0px;
 }
 
-.main .main_subscribe1 {
-	width: 100px;
+.main .subscribe_header {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	padding-bottom: 5px;
 	height: 25px;
-	/*background-color: red;*/
-	margin: 15px auto 20px auto;
+	width: 100px;
+	/*background-color: grey;*/
 	font-size: 130%;
-	font-weight: bold;
 	text-align: center;
 	border-bottom: 4px solid white;
 	color: white;
 }
 
-.main .main_subscribe2 {
-	color: white;
-	font-size: 120%;
-	font-weight: bold;
-	width: 345px;
-	margin: 5px auto 10px auto;
-}
-
-.main .main_subscribe_email {
-	width: 345px;
-	height: 30px;
-	margin: auto;
-}
-
-/* TUTAJ MIEJSCE NA KAFELKI OD SUBSCRIBE, CONTACT I CATEGORY*/
-
-
-
-
-
-
-
-
-.main .main_ads {
-	position: relative;
-	float: right;
-	margin: 0px 0px 25px 0px;
-	height: 420px;
-	width: 400px;
-	background-color: white;
-
-}
-
-.main .main_ads1 {
-	margin: 15px auto 15px auto;
-	width: 85px;
-	height: 25px;
-	text-align: center;
-	border-bottom: 4px solid black;
-	font-size: 120%;
-	font-weight: bold;
-}
-
-.main .main_ads2 {
+.main .subscribe_main {
+	width: 330px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 330px;
-	height: 321px;
-
+	margin-top: 15px;
+	font-size: 130%;
+	color: white;
 }
+
+.main .subscribe_mail_and_submit input,
+.main .subscribe_mail_and_submit textarea {
+	display: block;
+	width: 100%;
+	max-width: 315px;
+	padding: 5px;
+	font-size: 18px;
+	border: 1px solid gray;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+.main .subscribe_submit {
+	background-color: black;
+	color: white;
+	display: block;
+	width: 100%;
+	max-width: 327px;
+	padding: 10px;
+	border: 1px solid black;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	cursor: pointer;
+	font-weight: 600;
+	font-size: 110%;
+	font-family: Oswald;
+}
+
+
+
+/* KONIEC BOCZNYCH KAFELKOW */
 /* TU ZACZYNA SIE MAIN POST */
-.mainpostdiv
-{
+.mainpostdiv {
 	width: 600px;
-	float: left;
-	clear:both;
+
+	clear: both;
 	height: 770px;
-	background-color:white;
+	background-color: white;
 	display: flex;
 	font-family: Roboto Condensed;
-	margin: 25px 0px 0px 85px;
-
-	
-
-	
+	margin: 25px 25px 0px 25px;
 }
-.zdj1
-{
+
+.zdj1 {
 	position: relative;
 }
-.text
-{
+
+.text {
 	text-align: center;
 	color: grey;
 	margin: 10px;
 
 }
-.text1
-{
+
+.text1 {
 	font-weight: 1500;
 	text-align: center;
-	margin:10px;
+	margin: 10px;
 }
-.text2
-{
+
+.text2 {
 	text-align: center;
 	color: grey;
-	margin: 10px;	
-	
+	margin: 10px;
+
 }
-.text3
-{
+
+.text3 {
 	text-align: center;
 	margin: 10px;
 	padding: 15px;
 }
-.stopka
-{
+
+.stopkapostu {
 	margin-top: 30px;
 	border-top: 2px dotted gray;
-	
+
 }
-.ikony
-{
+
+.ikony {
 	font-size: 30px;
 	margin: 30px;
 	text-align: center;
 
 }
+
+/* KONIEC MAINPOST */
