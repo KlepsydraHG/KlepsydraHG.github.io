@@ -326,3 +326,70 @@ body {
 }
 
 /* KONIEC MAINPOST */
+
+/* css do bottom jagby ktos pytal */
+
+header{
+    margin: 30px ;
+    font-size: 30;
+    text-align: center;
+font-family:fantasy;
+
+}
+
+.photos1{
+    text-align: center;
+}
+
+.img1{
+    display: inline-block;
+    margin: 18px 15px;
+   
+}
+
+hr{
+    margin-left: 0;
+    margin-right: 0;
+    width: 100% ;
+}
+
+.downtext2{
+    font-size: 30;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+   font-weight: bold;
+}
+span.behance{
+    color: #fc7c57;
+}
+.button1{
+    display: inline-flex;
+border-color: none; 
+border-radius: 50px;
+border: none;
+padding: none;
+outline: none;
+overflow: hidden;
+font-weight: 0;
+margin:  8px;
+}
+.button1:hover{
+    background-color: #fc7c57;
+    color: white;
+}
+.button1:active{
+    background-color: green;
+    color: white;
+}
+.button__icon{
+    display: inline-flex;
+ align-items: center;
+padding: 11px 7px;
+font-size: 22px;
+}
+.buttons{
+    text-align: center;
+}
+.a1{
+  all:unset;
+}
