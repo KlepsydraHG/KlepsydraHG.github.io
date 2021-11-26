@@ -364,6 +364,7 @@ hr{
    font-weight: bold;
    background-color: white;
    padding-bottom: 60px;
+   margin: 0px 0px;
 }
 span.behance{
     color: #fc7c57;
@@ -383,6 +384,7 @@ margin-bottom: 25px;
 .button1:hover{
     background-color: #fc7c57;
     color: white;
+	cursor: pointer;
 }
 .button1:active{
     background-color: green;
@@ -408,11 +410,13 @@ font-size: 22px;
 
 .uptext{
 	margin-top: 30px;
-	padding-top: 15px;
+	padding-top: 34px;
 	font-size: 30;
     text-align: center;
     font-family: 'Oswald', sans-serif;
    font-weight: bold;
    background-color: white;
+   
+   
  
 }
