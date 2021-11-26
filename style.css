@@ -327,6 +327,10 @@ body {
 
 /* KONIEC MAINPOST */
 
+
+
+
+
 /* css do bottom jagby ktos pytal */
 
 header{
@@ -358,6 +362,8 @@ hr{
     text-align: center;
     font-family: 'Oswald', sans-serif;
    font-weight: bold;
+   background-color: white;
+   padding-bottom: 60px;
 }
 span.behance{
     color: #fc7c57;
@@ -372,6 +378,7 @@ outline: none;
 overflow: hidden;
 font-weight: 0;
 margin:  8px;
+margin-bottom: 25px;
 }
 .button1:hover{
     background-color: #fc7c57;
@@ -392,4 +399,20 @@ font-size: 22px;
 }
 .a1{
   all:unset;
+}
+
+.footer{
+	clear: both;
+	background-color: white;
+}
+
+.uptext{
+	margin-top: 30px;
+	padding-top: 15px;
+	font-size: 30;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+   font-weight: bold;
+   background-color: white;
+ 
 }
