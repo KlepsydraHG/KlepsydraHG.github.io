@@ -390,8 +390,8 @@ margin-bottom: 25px;
 	transition: all 200ms linear;
 }
 .button1:active{
-    background-color: #fc7b57a2;
-   
+    background-color: #fc7b57a2
+	
 }
 .button__icon{
     display: inline-flex;
