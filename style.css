@@ -81,6 +81,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	float: left;
+
+
 }
 
 /*POCZĄTEK BOCZNYCH KAFELKÓW */
@@ -385,10 +387,11 @@ margin-bottom: 25px;
     background-color: #fc7c57;
     color: white;
 	cursor: pointer;
+	transition: all 200ms linear;
 }
 .button1:active{
-    background-color: green;
-    color: white;
+    background-color: #fc7b57a2;
+   
 }
 .button__icon{
     display: inline-flex;
@@ -419,4 +422,47 @@ font-size: 22px;
    
    
  
+}
+
+/* newerpost olderpost / przenoszenie pod ostatnia kolumną */
+.spacebetween{
+	margin-left: 33px;
+	margin-top: 15px;
+	margin-bottom: 40px;
+	width: 89%;
+	
+}
+.newerpost{
+display: flex;
+float: left;
+font-size: 15px;
+}
+.olderpost{
+	display: flex;
+	float:right;
+	font-size: 15px;
+}
+.anewer{
+	all: unset;
+}
+
+.anewer:hover{
+color: #fc7c57;
+cursor: pointer;
+transition: all 200ms linear;
+}
+.aolder{
+all: unset;
+}
+
+.aolder:hover{
+color: #fc7c57;
+cursor: pointer;
+transition: all 200ms linear;
+}
+.anewer:active{
+	color:#fa3600c7 ;
+}
+.aolder:active{
+	color:#fa3600c7 ;
 }
