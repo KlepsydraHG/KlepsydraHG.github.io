@@ -1,0 +1,151 @@
+.mainpostdiv {
+	width: 600px;
+
+	clear: both;
+	height: 770px;
+	background-color: white;
+	display: flex;
+	font-family: Oswald;
+	margin: 25px 25px 0px 25px;
+}
+
+.zdj1 {
+	position: relative;
+}
+
+.text {
+	text-align: center;
+	color: grey;
+	margin: 10px;
+
+}
+
+.text1 {
+	font-weight: 1500;
+	text-align: center;
+	margin: 10px;
+}
+
+.text2 {
+	color: grey;
+	margin: 20px;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.text3 {
+	text-align: center;
+	margin: 10px;
+	padding: 15px;
+}
+
+.stopkapostu {
+
+	border-top: 2px dotted gray;
+
+}
+
+.ikony {
+	font-size: 30px;
+	margin: 30px;
+	text-align: center;
+
+}
+
+.spacebetween {
+	margin-left: 33px;
+	margin-top: 15px;
+	margin-bottom: 40px;
+	width: 89%;
+
+}
+
+.newerpost {
+	display: flex;
+	float: left;
+	font-size: 15px;
+}
+
+.olderpost {
+	display: flex;
+	float: right;
+	font-size: 15px;
+}
+
+.anewer {
+	all: unset;
+}
+
+.anewer:hover {
+	color: #fc7c57;
+	cursor: pointer;
+	transition: all 200ms linear;
+}
+
+.aolder {
+	all: unset;
+}
+
+.aolder:hover {
+	color: #fc7c57;
+	cursor: pointer;
+	transition: all 200ms linear;
+}
+
+.anewer:active {
+	color: #fa3600c7;
+}
+
+.aolder:active {
+	color: #fa3600c7;
+}
+.icon
+{
+	border-radius: 50%;
+	background-color: #F5F5F5;
+	width: 50px;
+	height: 50px;
+	display: block;
+	position: relative;
+	margin-left: 15px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	  -o-transition: all 0.5s ease;
+	 -ms-transition: all 0.5s ease;
+		 transition: all 0.5s ease;
+	
+}
+.icon:before
+{
+	top: 50%;
+	position: absolute;
+	margin-left: 0 !important;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.ikony
+{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+.icon:hover
+{
+	background-color: #fc7c57;
+	color: white;
+	transition: all 200ms linear;
+	transform: scale(1);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1);
+    z-index: 0;
+}
+.icon:active {
+	transform: scale(1);
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(1);
+    z-index: 0;
+
+  }
+  
