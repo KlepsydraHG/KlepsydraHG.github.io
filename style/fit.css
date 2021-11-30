@@ -3,23 +3,25 @@
 	width: 100%;
 
 }
-.imgs .imgs_kafelek {
-	max-width: 466px;
+.imgs .imgs_tile {
+	width: 25%;
 	height: 550px;
 	background-color: white;
 	position: relative;
 	display: inline-block;
 	margin-bottom: 25px;
 	float:left;
+	
 
 }
 
-.imgs .imgs_kafelek:hover {
+.imgs .imgs_tile:hover {
 
 	background-color: #fc7c57;
 	color: white;
 	transition: all 200ms linear;
 }
+
 
 .imgs_border {
 
@@ -46,7 +48,7 @@
 }
 
 
-.imgs_kafelek:hover>.imgs_border>.imgs_header{
+.imgs_tile:hover>.imgs_border>.imgs_header{
 	border-bottom: 1px solid white;
 }
 
@@ -56,6 +58,7 @@
 	object-fit: cover;
 	clip-path: polygon(50% 95%, 55% 100%, 100% 100%, 100% 0, 0 0, 0 100%, 45% 100%);
 	cursor: pointer;
+	width: 100%;
 }
 .imgs_header{
 	width: 70%;
@@ -68,7 +71,7 @@
 	.imgs_img {
 		height: 320px;
 	}
-	.imgs.kafelek{
+	.imgs.tile{
 		max-width: 466px;
 	height: 470px;
 

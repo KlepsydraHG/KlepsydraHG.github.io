@@ -4,7 +4,8 @@ body {
 	font-family: Roboto Condensed;
 }
 
-.imgs .imgs_kafelek {
+
+.imgs .imgs_tile {
 	float: left;
 	width: 25%;
 	height: 550px;
@@ -14,7 +15,7 @@ body {
 
 }
 
-.imgs .imgs_kafelek:hover {
+.imgs .imgs_tile:hover {
 
 	background-color: orange;
 	color: white;
@@ -49,7 +50,7 @@ body {
 	border-top: 1px solid red;
 }
 
-.imgs_kafelek:hover>.imgs_border>.imgs_bottext {
+.imgs_tile:hover>.imgs_border>.imgs_bottext {
 	border-top: 1px solid white;
 }
 

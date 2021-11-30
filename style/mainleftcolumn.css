@@ -1,8 +1,7 @@
 .mainpostdiv {
 	width: 600px;
 
-	clear: both;
-	height: 770px;
+	
 	background-color: white;
 	display: flex;
 	font-family: Oswald;
@@ -20,7 +19,22 @@
 	position: relative;
 	height: 400px;
 	width: 600px;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	  -o-transition: all 0.2s ease;
+	 -ms-transition: all 0.2s ease;
+		 transition: all 0.2s ease;
 }
+.zdj1:hover
+{
+
+	transform: scale(1);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1);
+    z-index: 0;
+	transition: all 100ms linear;
+}
+
 
 .text {
 	text-align: center;
@@ -50,18 +64,20 @@
 	padding: 15px;
 }
 
-.stopkapostu {
+.postfooter {
 
 	border-top: 2px dotted gray;
 
 }
 
-.ikony {
+.icons {
 	display: flex;
 	align-items: center;
 	font-size: 30px;
 	margin: 30px;
 	text-align: center;
+	justify-content:center;
+	
 
 }
 
@@ -136,12 +152,7 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-.ikony
-{
-	display: flex;
-	justify-content:center;
-	align-items: center;
-}
+
 .icon:hover
 {
 	background-color: #fc7c57;
