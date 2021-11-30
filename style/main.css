@@ -1,18 +1,22 @@
 .main {
 	margin-left: auto;
 	margin-right: auto;
-	width: 78%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	clear:both;
 
 }
 
 .main .firstcolumn {
 	display: flex;
 	flex-direction: column;
-	float: left;
+
+	
 }
 
 .main .secondcolumn {
 	display: flex;
 	flex-direction: column;
-	float: left;
+
 }

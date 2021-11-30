@@ -6,7 +6,9 @@
 	background-color: white;
 	display: flex;
 	font-family: Oswald;
-	margin: 25px 25px 0px 25px;
+	margin-top: 25px;
+	margin-right: 25px;
+	margin-left: 25px;
 }
 
 .zdj1 {
@@ -48,6 +50,8 @@
 }
 
 .ikony {
+	display: flex;
+	align-items: center;
 	font-size: 30px;
 	margin: 30px;
 	text-align: center;
