@@ -3,6 +3,11 @@
 	padding: 0;
 	
 }
+*,
+::after
+::before {
+	box-sizing: inherit;
+}
 a {
 	text-decoration: none;
 	color: inherit;
@@ -11,7 +16,14 @@ body {
 	background-color: #d9d9d9;
 	margin: 0px;
 	font-family: Oswald;
+	box-sizing: border-box;
 }
 html{
 	overflow-x: hidden;
+}
+img {
+	max-height: 100%;
+	width: auto;
+	height: auto;
+	max-width: 100%;
 }

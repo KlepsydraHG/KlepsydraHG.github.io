@@ -32,6 +32,10 @@
 	margin-top: 10px;
 }
 
+.main .aboutme_png{
+	width: 330px;
+}
+
 .main .aboutme_footer {
 	width: 285px;
 	margin-left: auto;
@@ -142,6 +146,12 @@
 	background-color: white;
 	height: 300px;
 	width: 330px;
+}
+
+.main .popularposts_png
+{
+	height: 100px;
+	width: 140px;
 }
 
 .main .popularposts_content .popularposts_img {

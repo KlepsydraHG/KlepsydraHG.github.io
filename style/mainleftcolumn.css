@@ -11,8 +11,15 @@
 	margin-left: 25px;
 }
 
+.autor{
+	height: 30px;
+	width: 30px;
+}
+
 .zdj1 {
 	position: relative;
+	height: 400px;
+	width: 600px;
 }
 
 .text {
