@@ -1,9 +1,9 @@
-.mainpostdiv {
+.mainpost{
 	width: 600px;
 
 
 	background-color: white;
-	display: flex;
+	
 	font-family: Oswald;
 	margin-top: 25px;
 }
