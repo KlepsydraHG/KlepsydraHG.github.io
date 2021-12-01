@@ -63,6 +63,14 @@ const retrievePopularPosts = () =>
     "json"
   );
 
+const retrievePostsByKeyword = (keyword) =>
+  retrieve(
+    `https://trol-api.herokuapp.com/api/posts/search/${keyword}`,
+    true,
+    console.log,
+    "json"
+  );
+
 const retrievePost = (id) =>
   retrieve(
     `https://trol-api.herokuapp.com/api/posts/${id}`,
@@ -92,3 +100,12 @@ if (!getToken()) {
 } else {
   retrieveAllPosts();
 }
+
+const searchInput = document.querySelector(".navbar-right__search");
+
+searchInput.addEventListener("keyup", (e) => {
+  const value = e.target.value;
+  if (value !== "") {
+    retrievePostsByKeyword(value);
+  }
+});
