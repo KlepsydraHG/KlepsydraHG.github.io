@@ -2,10 +2,11 @@
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
-	display: flex;
+	display: grid;
+	grid-template-columns: 600px 400px;
+	column-gap: 25px;
 	justify-content: center;
 	clear:both;
-
 }
 
 .main .firstcolumn {

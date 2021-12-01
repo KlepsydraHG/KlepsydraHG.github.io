@@ -8,12 +8,6 @@
 
 }
 
-hr {
-	margin-left: 0;
-	margin-right: 0;
-	width: 100%;
-}
-
 .downtext2 {
 	font-size: 30;
 	text-align: center;
@@ -83,4 +77,8 @@ span.behance {
 
 
 
+}
+
+.copyright__container {
+	border-top: 1px black solid
 }

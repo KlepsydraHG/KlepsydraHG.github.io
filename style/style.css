@@ -18,9 +18,6 @@ body {
 	font-family: Oswald;
 	box-sizing: border-box;
 }
-html{
-	overflow-x: hidden;
-}
 img {
 	max-height: 100%;
 	width: auto;
