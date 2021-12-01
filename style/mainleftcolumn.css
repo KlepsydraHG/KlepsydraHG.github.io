@@ -1,7 +1,7 @@
 .mainpostdiv {
 	width: 600px;
 
-	
+
 	background-color: white;
 	display: flex;
 	font-family: Oswald;
@@ -10,9 +10,10 @@
 	margin-left: 25px;
 }
 
-.autor{
+.autor {
 	height: 30px;
 	width: 30px;
+	clip-path: circle(50% at 50% 50%);
 }
 
 .zdj1 {
@@ -21,17 +22,17 @@
 	width: 600px;
 	-webkit-transition: all 0.2s ease;
 	-moz-transition: all 0.2s ease;
-	  -o-transition: all 0.2s ease;
-	 -ms-transition: all 0.2s ease;
-		 transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	transition: all 0.2s ease;
 }
-.zdj1:hover
-{
+
+.zdj1:hover {
 
 	transform: scale(1);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1);
-    z-index: 0;
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1);
+	z-index: 0;
 	transition: all 100ms linear;
 }
 
@@ -51,7 +52,7 @@
 
 .text2 {
 	color: grey;
-	margin: 20px;	
+	margin: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -76,8 +77,8 @@
 	font-size: 30px;
 	margin: 30px;
 	text-align: center;
-	justify-content:center;
-	
+	justify-content: center;
+
 
 }
 
@@ -128,8 +129,8 @@
 .aolder:active {
 	color: #fa3600c7;
 }
-.icon
-{
+
+.icon {
 	border-radius: 50%;
 	background-color: #F5F5F5;
 	width: 50px;
@@ -139,13 +140,13 @@
 	margin-left: 15px;
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
-	  -o-transition: all 0.5s ease;
-	 -ms-transition: all 0.5s ease;
-		 transition: all 0.5s ease;
-	
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
 }
-.icon:before
-{
+
+.icon:before {
 	top: 50%;
 	position: absolute;
 	margin-left: 0 !important;
@@ -153,21 +154,20 @@
 	transform: translate(-50%, -50%);
 }
 
-.icon:hover
-{
+.icon:hover {
 	background-color: #fc7c57;
 	color: white;
 	transition: all 200ms linear;
 	transform: scale(1);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1);
-    z-index: 0;
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1);
+	z-index: 0;
 }
+
 .icon:active {
 	transform: scale(1);
-    -webkit-transform: scale(0.1);
-    -moz-transform: scale(1);
-    z-index: 0;
+	-webkit-transform: scale(0.1);
+	-moz-transform: scale(1);
+	z-index: 0;
 
-  }
-  
+}
