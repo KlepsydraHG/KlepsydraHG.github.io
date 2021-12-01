@@ -14,7 +14,7 @@
 	clip-path: circle(50% at 50% 50%);
 }
 
-.zdj1 {
+.mainpostphoto1 {
 	position: relative;
 	height: 400px;
 	width: 600px;
@@ -25,7 +25,7 @@
 	transition: all 0.2s ease;
 }
 
-.zdj1:hover {
+.mainpostphoto1:hover {
 
 	transform: scale(1);
 	-webkit-transform: scale(1.05);
@@ -76,6 +76,7 @@
 	margin: 30px;
 	text-align: center;
 	justify-content: center;
+	color: black;
 
 
 }
