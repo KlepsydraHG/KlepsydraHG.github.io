@@ -1,89 +1,66 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href="styles.css">
-    <title>cos</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
-    </style>
-</head>
-
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=2.0">
+        <title>post</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+        </style>
+    </head>
 <body>
     <div class="description">
-        <div>
-        <h2>AUTHOR</h2>
-        </div>
-        <div class="images">
-            <ul>
-                <li><img src="img/coolman.PNG" alt="Coolman profile picture"></li>
-            </ul>    
+        <header>
+            <h2>AUTHOR</h2>
+        </header>
         
-        
-            <h3 class="Nickname"><strong>Cool Man</strong></h3>
-        </div>    
-        <br>
-        <div>    
-            <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-            Eligendi dolorum consequatur harum
-            exercitationem magnam asperiores dolorem aspernatur atque facere earum velit incidunt nemo, 
-            sapiente excepturi necessitatibus, cupiditate aperiam facilis iure.</p>
-    
-        </div>
+        <img src="img/coolman.PNG" alt="profile picture" style="float:left; margin:5px 20px;">
+        <h2 class="nickname">Coolman</h2>
+        <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ex odit autem aut dolor, 
+        incidunt recusandae distinctio et nesciunt velit quod. Vel reprehenderit nesciunt porro quidem iste 
+        iure dolorum repellendus.</p>
+
     </div>
     <div class="comment">
-        <div>
-        <h2>COMMENT</h2>
-        </div>
-        <div class="images">
-            <ul>
-                <li><img src="img/beard.PNG" alt="Coolman profile picture"></li>
-            </ul>    
-        
-        
-            <h3 class="Nickname"><strong>Beard</strong></h3><span class="date">~ August 17,2021</span>
-        </div>    
-        <br>
-        <div>    
-            <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-            Eligendi dolorum consequatur harum
-            exercitationem magnam asperiores dolorem aspernatur atque facere earum velit incidunt nemo, 
-            sapiente excepturi necessitatibus, cupiditate aperiam facilis iure.</p>
-        </div>
-        <p class="border"></p>
-    <h2 class="leave">Leave comment</h2>
+        <header>
+            <h2>COMMENT</h2>
+        </header>
+                
+        <img src="img/beard.PNG" alt="profile picture" style="float:left; margin:5px 20px">
+        <h2 class="nickname">Beard<span class="date"> ~ </span><span class="date">August 17, 2021</span></h2>
+        <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ex odit autem aut dolor, 
+        incidunt recusandae distinctio et nesciunt velit quod. Vel reprehenderit nesciunt porro quidem iste 
+        iure dolorum repellendus.</p>
+        <p class=border></p>
+        <h2 class="leave">Leave comment</h2>
     <div class="commenting">
-    <br><br><br>
         <form>
+        <textarea name="comment" id="comment" placeholder="Comment..." class="textarea" ></textarea> <!--rows dlugosc cols szerokosc i to miejscie jest na tekst/-->
         <label for="username"></label>
-        <input type="text" id="username" name="username" placeholder="Name..." required>
+        <input type="text" id="username" name="username" placeholder="Name..." required class="username">
         <br><br>
         <label for="email"></label>
-        <input type="email" id="email" name="email"placeholder="Email..." required>
-        <br>
-        <label for="comment"></label><br>
-        <textarea name="comment" id="comment" cols="40" rows="10" placeholder="Comment..."></textarea> <!--rows dlugosc cols szerokosc i to miejscie jest na tekst/-->
-        <button type="submit" style="background-color: #cf7256; color:white; width: 310px; height: 45px; border-color:white;font-family: calibri; font-size: 18px; border-radius:7px;">SUBMIT COMMENT</button>
+        <input type="email" id="email" name="email"placeholder="Email..." required class="email">
+        <label for="comment"></label>
+        <button type="submit" class="button" >SUBMIT COMMENT</button>
     </form>
     </div>
     </div>
     <div class="relatedposts">
-        <h2>RELATED POST</h2>
+        <h2>Related post</h2>
             <ul class="pictures">
                 <li><img src="img/picture1.png" alt="picture1"</li>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor optio ullam laboriosam eaque voluptatum sequi at, velit dolores? 
-                Quasi vero adipisci totam! Quos consectetur obcaecati hic alias corporis natus doloribus?</p>
+                <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor optio ullam laboriosam eaque voluptatum sequi at, velit dolores? 
+                Quasi vero adipisci totam! Quos consectetur obcaecati hic alias corporis natus doloribus?</strong></p>
                 <li><img src="img/picture2.png" alt="picture1"</li>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor optio ullam laboriosam eaque voluptatum sequi at, velit dolores? 
-                Quasi vero adipisci totam! Quos consectetur obcaecati hic alias corporis natus doloribus?</p>
+                <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor optio ullam laboriosam eaque voluptatum sequi at, velit dolores? 
+                Quasi vero adipisci totam! Quos consectetur obcaecati hic alias corporis natus doloribus?</strong></p>
             </ul>
 
 
     </div>
 
-
-
-
     </div>
+    
 </body>
-
 </html>
