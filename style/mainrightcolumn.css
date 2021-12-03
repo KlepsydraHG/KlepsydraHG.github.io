@@ -2,7 +2,7 @@
 	width: 400px;
 	margin-left: 40%;
 	margin-top: 30px;
-	
+
 }
 
 .main .aboutme {
@@ -35,7 +35,7 @@
 	margin-top: 10px;
 }
 
-.main .aboutme_png{
+.main .aboutme_png {
 	width: 330px;
 }
 
@@ -47,6 +47,7 @@
 	margin-bottom: 10px;
 	text-align: center;
 	font-style: italic;
+	font-family: 'Source Serif Pro';
 }
 
 .main .subscribe {
@@ -111,10 +112,10 @@
 	font-family: Oswald;
 	-webkit-transition: all 0.2s ease;
 	-moz-transition: all 0.2s ease;
-	  -o-transition: all 0.2s ease;
-	 -ms-transition: all 0.2s ease;
-		 transition: all 0.2s ease;
-	
+	-o-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+
 }
 
 .main .popularposts {
@@ -151,8 +152,7 @@
 	width: 330px;
 }
 
-.main .popularposts_png
-{
+.main .popularposts_png {
 	height: 100px;
 	width: 140px;
 }
@@ -295,4 +295,3 @@
 	text-decoration: none;
 	color: #fc7c57;
 }
-
