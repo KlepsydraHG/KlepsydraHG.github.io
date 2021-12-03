@@ -1,25 +1,22 @@
 .main {
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-	display: grid;
-	grid-template-columns: 600px 400px;
-	column-gap: 25px;
-	justify-content: center;
-	clear:both;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 600px 400px;
+  column-gap: 25px;
+  justify-content: center;
+  clear: both;
 }
 
-.main .firstcolumn {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 30px;
-
-	
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
 }
 
 .main .secondcolumn {
-	display: flex;
-	flex-direction: column;
-
+  display: flex;
+  flex-direction: column;
 }
