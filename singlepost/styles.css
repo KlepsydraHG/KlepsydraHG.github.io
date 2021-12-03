@@ -151,6 +151,7 @@ body {
     height: 155px;
     margin-right: 30px;
     margin-bottom: 40px;
+    border:1px lightgray solid;
 }
 
 .username {
@@ -158,17 +159,19 @@ body {
     width: 40%;
     height: 33px;
     margin-left: 10px;
+    border:1px lightgray solid;
 }
 
 .email {
     float: left;
     width: 40%;
     height: 33px;
-    margin: 10px
+    margin: 10px;
+    border:1px lightgray solid;
 }
 
 .button {
-    background-color: hsl(12, 80%, 50%);
+    background-color:hsl(16, 94%, 70%); 
     color: white;
     width: 41%;
     height: 48px;
