@@ -1,11 +1,12 @@
 .mainpost{
-	width: 600px;
-
-
+	height: 1000px;
+	width: 900px;
+	flex: auto;
 	background-color: white;
 	
-	font-family: Oswald;
+	font-family: 'Oswald';
 	margin-top: 25px;
+	
 }
 
 .autor {
@@ -16,8 +17,8 @@
 
 .mainpostphoto1 {
 	position: relative;
-	height: 400px;
-	width: 600px;
+	height: 600px;
+	width: 900px;
 	-webkit-transition: all 0.2s ease;
 	-moz-transition: all 0.2s ease;
 	-o-transition: all 0.2s ease;
@@ -43,7 +44,7 @@
 }
 
 .text1 {
-	font-weight: 1500;
+	
 	text-align: center;
 	margin: 10px;
 }
@@ -73,7 +74,7 @@
 	display: flex;
 	align-items: center;
 	font-size: 30px;
-	margin: 30px;
+	margin: 50px;
 	text-align: center;
 	justify-content: center;
 	color: black;
@@ -90,19 +91,21 @@
 }
 
 .newerpost {
-	display: flex;
+	
 	float: left;
-	font-size: 15px;
+	font-size: 20px;
+	
 }
 
 .olderpost {
-	display: flex;
+	
 	float: right;
-	font-size: 15px;
+	font-size: 20px;
+	
 }
 
 .anewer {
-	all: unset;
+	
 }
 
 .anewer:hover {

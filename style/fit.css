@@ -5,7 +5,7 @@
 }
 .imgs .imgs_tile {
 	width: 25%;
-	height: 550px;
+	height: 630px;
 	background-color: white;
 	position: relative;
 	display: inline-block;
@@ -54,7 +54,7 @@
 
 
 .imgs_img {
-	height: 400px;
+	height: 500px;
 	object-fit: cover;
 	clip-path: polygon(50% 95%, 55% 100%, 100% 100%, 100% 0, 0 0, 0 100%, 45% 100%);
 	cursor: pointer;
