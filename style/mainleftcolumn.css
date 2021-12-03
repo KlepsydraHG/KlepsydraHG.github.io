@@ -1,15 +1,16 @@
+
 .mainpost{
 	height: 1000px;
 	width: 900px;
 	flex: auto;
 	background-color: white;
-	
-	font-family: 'Oswald';
 	margin-top: 25px;
-	
+	font-family: 'Oswald';
 }
 
-.autor {
+
+.autor
+{
 	height: 30px;
 	width: 30px;
 	clip-path: circle(50% at 50% 50%);
