@@ -1,157 +1,159 @@
-                                                                                                        .mainpost {
-                                                                                                            height: 1000px;
-                                                                                                            width: 900px;
-                                                                                                            flex: auto;
-                                                                                                            background-color: white;
-                                                                                                            margin-top: 25px;
-                                                                                                            font-family: 'Oswald';
-                                                                                                        }
-                                                                                                        
-                                                                                                        .autor {
-                                                                                                            height: 30px;
-                                                                                                            width: 30px;
-                                                                                                            clip-path: circle(50% at 50% 50%);
-                                                                                                        }
-                                                                                                        
-                                                                                                        .mainpostphoto1 {
-                                                                                                            position: relative;
-                                                                                                            height: 600px;
-                                                                                                            width: 900px;
-                                                                                                            -webkit-transition: all 0.2s ease;
-                                                                                                            -moz-transition: all 0.2s ease;
-                                                                                                            -o-transition: all 0.2s ease;
-                                                                                                            -ms-transition: all 0.2s ease;
-                                                                                                            transition: all 0.2s ease;
-                                                                                                        }
-                                                                                                        
-                                                                                                        .mainpostphoto1:hover {
-                                                                                                            transform: scale(1);
-                                                                                                            -webkit-transform: scale(1.05);
-                                                                                                            -moz-transform: scale(1);
-                                                                                                            z-index: 0;
-                                                                                                            transition: all 100ms linear;
-                                                                                                        }
-                                                                                                        
-                                                                                                        .text {
-                                                                                                            text-align: center;
-                                                                                                            color: grey;
-                                                                                                            margin: 10px;
-                                                                                                        }
-                                                                                                        
-                                                                                                        .text1 {
-                                                                                                            text-align: center;
-                                                                                                            margin: 10px;
-                                                                                                        }
-                                                                                                        
-                                                                                                        .text2 {
-                                                                                                            color: grey;
-                                                                                                            margin: 20px;
-                                                                                                            display: flex;
-                                                                                                            justify-content: center;
-                                                                                                            align-items: center;
-                                                                                                        }
-                                                                                                        
-                                                                                                        .text3 {
-                                                                                                            text-align: center;
-                                                                                                            margin: 10px;
-                                                                                                            padding: 15px;
-                                                                                                            font-family: 'Source Serif Pro';
-                                                                                                            font-weight: 500;
-                                                                                                        }
-                                                                                                        
-                                                                                                        .postfooter {
-                                                                                                            border-top: 2px dotted gray;
-                                                                                                        }
-                                                                                                        
-                                                                                                        .icons {
-                                                                                                            display: flex;
-                                                                                                            align-items: center;
-                                                                                                            font-size: 30px;
-                                                                                                            margin: 50px;
-                                                                                                            text-align: center;
-                                                                                                            justify-content: center;
-                                                                                                            color: black;
-                                                                                                        }
-                                                                                                        /*bomba spacebetween*/
-                                                                                                        
-                                                                                                        .spacebetween {
-                                                                                                            text-align: center;
-                                                                                                            margin-top: 80px;
-                                                                                                            margin-bottom: 55px;
-                                                                                                        }
-                                                                                                        
-                                                                                                        .newerpost {
-                                                                                                            display: inline-flex;
-                                                                                                            float: left;
-                                                                                                            font-size: 15px;
-                                                                                                            position: relative;
-                                                                                                        }
-                                                                                                        
-                                                                                                        .olderpost {
-                                                                                                            position: relative;
-                                                                                                            z-index: 1;
-                                                                                                            float: right;
-                                                                                                            display: inline-flex;
-                                                                                                            font-size: 15px;
-                                                                                                        }
-                                                                                                        
-                                                                                                        .anewer:hover {
-                                                                                                            color: #fc7c57;
-                                                                                                            cursor: pointer;
-                                                                                                            transition: all 200ms linear;
-                                                                                                        }
-                                                                                                        
-                                                                                                        .aolder:hover {
-                                                                                                            color: #fc7c57;
-                                                                                                            cursor: pointer;
-                                                                                                            transition: all 200ms linear;
-                                                                                                        }
-                                                                                                        
-                                                                                                        .anewer:active {
-                                                                                                            color: #fa3600c7;
-                                                                                                            position: relative;
-                                                                                                        }
-                                                                                                        
-                                                                                                        .aolder:active {
-                                                                                                            color: #fa3600c7;
-                                                                                                        }
-                                                                                                        
-                                                                                                        .icon {
-                                                                                                            border-radius: 50%;
-                                                                                                            background-color: #F5F5F5;
-                                                                                                            width: 50px;
-                                                                                                            height: 50px;
-                                                                                                            display: block;
-                                                                                                            position: relative;
-                                                                                                            margin-left: 15px;
-                                                                                                            -webkit-transition: all 0.5s ease;
-                                                                                                            -moz-transition: all 0.5s ease;
-                                                                                                            -o-transition: all 0.5s ease;
-                                                                                                            -ms-transition: all 0.5s ease;
-                                                                                                            transition: all 0.5s ease;
-                                                                                                        }
-                                                                                                        
-                                                                                                        .icon:before {
-                                                                                                            top: 50%;
-                                                                                                            position: absolute;
-                                                                                                            margin-left: 0 !important;
-                                                                                                            left: 50%;
-                                                                                                            transform: translate(-50%, -50%);
-                                                                                                        }
-                                                                                                        
-                                                                                                        .icon:hover {
-                                                                                                            background-color: #fc7c57;
-                                                                                                            color: white;
-                                                                                                            transition: all 200ms linear;
-                                                                                                            transform: scale(1);
-                                                                                                            -webkit-transform: scale(1.2);
-                                                                                                            -moz-transform: scale(1);
-                                                                                                            z-index: 0;
-                                                                                                        }
-                                                                                                        
-                                                                                                        .icon:active {
-                                                                                                            transform: scale(1);
-                                                                                                            -webkit-transform: scale(0.1);
-                                                                                                            -moz-transform: scale(1);
-                                                                                                            z-index: 0;
-                                                                                                        }
+.mainpost {
+    height: 1000px;
+    width: 900px;
+    flex: auto;
+    background-color: white;
+    margin-top: 25px;
+    font-family: "Oswald";
+}
+
+.autor {
+    height: 30px;
+    width: 30px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.mainpostphoto1 {
+    position: relative;
+    height: 600px;
+    width: 900px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.mainpostphoto1:hover {
+    transform: scale(1);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1);
+    z-index: 0;
+    transition: all 100ms linear;
+}
+
+.text {
+    text-align: center;
+    color: grey;
+    margin: 10px;
+}
+
+.text1 {
+    text-align: center;
+    margin: 10px;
+}
+
+.text2 {
+    color: grey;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text3 {
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    font-family: "Source Serif Pro";
+    font-weight: 500;
+}
+
+.postfooter {
+    border-top: 2px dotted gray;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin: 50px;
+    text-align: center;
+    justify-content: center;
+    color: black;
+}
+
+
+/*bomba spacebetween*/
+
+.spacebetween {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 55px;
+}
+
+.newerpost {
+    display: inline-flex;
+    float: left;
+    font-size: 15px;
+    position: relative;
+}
+
+.olderpost {
+    position: relative;
+    z-index: 1;
+    float: right;
+    display: inline-flex;
+    font-size: 15px;
+}
+
+.anewer:hover {
+    color: #fc7c57;
+    cursor: pointer;
+    transition: all 200ms linear;
+}
+
+.aolder:hover {
+    color: #fc7c57;
+    cursor: pointer;
+    transition: all 200ms linear;
+}
+
+.anewer:active {
+    color: #fa3600c7;
+    position: relative;
+}
+
+.aolder:active {
+    color: #fa3600c7;
+}
+
+.icon {
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: relative;
+    margin-left: 15px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.icon:before {
+    top: 50%;
+    position: absolute;
+    margin-left: 0 !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon:hover {
+    background-color: #fc7c57;
+    color: white;
+    transition: all 200ms linear;
+    transform: scale(1);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1);
+    z-index: 0;
+}
+
+.icon:active {
+    transform: scale(1);
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(1);
+    z-index: 0;
+}

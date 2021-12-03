@@ -10,7 +10,7 @@
 .downtext2 {
     font-size: 30;
     text-align: center;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     font-weight: bold;
     background-color: white;
     padding-bottom: 60px;
@@ -42,7 +42,7 @@ span.behance {
 }
 
 .button1:active {
-    background-color: #fc7b57a2
+    background-color: #fc7b57a2;
 }
 
 .button__icon {
@@ -56,16 +56,12 @@ span.behance {
     text-align: center;
 }
 
-.a1 {
-    all: unset;
-}
-
 .footer {
     clear: both;
     background-color: white;
     width: 100%;
     height: 20%;
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 .uptext {
@@ -73,11 +69,11 @@ span.behance {
     padding-top: 34px;
     font-size: 30;
     text-align: center;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     font-weight: bold;
     background-color: white;
 }
 
 .copyright__container {
-    border-top: 1px black solid
+    border-top: 1px black solid;
 }
