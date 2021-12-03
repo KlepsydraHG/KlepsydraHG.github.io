@@ -53,18 +53,19 @@ body {
 
 .description .content {
     font-size: 17px;
-    color: hsl(0, 1%, 51%);
+    color:rgb(143, 143, 143);
     padding: 5px;
     margin-left: 58px;
+    font-family:'Source Serif Pro';
 }
 
 .description img {
-    width: 16%;
+    width: 13%;
 }
 
 .comment {
     background-color: white;
-    margin: 30px 100px;
+    margin: 10px 100px;
     width: 60%;
     display: inline-block;
 }
@@ -98,13 +99,15 @@ body {
 
 .comment .content {
     font-size: 17px;
-    color: hsl(0, 1%, 51%);
+    color: rgb(143, 143, 143);
     padding: 5px;
     margin-left: 58px;
+    font-family:'Source Serif Pro';
 }
 
 .comment img {
     width: 11%;
+    padding-bottom:95px;
 }
 
 .border {
@@ -140,7 +143,11 @@ body {
     text-align: center;
     text-decoration: underline 2px;
 }
-
+.relatedposts ul p{
+    font-family:'Source Serif Pro'; 
+    color:#2c2c2c;
+    font-size:1.1em;
+}
 .leave {
     margin: 20px;
 }
@@ -152,6 +159,8 @@ body {
     margin-right: 30px;
     margin-bottom: 40px;
     border:1px lightgray solid;
+    font-family:'Source Serif Pro'; 
+    font-size: 0.95em;
 }
 
 .username {
@@ -160,6 +169,8 @@ body {
     height: 33px;
     margin-left: 10px;
     border:1px lightgray solid;
+    font-family:'Source Serif Pro'; 
+    font-size: 0.95em;
 }
 
 .email {
@@ -168,6 +179,8 @@ body {
     height: 33px;
     margin: 10px;
     border:1px lightgray solid;
+    font-family:'Source Serif Pro'; 
+    font-size: 0.95em;
 }
 
 .button {
