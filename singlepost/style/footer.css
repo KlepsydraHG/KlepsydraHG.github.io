@@ -1,0 +1,81 @@
+.photos1 {
+    text-align: center;
+}
+
+.img1 {
+    display: inline-block;
+    width: 275px;
+    height: 275px;
+    margin: 18px 9px 0px 9px;
+}
+
+.downtext2 {
+    font-size: 30;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    background-color: white;
+    padding-bottom: 60px;
+    margin: 0px 0px;
+}
+
+span.behance {
+    color: #fc7c57;
+}
+
+.button1 {
+    display: inline-flex;
+    border-color: none;
+    border-radius: 50px;
+    border: none;
+    padding: none;
+    outline: none;
+    overflow: hidden;
+    font-weight: 0;
+    margin: 8px;
+    margin-bottom: 25px;
+}
+
+.button1:hover {
+    background-color: #fc7c57;
+    color: white;
+    cursor: pointer;
+    transition: all 200ms linear;
+}
+
+.button1:active {
+    background-color: #fc7b57a2;
+}
+
+.button__icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 11px 7px;
+    font-size: 22px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.footer {
+    clear: both;
+    background-color: white;
+    width: 100%;
+    height: 20%;
+    margin-top: 80px;
+}
+
+.uptext {
+    margin-top: 30px;
+    padding-top: 34px;
+    font-size: 30;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    background-color: white;
+}
+
+.copyright__container {
+    border-top: 1px black solid;
+}

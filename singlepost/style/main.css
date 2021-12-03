@@ -1,0 +1,27 @@
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: flex;
+  grid-template-columns: 600px 400px;
+  column-gap: 25px;
+  justify-content: center;
+  clear: both;
+}
+
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+
+.main .firstcolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.main .secondcolumn {
+  display: flex;
+  flex-direction: column;
+}

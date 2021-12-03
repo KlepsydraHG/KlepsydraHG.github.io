@@ -1,0 +1,91 @@
+.site-nav {
+	background-color: black;
+	width: 100%;
+	overflow: hidden;
+	justify-content: space-evenly;
+	display: flex;
+}
+
+.site-nav a {
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Oswald';
+}
+
+.site-nav__list,
+.site-nav__list__right {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	display: flex;
+	flex-direction: row;
+}
+
+.site-nav__item,
+.site-nav__item__right {
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.site-nav__item:hover {
+	background-color: gray;
+}
+
+.site-nav__item__right a {
+	margin: 10px;
+}
+
+@media (max-width: 48em) {
+	.site-nav .site-nav__list {
+		display: none;
+	}
+
+	.site-nav__list li {
+		padding: 2px 2px;
+	}
+
+	.site-nav__item__right a {
+		margin: 10px;
+	}
+}
+
+@media (min-width: 48em) {
+	.hamburger {
+		display: none;
+	}
+}
+
+#hamburger {
+	width: 100%;
+	text-align: center;
+	background-color: black;
+}
+
+#hamburger a {
+	color: white;
+	padding: 10px;
+}
+
+.hamburger {
+	text-decoration: none;
+}
+
+.logo img {
+	position: relative;
+	left: 50%;
+	top: 30%;
+	transform: translateX(-50%);
+	width: 15%;
+	padding: 15px;
+}
+
+.logo {
+	margin: auto;
+	background-color: white;
+	height: 300px;
+}

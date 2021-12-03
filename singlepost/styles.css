@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
 body {
     background-color: #d9d9d9;
     font-family: 'Oswald';
@@ -27,10 +33,10 @@ body {
 
 .description {
     background-color: white;
-    margin: 20px 100px;
-    width: 47.7%;
+    margin: 20px 20px;
+    width: 900px;
     display: inline-block;
-    
+
 }
 
 .description header h2 {
@@ -54,10 +60,11 @@ body {
 
 .description .content {
     font-size: 17px;
-    color:rgb(143, 143, 143);
+    color: rgb(143, 143, 143);
     padding: 5px;
     margin-left: 58px;
-    font-family:'Source Serif Pro';
+    margin-bottom: 35px;
+    font-family: 'Source Serif Pro';
 }
 
 .description img {
@@ -66,8 +73,8 @@ body {
 
 .comment {
     background-color: white;
-    margin: 10px 100px;
-    width: 60%;
+    margin: 10px 20px;
+    width: 900px;
     display: inline-block;
 }
 
@@ -103,12 +110,12 @@ body {
     color: rgb(143, 143, 143);
     padding: 5px;
     margin-left: 58px;
-    font-family:'Source Serif Pro';
+    font-family: 'Source Serif Pro';
 }
 
 .comment img {
     width: 11%;
-    padding-bottom:95px;
+    padding-bottom: 95px;
 }
 
 .border {
@@ -119,8 +126,8 @@ body {
 }
 
 .relatedposts {
-    width: 60%;
-    margin: 20px 100px;
+    width: 900px;
+    margin: 20px 20px;
     background-color: white;
 }
 
@@ -142,13 +149,15 @@ body {
 
 .relatedposts h2 {
     text-align: center;
-    text-decoration: underline 2px;
+    text-decoration: underline 3px;
 }
-.relatedposts ul p{
-    font-family:'Source Serif Pro'; 
-    color:#2c2c2c;
-    font-size:1.1em;
+
+.relatedposts ul p {
+    font-family: 'Source Serif Pro';
+    color: #2c2c2c;
+    font-size: 1.1em;
 }
+
 .leave {
     margin: 20px;
 }
@@ -159,8 +168,8 @@ body {
     height: 155px;
     margin-right: 30px;
     margin-bottom: 40px;
-    border:1px lightgray solid;
-    font-family:'Source Serif Pro'; 
+    border: 1px lightgray solid;
+    font-family: 'Source Serif Pro';
     font-size: 0.95em;
 }
 
@@ -169,8 +178,8 @@ body {
     width: 40%;
     height: 33px;
     margin-left: 10px;
-    border:1px lightgray solid;
-    font-family:'Source Serif Pro'; 
+    border: 1px lightgray solid;
+    font-family: 'Source Serif Pro';
     font-size: 0.95em;
 }
 
@@ -179,13 +188,13 @@ body {
     width: 40%;
     height: 33px;
     margin: 10px;
-    border:1px lightgray solid;
-    font-family:'Source Serif Pro'; 
+    border: 1px lightgray solid;
+    font-family: 'Source Serif Pro';
     font-size: 0.95em;
 }
 
 .button {
-    background-color:hsl(16, 94%, 70%); 
+    background-color: hsl(16, 94%, 70%);
     color: white;
     width: 41%;
     height: 48px;
@@ -295,199 +304,200 @@ body {
     }
 }
 
-    .mainpost
-{
+.mainpost {
     height: 2080px;
-    width: 47.7%;;
+    width: 900px;
     flex: auto;
     background-color: white;
     margin-top: 25px;
     font-family: 'Oswald';
-    margin: 20px 100px;
+    margin: 20px 20px;
 
-	
 
-	
-}
-.zdj1
-{
-	position: relative;
-	-webkit-transition: all 0.2s ease;
-	-moz-transition: all 0.2s ease;
-	  -o-transition: all 0.2s ease;
-	 -ms-transition: all 0.2s ease;
-		 transition: all 0.2s ease;
-		 width: 900px;
-		 height: 600px;
 
 
 }
-.zdj1:hover
-{
-	transform: scale(1);
+
+.zdj1 {
+    position: relative;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    width: 900px;
+    height: 600px;
+
+
+}
+
+.zdj1:hover {
+    transform: scale(1);
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1);
     z-index: 0;
-	transition: all 100ms linear;
+    transition: all 100ms linear;
 }
 
 
-.text
-{
-	
-	color: grey;
-	margin: 20px;
+.text {
+
+    color: grey;
+    margin: 20px;
 
 }
 
 
-	
 
 
-.text1
-{
-	font-weight: 1500;
-	margin:20px;
-}
-.text2
-{
 
-	color: grey;
-	margin: 20px;	
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	
-
+.text1 {
+    font-weight: 1500;
+    margin: 20px;
 }
 
-.text3
-{
-	
-	margin: 20px;
-	
-}
-.stopka
-{
-	margin-top: 30px;
-	border-top: 2px dotted gray;
-	
+.text2 {
+
+    color: grey;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
 }
 
-.block
-{
-background-color: 	#F5F5F5;
-height: 90px;
-width: 860px;
-margin: 20px;
--webkit-transition: all 0.2s ease;
-	-moz-transition: all 0.2s ease;
-	  -o-transition: all 0.2s ease;
-	 -ms-transition: all 0.2s ease;
-		 transition: all 0.2s ease;
+.text3 {
+
+    margin: 20px;
+    font-family: 'Source Serif Pro';
+
 }
-.block:hover
-{
-	transform: scale(1);
+
+.stopka {
+    margin-top: 30px;
+    border-top: 2px dotted gray;
+
+}
+
+.block {
+    background-color: #F5F5F5;
+    height: 90px;
+    width: 860px;
+    margin: 20px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    font-family: 'Source Serif Pro';
+}
+
+.block:hover {
+    transform: scale(1);
     -webkit-transform: scale(1.03);
     -moz-transform: scale(1);
     z-index: 0;
-	transition: all 100ms linear;
+    transition: all 100ms linear;
 }
-.block-text
-{
-	text-align: center;
-	margin: 15px;
-	padding: 15px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: larger;
-	
+
+.block-text {
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    /*font-style: italic;  jak poprawi sie ten myslnik to pochylimy*/
+
 }
-.text4
-{
-	margin: 20px;
+
+.text4 {
+    margin: 20px;
+    font-family: 'Source Serif Pro';
 }
-.text5
-{
-	margin: 20px;
+
+.text5 {
+    margin: 20px;
 }
-.text6
-{
-	margin: 20px;
+
+.text6 {
+    margin: 20px;
+    font-family: 'Source Serif Pro';
 }
-.text7
-{
-	margin: 20px;
+
+.text7 {
+    margin: 20px;
 }
-.text8
-{
-	margin: 20px;
+
+.text8 {
+    margin: 20px;
+    font-family: 'Source Serif Pro';
 }
-.minus
-{
-float: left;
-color: #fc7c57;	
-border:  2px solid;
-height: 1px;
-width: 20px;
-background-color: #fc7c57;
-margin-bottom: 18px;
+
+.minus {
+    float: left;
+    color: #fc7c57;
+    border: 2px solid;
+    height: 1px;
+    width: 20px;
+    background-color: #fc7c57;
+    margin-bottom: 18px;
 }
+
 .icons {
-	display: flex;
-	align-items: center;
-	font-size: 30px;
-	margin: 50px;
-	text-align: center;
-	justify-content: center;
-	color: black;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin: 50px;
+    text-align: center;
+    justify-content: center;
+    color: black;
 
 
 }
+
 .icon {
-	border-radius: 50%;
-	background-color: #F5F5F5;
-	width: 50px;
-	height: 50px;
-	display: block;
-	position: relative;
-	margin-left: 15px;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	-ms-transition: all 0.5s ease;
-	transition: all 0.5s ease;
+    border-radius: 50%;
+    background-color: #F5F5F5;
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: relative;
+    margin-left: 15px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     text-decoration: none;
     color: black;
 
 }
 
 .icon:before {
-	top: 50%;
-	position: absolute;
-	margin-left: 0 !important;
-	left: 50%;
-	transform: translate(-50%, -50%);
+    top: 50%;
+    position: absolute;
+    margin-left: 0 !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .icon:hover {
-	background-color: #fc7c57;
-	color: white;
-	transition: all 200ms linear;
-	transform: scale(1);
-	-webkit-transform: scale(1.2);
-	-moz-transform: scale(1);
-	z-index: 0;
+    background-color: #fc7c57;
+    color: white;
+    transition: all 200ms linear;
+    transform: scale(1);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1);
+    z-index: 0;
 }
 
 .icon:active {
-	transform: scale(1);
-	-webkit-transform: scale(0.1);
-	-moz-transform: scale(1);
-	z-index: 0;
+    transform: scale(1);
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(1);
+    z-index: 0;
 
 }
-
- 

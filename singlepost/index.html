@@ -2,154 +2,417 @@
 <html>
 
 <head>
-    <link rel="stylesheet"  type="text/css" href="styles.css" href="icons/css/fontello.css"/>
-    <link rel="stylesheet"  type="text/css"  href="icons/css/fontello.css"/>
+    <link rel="stylesheet" type="text/css" href="styles.css" href="icons/css/fontello.css" />
+    <link rel="stylesheet" type="text/css" href="icons/css/fontello.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=2.0">
     <title>post</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js"
+        integrity="sha256-2JRzNxMJiS0aHOJjG+liqsEOuBb6++9cY4dSOyiijX4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <link rel="stylesheet" type="text/css" href="style/navbar.css" />
+    <header>
+        <div id="hamburger">
+            <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                <span>MENU</span>
+            </a>
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("site-nav__list");
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                    }
+                }
+            </script>
+        </div>
+        <nav class="site-nav">
+            <ul class="site-nav__list" id="site-nav__list">
+                <li class="site-nav__item">
+                    <a class="site-nav__link" href="#">HOME PAGES</a>
+                </li>
+                <li class="site-nav__item">
+                    <a class="site-nav__link" href="#">SINGLE POST</a>
+                </li>
+                <li class="site-nav__item">
+                    <a class="site-nav__link" href="#">CONTACT</a>
+                </li>
+                <li class="site-nav__item">
+                    <a class="site-nav__link" href="#">ABOUT US</a>
+                </li>
+                <li class="site-nav__item__right">
+                    <input type="text" class="navbar-right__search">
+                </li>
+                <li class="site-nav__item__right">
+                    <a href="https://facebook.com" target="_blank" rel="noopener nofollow">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener nofollow">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="img/logo.svg" alt="logo">
+        </div>
+    </header>
 
-    
+
     <div class="quotations">
         <div class="quotations_text">
             <div class="quotations_text_p"> Taka mała kreska nad "o" w słowie woda, a tak wiele zmienia</div>
         </div>
     </div>
 
+    <link rel="stylesheet" type="text/css" href="style/main.css" />
     <div class="main">
-        <div>
-            
-                
+        <link rel="stylesheet" type="text/css" href="style/mainleftcolumn.css" />
+        <div class="firstcolumn">
+            <div>
+
+
                 <div class="mainpost">
-                    
-                    <img class="zdj1" src="img/5.png" >
-                    <div class="text1"><h3><b>Being Atraveler in The World, Just Like A lion Without Beard</b></h3></div>
-                    <div class="text2"><span style="color:#fc7c57">in&nbsp;</span><span>Relationship &nbsp; -  &nbsp; </span><span style="color:#fc7c57"> Posted on </span><span> &nbsp; August 17,2017 &nbsp; - &nbsp; </span><span style="color:#fc7c57">&nbsp; by &nbsp; </span><img class="autor" src="img/10.png" height="30" width="30" > &nbsp; Cool Man </div>
-                    <div class="text3">Lorem Ipsum passage, andgoing through the cites of the word in classical litterature, discovered the
-                    undouubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
-                     Malorum"(The Extremes of Good and Evil) by Cicero, written in 45 BC. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nulla assumenda quam a odit harum veritatis nemo,
-                      amet in, quos ex. Quibusdam repudiandae, exercitationem laboriosam praesentium cupiditate alias vero velit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum commodi repellendus voluptate? Laborum labore aperiam, expedita facere dolores ipsam dignissimos,
-                       necessitatibus autem sequi quisquam quasi pariatur, molestias reiciendis! Eum, repellat.</br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut porro maiores facilis numquam, rem inventore, mollitia 
-                       sint perferendis iusto dicta nulla iure magni minus at optio, voluptatibus cum reiciendis maxime.</br></div>
-                       <div class="block" >
-                        <div class="block-text" >
-                            <div class="minus" >   </div>  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, eum vel. Incidunt, nam nemo sit dolores, voluptatibus cum reiciendis maxime</div>
-                       </div>
-                       <div class="text4"><br>Lorem Ipsum passage, andgoing through the cites of the word in classical litterature, discovered the
-                        undouubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
-                         Malorum"(The Extremes of Good and Evil) by Cicero, written in 45 BC. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nulla assumenda quam a odit harum veritatis nemo,
-                          amet in, quos ex. Quibusdam repudiandae, exercitationem laboriosam praesentium cupiditate alias vero velit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum commodi repellendus voluptate? Laborum labore aperiam, expedita facere dolores ipsam dignissimos,
-                           necessitatibus autem sequi quisquam quasi pariatur, molestias reiciendis! Eum, repellat.
-                           <br></br>
-                           Lorem Ipsum passage, andgoing through the cites of the word in classical litterature, discovered the
-                        undouubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
-                         Malorum"(The Extremes of Good and Evil) by Cicero, written in 45 BC. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nulla assumenda quam a odit harum veritatis nemo,
-                          amet in, quos ex. Quibusdam repudiandae, exercitationem laboriosam praesentium cupiditate alias vero velit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum commodi repellendus voluptate? Laborum labore aperiam, expedita facere dolores ipsam dignissimos,
-                           necessitatibus autem sequi quisquam quasi pariatur, molestias reiciendis! Eum, repellat.</div>
-                           <div class="text5">
-                               <br></br>
-                               <h3><b>1914 translation by H.Rackham</b></h3>
-                            </div>
-                            <div class="text6">
-                                Lorem Ipsum passage, andgoing through the cites of the word in classical litterature, discovered the
-                                undouubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
-                                 Malorum"(The Extremes of Good and Evil) by Cicero, written in 45 BC. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nulla assumenda quam a odit harum veritatis nemo,
-                                  amet in, quos ex. Quibusdam repudiandae, exercitationem laboriosam praesentium cupiditate alias vero velit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum commodi repellendus voluptate? Laborum labore aperiam, expedita facere dolores ipsam dignissimos,
-                                   necessitatibus autem sequi quisquam quasi pariatur, molestias reiciendis! Eum, repellat.
-                                 </div>
-                            <div class="text7">
-                                <h3><b>Sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et</b></h3>
-                            </div>
-                            <div class="text8">
-                                Lorem Ipsum passage, andgoing through the cites of the word in classical litterature, discovered the undouubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"(The Extremes of Good and Evil) by Cicero, written in 45 BC. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nulla assumenda quam a odit harum veritatis nemo, amet in, quos ex. Quibusdam repudiandae, exercitationem laboriosam praesentium cupiditate alias vero velit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum commodi repellendus voluptate? Laborum labore aperiam, expedita 
-                                facere dolores ipsam dignissimos, necessitatibus autem sequi quisquam quasi pariatur, molestias reiciendis! Eum, repellat.
-    
-                            </div>
-                            
-    
-                           
-                     
-    
+
+                    <img class="zdj1" src="img/5.png">
+                    <div class="text1">
+                        <h3><b>Being Atraveler in The World, Just Like A lion Without Beard</b></h3>
+                    </div>
+                    <div class="text2"><span style="color:#fc7c57">in&nbsp;</span><span>Relationship &nbsp; - &nbsp;
+                        </span><span style="color:#fc7c57"> Posted on </span><span> &nbsp; August 17,2017 &nbsp; -
+                            &nbsp;
+                        </span><span style="color:#fc7c57">&nbsp; by &nbsp; </span><img class="autor" src="img/10.png"
+                            height="30" width="30"> &nbsp; Cool Man </div>
+                    <div class="text3">Lorem Ipsum passage, andgoing through the cites of the word in classical
+                        litterature,
+                        discovered the
+                        undouubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum
+                        et
+                        Malorum"(The Extremes of Good and Evil) by Cicero, written in 45 BC. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Quasi nulla assumenda quam a odit harum veritatis nemo,
+                        amet in, quos ex. Quibusdam repudiandae, exercitationem laboriosam praesentium cupiditate alias
+                        vero
+                        velit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum commodi repellendus
+                        voluptate? Laborum labore aperiam, expedita facere dolores ipsam dignissimos,
+                        necessitatibus autem sequi quisquam quasi pariatur, molestias reiciendis! Eum,
+                        repellat.</br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut porro maiores
+                        facilis
+                        numquam, rem inventore, mollitia
+                        sint perferendis iusto dicta nulla iure magni minus at optio, voluptatibus cum reiciendis
+                        maxime.</br></div>
+                    <div class="block">
+                        <div class="block-text">
+                            <div class="minus"> </div> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Ratione,
+                            eum vel. Incidunt, nam nemo sit dolores, voluptatibus cum reiciendis maxime
+                        </div>
+                    </div>
+                    <div class="text4"><br>Lorem Ipsum passage, andgoing through the cites of the word in classical
+                        litterature, discovered the
+                        undouubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum
+                        et
+                        Malorum"(The Extremes of Good and Evil) by Cicero, written in 45 BC. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Quasi nulla assumenda quam a odit harum veritatis nemo,
+                        amet in, quos ex. Quibusdam repudiandae, exercitationem laboriosam praesentium cupiditate alias
+                        vero
+                        velit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum commodi repellendus
+                        voluptate? Laborum labore aperiam, expedita facere dolores ipsam dignissimos,
+                        necessitatibus autem sequi quisquam quasi pariatur, molestias reiciendis! Eum, repellat.
+                        <br></br>
+                        Lorem Ipsum passage, andgoing through the cites of the word in classical litterature, discovered
+                        the
+                        undouubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum
+                        et
+                        Malorum"(The Extremes of Good and Evil) by Cicero, written in 45 BC. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Quasi nulla assumenda quam a odit harum veritatis nemo,
+                        amet in, quos ex. Quibusdam repudiandae, exercitationem laboriosam praesentium cupiditate alias
+                        vero
+                        velit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum commodi repellendus
+                        voluptate? Laborum labore aperiam, expedita facere dolores ipsam dignissimos,
+                        necessitatibus autem sequi quisquam quasi pariatur, molestias reiciendis! Eum, repellat.</div>
+                    <div class="text5">
+                        <br></br>
+                        <h3><b>1914 translation by H.Rackham</b></h3>
+                    </div>
+                    <div class="text6">
+                        Lorem Ipsum passage, andgoing through the cites of the word in classical litterature, discovered
+                        the
+                        undouubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum
+                        et
+                        Malorum"(The Extremes of Good and Evil) by Cicero, written in 45 BC. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Quasi nulla assumenda quam a odit harum veritatis nemo,
+                        amet in, quos ex. Quibusdam repudiandae, exercitationem laboriosam praesentium cupiditate alias
+                        vero
+                        velit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum commodi repellendus
+                        voluptate? Laborum labore aperiam, expedita facere dolores ipsam dignissimos,
+                        necessitatibus autem sequi quisquam quasi pariatur, molestias reiciendis! Eum, repellat.
+                    </div>
+                    <div class="text7">
+                        <h3><b>Sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et</b></h3>
+                    </div>
+                    <div class="text8">
+                        Lorem Ipsum passage, andgoing through the cites of the word in classical litterature, discovered
+                        the
+                        undouubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum
+                        et
+                        Malorum"(The Extremes of Good and Evil) by Cicero, written in 45 BC. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Quasi nulla assumenda quam a odit harum veritatis nemo, amet in,
+                        quos
+                        ex. Quibusdam repudiandae, exercitationem laboriosam praesentium cupiditate alias vero velit.
+                        Lorem
+                        ipsum, dolor sit amet consectetur adipisicing elit. Ipsum commodi repellendus voluptate? Laborum
+                        labore aperiam, expedita
+                        facere dolores ipsam dignissimos, necessitatibus autem sequi quisquam quasi pariatur, molestias
+                        reiciendis! Eum, repellat.
+
+                    </div>
+
+
+
+
+
                     <div class="stopka"></div>
                     <div class="icons">
                         <a class="icon icon-youtube" href="https://youtube.com" rel="noopener nofollow" target="_blank"
                             title="YouTube"></a>
-                        <a class="icon icon-facebook" href="https://facebook.com" rel="noopener nofollow" target="_blank"
-                            title="Facebook"></a>
+                        <a class="icon icon-facebook" href="https://facebook.com" rel="noopener nofollow"
+                            target="_blank" title="Facebook"></a>
                         <a class="icon icon-twitter" href="https://twitter.com" rel="noopener nofollow" target="_blank"
                             title="Twitter"></a>
-                        <a class="icon icon-pinterest" href="https://pinterest.com" rel="noopener nofollow" target="_blank"
-                            title="Pinterest"></a>
-                        <a class="icon icon-whatsapp" href="https://whatsapp.com" rel="noopener nofollow" target="_blank"
-                            title="Whatsapp"></a>
-           
-                
+                        <a class="icon icon-pinterest" href="https://pinterest.com" rel="noopener nofollow"
+                            target="_blank" title="Pinterest"></a>
+                        <a class="icon icon-whatsapp" href="https://whatsapp.com" rel="noopener nofollow"
+                            target="_blank" title="Whatsapp"></a>
+
+
+                    </div>
+
+
+                </div>
+
             </div>
-    
-          
+
+            <div class="description">
+                <header>
+                    <h2>AUTHOR</h2>
+                </header>
+
+                <img src="img/coolman.PNG" alt="profile picture" style="float:left; margin:5px 20px;">
+                <h2 class="nickname">Coolman</h2>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ex odit autem aut
+                    dolor,
+                    incidunt recusandae distinctio et nesciunt velit quod. Vel reprehenderit nesciunt porro quidem iste
+                    iure dolorum repellendus.</p>
+
+            </div>
+            <div class="comment">
+                <header>
+                    <h2>COMMENT</h2>
+                </header>
+
+                <img src="img/beard.PNG" alt="profile picture" style="float:left; margin:5px 20px">
+                <h2 class="nickname">Beard<span class="date"> ~ </span><span class="date">August 17, 2021</span></h2>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ex odit autem aut
+                    dolor,
+                    incidunt recusandae distinctio et nesciunt velit quod. Vel reprehenderit nesciunt porro quidem iste
+                    iure dolorum repellendus.</p>
+                <p class=border></p>
+                <h2 class="leave">Leave comment</h2>
+                <div class="commenting">
+                    <form>
+                        <textarea name="comment" id="comment" placeholder="Comment..." class="textarea"></textarea>
+                        <!--rows dlugosc cols szerokosc i to miejscie jest na tekst/-->
+                        <label for="username"></label>
+                        <input type="text" id="username" name="username" placeholder="Name..." required
+                            class="username">
+                        <br><br>
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" placeholder="Email..." required class="email">
+                        <label for="comment"></label>
+                        <button type="submit" class="button">SUBMIT COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="relatedposts">
+                <h2>RELATED POSTS</h2>
+                <ul class="pictures">
+                    <li><img src="img/picture1.png" alt="picture1" </li> <p><strong>Lorem ipsum dolor sit amet
+                            consectetur
+                            adipisicing elit. Dolor optio ullam laboriosam eaque voluptatum sequi at, velit dolores?
+                            Quasi vero adipisci totam! Quos consectetur obcaecati hic alias corporis natus
+                            doloribus?</strong>
+                        </p>
+                    <li><img src="img/picture2.png" alt="picture1" </li> <p><strong>Lorem ipsum dolor sit amet
+                            consectetur
+                            adipisicing elit. Dolor optio ullam laboriosam eaque voluptatum sequi at, velit dolores?
+                            Quasi vero adipisci totam! Quos consectetur obcaecati hic alias corporis natus
+                            doloribus</strong>
+                        </p>
+                </ul>
+
+
+            </div>
         </div>
-        
+        <link rel="stylesheet" type="text/css" href="style/mainrightcolumn.css" />
+        <div class="secondcolumn">
+            <div class="sidedivs">
+
+                <div class="aboutme">
+                    <div class="aboutme_header">ABOUT ME</div>
+                    <div class="aboutme_main"><img class="aboutme_png" src="img/aboutme.png" width="330px" /></div>
+                    <div class="aboutme_footer">lorem ipsum dummy text lorem ipsum dummy text lorem ipsum dummy text
+                        lorem ipsum dummy text</div>
+                </div>
+
+                <div class="subscribe">
+                    <div class="subscribe_header">SUBSCRIBE</div>
+                    <div class="subscribe_main">Subscribe to Our newsletter for free Update every week</div>
+                    <div class="subscribe_mail_and_submit">
+                        <input type="email" id="email" name="email" placeholder="Your email">
+
+                        <button class="subscribe_submit" type="submit">SUBSCRIBE</button>
+                    </div>
+                </div>
+
+                <div class="popularposts">
+                    <div class="popularposts_header">POPULAR POSTS</div>
+                    <div class="popularposts_content">
+                        <div class="popularposts_img">
+
+                            <img class="popularposts_png" src="img/Popular_Post_Thumbnail1.png">
+                            <div>
+                                <!--Ten div klasy nie potrzebuje, bo nie trzeba go edytować w css-->
+                                <div class="popularposts_text">
+                                    Being A traveler in The World, Just like A lion Without Beard
+                                </div>
+                                <div class="popularposts_text_footer">
+                                    <div class="popularposts_posted">Posted on</div>
+                                    <div class="popularposts_date">August 17, 2017</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="popularposts_img">
+
+                            <img class="popularposts_png" src="img/Popular_Post_Thumbnail2.png">
+                            <div>
+                                <!--Ten div klasy nie potrzebuje, bo nie trzeba go edytować w css-->
+                                <div class="popularposts_text">
+                                    Lorem Ipsum Dolor Sit met, Just a Dummy text for Content
+                                </div>
+                                <div class="popularposts_text_footer">
+                                    <div class="popularposts_posted">Posted on</div>
+                                    <div class="popularposts_date">August 17, 2017</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="popularposts_img">
+
+                            <img class="popularposts_png" src="img/Popular_Post_Thumbnail3.png">
+                            <div>
+                                <!--Ten div klasy nie potrzebuje, bo nie trzeba go edytować w css-->
+                                <div class="popularposts_text">
+                                    Just a Dummy text for Content, Lorem Ipsum
+                                </div>
+                                <div class="popularposts_text_footer">
+                                    <div class="popularposts_posted">Posted on</div>
+                                    <div class="popularposts_date">August 17, 2017</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="category_header">CATEGORY</div>
+                    <div class="category_content">
+                        <ul class="ul">
+                            <li class="li"><a class="link" href="google.com">Beard</a></li><br>
+                            <li class="li"><a class="link" href="google.com">Travel</a></li><br>
+                            <li class="li"><a class="link" href="google.com">Sun Rise</a></li><br>
+                            <li class="li"><a class="link" href="google.com">Village</a></li><br>
+                            <li class="li"><a class="link" href="google.com">Night Fall</a></li><br>
+                            <li class="li"><a class="link" href="google.com">City</a></li><br>
+                            <li class="li"><a class="link" href="google.com">Local Food</a></li>
+                        </ul>
+
+
+
+                        <div>
+                        </div>
+                    </div>
+
+                    <div class="slideads">
+                        <div class="slideads_header">SLIDE ADS</div>
+                        <div class="slideads_main">
+                            <img src="img/ads.png" width="330px">
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
         </div>
-    
-    <div class="description">
-        <header>
-            <h2>AUTHOR</h2>
-        </header>
-
-        <img src="img/coolman.PNG" alt="profile picture" style="float:left; margin:5px 20px;">
-        <h2 class="nickname">Coolman</h2>
-        <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ex odit autem aut dolor,
-            incidunt recusandae distinctio et nesciunt velit quod. Vel reprehenderit nesciunt porro quidem iste
-            iure dolorum repellendus.</p>
 
     </div>
-    <div class="comment">
-        <header>
-            <h2>COMMENT</h2>
-        </header>
+    <link rel="stylesheet" type="text/css" href="style/footer.css" />
+    <div class="footer">
 
-        <img src="img/beard.PNG" alt="profile picture" style="float:left; margin:5px 20px">
-        <h2 class="nickname">Beard<span class="date"> ~ </span><span class="date">August 17, 2021</span></h2>
-        <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ex odit autem aut dolor,
-            incidunt recusandae distinctio et nesciunt velit quod. Vel reprehenderit nesciunt porro quidem iste
-            iure dolorum repellendus.</p>
-        <p class=border></p>
-        <h2 class="leave">Leave comment</h2>
-        <div class="commenting">
-            <form>
-                <textarea name="comment" id="comment" placeholder="Comment..." class="textarea"></textarea>
-                <!--rows dlugosc cols szerokosc i to miejscie jest na tekst/-->
-                <label for="username"></label>
-                <input type="text" id="username" name="username" placeholder="Name..." required class="username">
-                <br><br>
-                <label for="email"></label>
-                <input type="email" id="email" name="email" placeholder="Email..." required class="email">
-                <label for="comment"></label>
-                <button type="submit" class="button">SUBMIT COMMENT</button>
-            </form>
+        <p class="uptext">FOLLOW MY INSTAGRAM @MY INSTAGRAM</p>
+
+
+        <div class="photos1">
+            <img class="img1" alt="photo1" src="img/img1.png">
+            <img class="img1" alt="photo2" src="img/img2.png">
+            <img class="img1" alt="photo3" src="img/img3.png">
+            <img class="img1" alt="photo4" src="img/img4.png">
+            <img class="img1" alt="photo5" src="img/img5.png">
+            <img class="img1" alt="photo6" src="img/img6.png">
         </div>
-    </div>
-    <div class="relatedposts">
-        <h2>Related post</h2>
-        <ul class="pictures">
-            <li><img src="img/picture1.png" alt="picture1" </li> <p><strong>Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Dolor optio ullam laboriosam eaque voluptatum sequi at, velit dolores?
-                    Quasi vero adipisci totam! Quos consectetur obcaecati hic alias corporis natus doloribus?</strong>
-                </p>
-            <li><img src="img/picture2.png" alt="picture1" </li> <p><strong>Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Dolor optio ullam laboriosam eaque voluptatum sequi at, velit dolores?
-                    Quasi vero adipisci totam! Quos consectetur obcaecati hic alias corporis natus doloribus</strong>
-                </p>
-        </ul>
+        <br>
 
 
-    </div>
+
+
+
+        <div class="icons">
+            <a class="icon icon-youtube" href="https://youtube.com" rel="noopener nofollow" target="_blank"
+                title="YouTube"></a>
+            <a class="icon icon-facebook" href="https://facebook.com" rel="noopener nofollow" target="_blank"
+                title="Facebook"></a>
+            <a class="icon icon-twitter" href="https://twitter.com" rel="noopener nofollow" target="_blank"
+                title="Twitter"></a>
+            <a class="icon icon-pinterest" href="https://pinterest.com" rel="noopener nofollow" target="_blank"
+                title="Pinterest"></a>
+            <a class="icon icon-whatsapp" href="https://whatsapp.com" rel="noopener nofollow" target="_blank"
+                title="Whatsapp"></a>
+        </div>
+
+        <br>
+        <div class="copyright__container">
+            <br>
+            <p class="downtext2">ZERO KM COPYRIGHT © 2018&nbsp;&nbsp;&nbsp;&nbsp;- &nbsp;&nbsp;<span class="behance">
+                    HTTPS://WWW.BEHANCE.NET/DWI_MBOJOWAE</span> </p>
+        </div>
 
     </div>
+
 
 
 </body>
