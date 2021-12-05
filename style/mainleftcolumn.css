@@ -83,7 +83,7 @@
 
 .newerpost {
   display: inline-flex;
-  float: left;
+  text-align: left;
   font-size: 15px;
   position: relative;
 }
@@ -91,7 +91,7 @@
 .olderpost {
   position: relative;
   z-index: 1;
-  float: right;
+  text-align: right;
   display: inline-flex;
   font-size: 15px;
 }
