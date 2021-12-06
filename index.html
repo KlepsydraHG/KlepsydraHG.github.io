@@ -22,33 +22,46 @@
     <link rel="stylesheet" type="text/css" href="style/top.css" />
     <header>
         <nav class="site-nav">
-            <ul class="site-nav__list">
-                <li class="site-nav__item">
-                    <a class="site-nav__link" href="#">HOME PAGES</a>
-                </li>
-                <li class="site-nav__item">
-                    <a class="site-nav__link" href="#">SINGLE POST</a>
-                </li>
-                <li class="site-nav__item">
-                    <a class="site-nav__link" href="#">CONTACT</a>
-                </li>
-                <li class="site-nav__item">
-                    <a class="site-nav__link" href="#">ABOUT US</a>
-                </li>
-                <li class="site-nav__item__right">
-                    <a href="https://facebook.com" target="_blank" rel="noopener nofollow">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                </li>
-                <li class="site-nav__item__right">
-                    <a href="https://twitter.com" target="_blank" rel="noopener nofollow">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li class="site-nav__item__right">
-                    <input type="search" class="navbar-right__search">
-                </li>
-            </ul>
+            <script src="js_hamburger.js" defer></script>
+            <div class="abcd">
+                <span>menu albo logo</span>
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+            </div>
+            <div class="site-nav__links">
+                <ul class="site-nav__list">
+                    <li class="site-nav__item" id="site-nav__item">
+                        <a class="site-nav__link" href="#">HOME PAGES</a>
+                    </li>
+                    <li class="site-nav__item" id="site-nav__item">
+                        <a class="site-nav__link" href="#">SINGLE POST</a>
+                    </li>
+                    <li class="site-nav__item" id="site-nav__item">
+                        <a class="site-nav__link" href="#">CONTACT</a>
+                    </li>
+                    <li class="site-nav__item" id="site-nav__item">
+                        <a class="site-nav__link" href="#">ABOUT US</a>
+                    </li>
+                </ul>
+                <ul class="site-nav__list__right">
+                    <li class="site-nav__item__right" id="site-nav__item">
+                        <input type="search" class="navbar-right__search">
+                    </li>
+                    <li class="site-nav__item__right" id="site-nav__item">
+                        <a href="https://facebook.com" target="_blank" rel="noopener nofollow">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="site-nav__item__right" id="site-nav__item">
+                        <a href="https://twitter.com" target="_blank" rel="noopener nofollow">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <div class="logo">
             <img src="img/logo.svg" alt="logo">
