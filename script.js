@@ -85,9 +85,9 @@ const retrieveAllPosts = () =>
   );
 
 const retrievePostsPage = (page) => {
-  const after_id = (page - 1) * limitPerPage;
+  const after = (page - 1) * limitPerPage;
   return retrieve(
-    `https://trol-api.herokuapp.com/api/posts?after_id=${after_id}&limit=${limitPerPage}`,
+    `https://trol-api.herokuapp.com/api/posts?after=${after}&limit=${limitPerPage}`,
     true,
     createPosts,
     "json"
@@ -102,13 +102,15 @@ const retrievePopularPosts = () =>
     "json"
   );
 
-const retrievePostsByKeyword = (keyword) =>
-  retrieve(
-    `https://trol-api.herokuapp.com/api/posts?search=${keyword}`,
+const retrievePostsByKeyword = (keyword, page = 1) => {
+  const after = (page - 1) * limitPerPage;
+  return retrieve(
+    `https://trol-api.herokuapp.com/api/posts?search=${keyword}&after=${after}&limit=${limitPerPage}`,
     true,
-    console.log,
+    createPosts,
     "json"
   );
+};
 
 const retrievePost = (id) =>
   retrieve(
@@ -146,8 +148,11 @@ const searchInput = document.querySelector(".navbar-right__search");
 
 searchInput.addEventListener("keyup", (e) => {
   const value = e.target.value;
-  if (value !== "") {
-    retrievePostsByKeyword(value);
+  if (value !== "" && value.length > 2) {
+    removePosts();
+    retrievePostsByKeyword(value).then(() => {
+      console.log("done");
+    });
   }
 });
 
