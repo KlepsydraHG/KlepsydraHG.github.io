@@ -2,6 +2,14 @@ let token;
 const firstColumn = document.querySelector(".firstcolumn");
 const postsContainer = document.querySelector(".posts-container");
 const postTemplate = document.querySelector("#post");
+const limitPerPage = 5;
+let pagesAmount;
+
+const removePosts = () => {
+  while (postsContainer.firstChild) {
+    postsContainer.firstChild.remove();
+  }
+};
 
 const fillPost = (post) => {
   const clone = postTemplate.content.cloneNode(true);
@@ -42,7 +50,7 @@ const setToken = (token) => {
 const retrieve = (endpoint, authorization, callback, ...callbackArgs) => {
   const headers = authorization
     ? {
-        // Authorization: `Bearer ${token}`,
+        Authorization: `Bearer ${token}`,
       }
     : {};
   return fetch(endpoint, {
@@ -72,15 +80,14 @@ const retrieveAllPosts = () =>
   retrieve(
     "https://trol-api.herokuapp.com/api/posts",
     true,
-    console.log,
+    getNumberOfPages,
     "json"
   );
 
 const retrievePostsPage = (page) => {
-  const limit = 5;
-  const after_id = (page - 1) * limit;
-  retrieve(
-    `https://trol-api.herokuapp.com/api/posts?after_id=${after_id}&limit=${limit}`,
+  const after_id = (page - 1) * limitPerPage;
+  return retrieve(
+    `https://trol-api.herokuapp.com/api/posts?after_id=${after_id}&limit=${limitPerPage}`,
     true,
     createPosts,
     "json"
@@ -128,11 +135,12 @@ const retrieveCategories = () =>
   );
 
 if (!getToken()) {
-  retrieveToken().then(() => retrievePostsPage(1));
+  retrieveToken().then(() => retrieveAllPosts());
 } else {
-  console.log(token);
-  retrievePostsPage(1);
+  retrieveAllPosts();
 }
+
+/* to powinien byc osobny plik w sumie */
 
 const searchInput = document.querySelector(".navbar-right__search");
 
@@ -142,3 +150,51 @@ searchInput.addEventListener("keyup", (e) => {
     retrievePostsByKeyword(value);
   }
 });
+
+/* to powinien byc osobny plik tez */
+
+const newerPostsAnchor = document.querySelector(".anewer");
+const olderPostsAnchor = document.querySelector(".aolder");
+
+const updatePageAnchors = (page) => {
+  const isTooBig = page + 1 === pagesAmount + 1;
+  const isTooSmall = page - 1 === 0;
+  //teraz niech tak będzie
+  if (isTooBig) {
+    olderPostsAnchor.style.visibility = "hidden";
+  } else {
+    olderPostsAnchor.style.visibility = "visible";
+  }
+  if (isTooSmall) {
+    newerPostsAnchor.style.visibility = "hidden";
+  } else {
+    newerPostsAnchor.style.visibility = "visible";
+  }
+  olderPostsAnchor.setAttribute("page", page + 1);
+  newerPostsAnchor.setAttribute("page", page - 1);
+};
+
+const getNumberOfPages = (pages) => {
+  pagesAmount = Math.ceil(pages.length / limitPerPage);
+  if (pagesAmount === 0) {
+    postsContainer.textContent = "Sry, no posts yet ;c";
+  } else {
+    retrievePostsPage(1).then(() => {
+      updatePageAnchors(1);
+    });
+  }
+};
+
+const anchorOnClick = (e) => {
+  const anchor = e.currentTarget;
+  const newPage = Number(anchor.getAttribute("page"));
+  e.preventDefault();
+  removePosts();
+  retrievePostsPage(newPage).then(() => {
+    updatePageAnchors(newPage);
+  });
+};
+
+newerPostsAnchor.addEventListener("click", anchorOnClick);
+
+olderPostsAnchor.addEventListener("click", anchorOnClick);
