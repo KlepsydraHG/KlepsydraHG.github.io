@@ -1,104 +1,32 @@
 let token;
 const firstColumn = document.querySelector(".firstcolumn");
 const postsContainer = document.querySelector(".posts-container");
+const postTemplate = document.querySelector("#post");
 
-const createTitle = (text, size = 1) => {
-  const title = document.createElement("h" + size);
-  title.textContent = text;
-  return title;
+const fillPost = (post) => {
+  const clone = postTemplate.content.cloneNode(true);
+  const background = clone.querySelector(".mainpost__background");
+  const category = clone.querySelector(".mainpost__category");
+  const title = clone.querySelector(".mainpost__title");
+  const date = clone.querySelector(".mainpost__date");
+  const authorsAvatar = clone.querySelector(".mainpost__author-avatar");
+  const authorsName = clone.querySelector(".mainpost__author-name");
+  const content = clone.querySelector(".mainpost__content");
+  background.src = post.Background;
+  category.textContent = post.CategoryTitle;
+  title.textContent = post.Title;
+  date.textContent = post.PostDate;
+  authorsAvatar.src = post.Avatar;
+  authorsName.textContent = post.AuthorName;
+  content.textContent = post.Content_shortened;
+  return clone;
 };
 
 const createPosts = (posts) => {
   posts.forEach((post) => {
-    postsContainer.appendChild(createPostDiv(post));
+    const postFilled = fillPost(post);
+    postsContainer.appendChild(postFilled);
   });
-};
-
-const createOrangeSpan = (text) => {
-  const span = document.createElement("span");
-  //nie ma klasy takiej, takze
-  span.style = "color:#fc7c57";
-  span.textContent = text;
-  return span;
-};
-
-const createImage = (elementsClass, src) => {
-  const image = document.createElement("img");
-  image.classList.add(elementsClass);
-  image.src = src;
-  return image;
-};
-
-const createCategoryDiv = (category) => {
-  const div = document.createElement("div");
-  div.classList.add("text");
-  div.appendChild(createOrangeSpan("In "));
-  const text = document.createTextNode(category);
-  div.appendChild(text);
-  return div;
-};
-
-const createTitleDiv = (title) => {
-  const div = document.createElement("div");
-  div.classList.add("text1");
-  div.appendChild(createTitle(title, 3));
-  return div;
-};
-
-const createCreationInfoDiv = (date, avatar, author) => {
-  const div = document.createElement("div");
-  div.classList.add("text2");
-  div.appendChild(createOrangeSpan(`Posted on  `));
-  const dateNode = document.createTextNode("" + date);
-  div.appendChild(dateNode);
-  div.appendChild(createOrangeSpan(`  by  `));
-  div.appendChild(createImage("author", /*avatar*/ "img/trolface.png"));
-  const authorNode = document.createTextNode("  " + author);
-  div.appendChild(authorNode);
-  return div;
-};
-
-const createContentDiv = (content) => {
-  const div = document.createElement("div");
-  div.classList.add("text3");
-  div.textContent = content;
-  return div;
-};
-
-const createIcon = (site) => {
-  const anchor = document.createElement("a");
-  anchor.classList.add("icon");
-  anchor.classList.add(`icon-${site}`);
-  anchor.target = "_blank";
-  anchor.href = `https://${site}.com`;
-  return anchor;
-};
-
-const createIconsContainer = () => {
-  const div = document.createElement("div");
-  div.classList.add("icons");
-  const sites = ["youtube", "facebook", "twitter", "pinterest", "whatsapp"];
-  sites.forEach((site) => {
-    div.appendChild(createIcon(site));
-  });
-  return div;
-};
-
-const createPostDiv = (data) => {
-  const div = document.createElement("div");
-  div.classList.add("mainpost");
-  const addedElements = [
-    createImage("mainpostphoto1", /*data.Background*/ "img/10.png"),
-    createCategoryDiv(data.CategoryTitle),
-    createTitleDiv(data.Title),
-    createCreationInfoDiv(data.PostDate, data.Avatar, data.AuthorName),
-    createContentDiv(data.Content_shortened),
-    createIconsContainer(),
-  ];
-  addedElements.forEach((element) => {
-    div.appendChild(element);
-  });
-  return div;
 };
 
 const getToken = () => {
@@ -114,7 +42,7 @@ const setToken = (token) => {
 const retrieve = (endpoint, authorization, callback, ...callbackArgs) => {
   const headers = authorization
     ? {
-        Authorization: `Bearer ${token}`,
+        // Authorization: `Bearer ${token}`,
       }
     : {};
   return fetch(endpoint, {

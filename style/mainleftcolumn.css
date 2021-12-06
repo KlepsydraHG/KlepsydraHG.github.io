@@ -7,13 +7,13 @@
   font-family: "Oswald";
 }
 
-.author {
+.mainpost__author-avatar {
   height: 30px;
   width: 30px;
   clip-path: circle(50% at 50% 50%);
 }
 
-.mainpostphoto1 {
+.mainpost__background {
   position: relative;
   height: 600px;
   width: 900px;
@@ -24,7 +24,7 @@
   transition: all 0.2s ease;
 }
 
-.mainpostphoto1:hover {
+.mainpost__background:hover {
   transform: scale(1);
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1);
@@ -51,7 +51,7 @@
   align-items: center;
 }
 
-.text3 {
+.mainpost__content {
   text-align: center;
   margin: 10px;
   padding: 15px;
