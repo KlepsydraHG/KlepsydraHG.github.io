@@ -12,6 +12,20 @@
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js"
         integrity="sha256-2JRzNxMJiS0aHOJjG+liqsEOuBb6++9cY4dSOyiijX4=" crossorigin="anonymous"></script>
+
+    <!--Jezeli masz jakis cytat nowy, wklej go do nowej linii w skrypcie. Pamietaj o cudzyslowiu-->
+    <script type="text/javascript"> 
+        var sentences = new Array(
+        "Ja mam tu plik .css zapisany w gimpie",
+        "ale ja nie mam tego like cos tam",
+        "ogolnie jestem gitem, ale...",
+        "Chcecie minimalistyczna strone? Pozegnajcie sie z plikiem .css",
+        "Ej moze zrobimy wlasna mownice jak w sejmie i bedziemy zglaszac wnioski formalne z prosba o edycje pliku index.html",
+        "Jest 8:26, ktory jelop odpalil lola?",
+        "UCZCIE SIE KURCZE",
+        "A moze animacje bys zrobil? Po kij"
+        );
+    </script>
 </head>
 
 <body>
@@ -68,7 +82,11 @@
 
     <div class="quotations">
         <div class="quotations_text">
-            <div class="quotations_text_p"> Taka mała kreska nad "o" w słowie woda, a tak wiele zmienia</div>
+            <div class="quotations_text_p">
+                <script type="text/javascript">
+                    document.write(sentences[Math.floor(Math.random()*sentences.length)]);
+                </script>
+            </div>
         </div>
     </div>
 
