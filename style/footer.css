@@ -3,18 +3,33 @@
     margin-top: 30px;  
 }
 
-
-.photos__element {
+.carousel-cell  {
+    display: inline-block;
+    margin: 0px 0px;
+    width: 0%;
+    height: 0px;
+}
+.photos__element  {
     display: inline-block;
     margin: 18px 20px;
 }
-
 .photos__element:hover{
     transition: all 150ms linear;
     transform: scale(1);
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1);
-    z-index: 0;
+    z-index: 1;
+}
+.carousel-cell:hover{
+    transition: all 150ms linear;
+    transform: scale(1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1);
+    z-index: 1;
+}
+.main-carousel{
+    z-index: -1;
+    width: 0;
 }
 
 .downtext {
@@ -37,17 +52,20 @@ span.behance {
 .footer {
     clear: both;
     background-color: white;
+    margin: 0;
     width: 100%;
-    margin: auto;
+    text-align: center;
+    
 }
 
 .uptext {
     margin-top: 30px;
-    padding-top: 34px;
+    padding-top: 30px;
     font-size: 30;
     text-align: center;
     font-family: "Oswald", sans-serif;
     font-weight: bold;
+    margin-bottom: 15px;
    
 }
 
@@ -57,10 +75,63 @@ span.behance {
 
 @media screen and (max-width: 1350px)
 {
-    .footer
-    {
-    width: 1350px;
-  
-    }
+        .carousel-cell  {
+            display: inline-block;
+            margin: 18px 20px;
+            width: 20%;
+            height: 300px;
+        }
 
+        .main-carousel{
+            z-index: 1;
+            width: 100%;
+        }
+
+        .photos{
+   z-index: -1;
+    width: 0;
+    height: 0;  
+        }
+        .photos__element  {
+            display: inline-block;
+            margin: 0px 0px;
+            width: 0%;
+            height: 0px;
+
+}
+
+@media screen and (max-width: 1100px)
+{
+ 
+    .carousel-cell  {
+        display: inline-block;
+        margin: 18px 20px;
+        width: 30%;
+        height: 300px;
+    }
+  
+}
+
+@media screen and (max-width: 900px)
+{
+ 
+    .carousel-cell  {
+        display: inline-block;
+        margin: 18px 20px;
+        width: 35%;
+        height: 270px;
+    }
+  
+}
+
+@media screen and (max-width: 700px)
+{
+ 
+    .carousel-cell  {
+        display: inline-block;
+        margin: 18px 15px;
+        width: 40%;
+        height: 250px;
+    }
+  
 }
