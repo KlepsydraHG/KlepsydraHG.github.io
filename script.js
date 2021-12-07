@@ -1,6 +1,6 @@
 let token;
 const firstColumn = document.querySelector(".firstcolumn");
-const mainPostsContainer = document.querySelector(".posts-container");
+const mainPostsContainer = document.querySelector(".main-post__container");
 const mainPostTemplate = document.querySelector("#main-post");
 const limitPerPage = 5;
 
@@ -93,7 +93,7 @@ if (!getToken()) {
 
 /* to powinien byc osobny plik w sumie */
 
-const searchInput = document.querySelector(".navbar-right__search");
+const searchInput = document.querySelector(".site-nav__search");
 const searchedPostsContainer = document.querySelector(
   ".searched-post__container"
 );
@@ -169,6 +169,14 @@ searchInput.addEventListener("search", (e) => {
       );
   } else {
     showSearchingFeedback("Input more characters!");
+  }
+});
+
+window.addEventListener("click", (e) => {
+  const elementsClasses = e.target.className;
+  if (!/(searched|site-nav__search)/.test(elementsClasses)) {
+    removeChildren(searchedPostsContainer);
+    feedback.classList.add("searched__feedback--hidden");
   }
 });
 
@@ -253,6 +261,7 @@ const anchorOnClick = (e) => {
   e.preventDefault();
   mainPostsContainer.scrollIntoView(true);
   removeChildren(mainPostsContainer);
+  mainPostsContainer.textContent = "Loading posts...";
   getMainPages(newPage);
 };
 
