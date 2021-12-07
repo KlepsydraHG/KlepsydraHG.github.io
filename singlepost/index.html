@@ -16,52 +16,59 @@
 
 <body>
     <link rel="stylesheet" type="text/css" href="style/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="style/top.css" />
     <header>
-        <div id="hamburger">
-            <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-                <span>MENU</span>
-            </a>
-            <script>
-                function myFunction() {
-                    var x = document.getElementById("site-nav__list");
-                    if (x.style.display === "block") {
-                        x.style.display = "none";
-                    } else {
-                        x.style.display = "block";
-                    }
-                }
-            </script>
-        </div>
         <nav class="site-nav">
-            <ul class="site-nav__list" id="site-nav__list">
-                <li class="site-nav__item">
-                    <a class="site-nav__link" href="#">HOME PAGES</a>
-                </li>
-                <li class="site-nav__item">
-                    <a class="site-nav__link" href="#">SINGLE POST</a>
-                </li>
-                <li class="site-nav__item">
-                    <a class="site-nav__link" href="#">CONTACT</a>
-                </li>
-                <li class="site-nav__item">
-                    <a class="site-nav__link" href="#">ABOUT US</a>
-                </li>
-                <li class="site-nav__item__right">
-                    <input type="text" class="navbar-right__search">
-                </li>
-                <li class="site-nav__item__right">
-                    <a href="https://facebook.com" target="_blank" rel="noopener nofollow">
-                        <i class="fab fa-facebook-f"></i>
+            <script src="js_hamburger.js" defer></script>
+            <div class="site-nav__mobile">
+                <div class="site-logo-container">
+                    <a class="site-logo__mobile">
+                        <img class="mobile-logo-image" src="singlepost/img/mobile-logo.svg" alt="logo">
                     </a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener nofollow">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-            </ul>
+                </div>
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+            </div>
+            <div class="site-nav__links">
+                <ul class="site-nav__list">
+                    <li class="site-nav__item" id="site-nav__item">
+                        <a class="site-nav__link" href="index.html">HOME PAGES</a>
+                    </li>
+                    <li class="site-nav__item" id="site-nav__item">
+                        <a class="site-nav__link" href="singlepost/index.html">SINGLE POST</a>
+                    </li>
+                    <li class="site-nav__item" id="site-nav__item">
+                        <a class="site-nav__link" href="#">CONTACT</a>
+                    </li>
+                    <li class="site-nav__item" id="site-nav__item">
+                        <a class="site-nav__link" href="#">ABOUT US</a>
+                    </li>
+                </ul>
+                <ul class="site-nav__list__right">
+                    <li class="site-nav__item__right" id="site-nav__item">
+                        <a>
+                        <input type="search" class="navbar-right__search">
+                        <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                    <li class="site-nav__item__right" id="site-nav__item">
+                        <a href="https://facebook.com" target="_blank" rel="noopener nofollow">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="site-nav__item__right" id="site-nav__item">
+                        <a href="https://twitter.com" target="_blank" rel="noopener nofollow">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-        <div class="logo">
-            <img src="img/logo.svg" alt="logo">
+        <div class="site-logo">
+            <img class="logo-image" src="img/logo.svg" alt="logo">
         </div>
     </header>
 

@@ -23,8 +23,12 @@
     <header>
         <nav class="site-nav">
             <script src="js_hamburger.js" defer></script>
-            <div class="abcd">
-                <span>menu albo logo</span>
+            <div class="site-nav__mobile">
+                <div class="site-logo-container">
+                    <a class="site-logo__mobile">
+                        <img class="mobile-logo-image" src="img/mobile-logo.svg" alt="logo">
+                    </a>
+                </div>
                 <a href="#" class="toggle-button">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -34,10 +38,10 @@
             <div class="site-nav__links">
                 <ul class="site-nav__list">
                     <li class="site-nav__item" id="site-nav__item">
-                        <a class="site-nav__link" href="#">HOME PAGES</a>
+                        <a class="site-nav__link" href="index.html">HOME PAGES</a>
                     </li>
                     <li class="site-nav__item" id="site-nav__item">
-                        <a class="site-nav__link" href="#">SINGLE POST</a>
+                        <a class="site-nav__link" href="singlepost/index.html">SINGLE POST</a>
                     </li>
                     <li class="site-nav__item" id="site-nav__item">
                         <a class="site-nav__link" href="#">CONTACT</a>
@@ -48,7 +52,10 @@
                 </ul>
                 <ul class="site-nav__list__right">
                     <li class="site-nav__item__right" id="site-nav__item">
+                        <a>
                         <input type="search" class="navbar-right__search">
+                        <i class="fas fa-search"></i>
+                        </a>
                     </li>
                     <li class="site-nav__item__right" id="site-nav__item">
                         <a href="https://facebook.com" target="_blank" rel="noopener nofollow">
@@ -63,8 +70,8 @@
                 </ul>
             </div>
         </nav>
-        <div class="logo">
-            <img src="img/logo.svg" alt="logo">
+        <div class="site-logo">
+            <img class="logo-image" src="img/logo.svg" alt="logo">
         </div>
     </header>
 
