@@ -70,6 +70,11 @@
                 </ul>
             </div>
         </nav>
+        <div class="searched">
+            <div class="searched-post__container"></div>
+            <p class="searched__feedback searched__feedback--hidden"></p>
+            <button class="searched__more searched__more--hidden">Show more</button>
+        </div>
         <div class="site-logo">
             <img class="logo-image" src="img/logo.svg" alt="logo">
         </div>
@@ -281,7 +286,7 @@
 
     </div>
     </div>
-    <template id="post">
+    <template id="main-post">
         <div class="mainpost">
             <img class="mainpost__background" src="" alt="persone">
             <div class="text">
@@ -306,6 +311,15 @@
                 <a class="icon icon-twitter" href="https://twitter.com" rel="noopener nofollow" target="_blank" title="Twitter"></a>
                 <a class="icon icon-pinterest" href="https://pinterest.com" rel="noopener nofollow" target="_blank" title="Pinterest"></a>
                 <a class="icon icon-whatsapp" href="https://whatsapp.com" rel="noopener nofollow" target="_blank" title="Whatsapp"></a>
+            </div>
+        </div>
+    </template>
+    <template id="searched-post">
+        <div class="searched-post">
+            <h1 class="searched-post__title"></h1>
+            <div class="searched-post__author">
+                <img class="searched-post__author-avatar" src="" alt="post's author">
+                <span class="searched-post__author-name"></span>
             </div>
         </div>
     </template>
