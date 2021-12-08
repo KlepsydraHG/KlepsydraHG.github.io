@@ -3,7 +3,7 @@
   color: white;
   text-decoration: none;
   font-size: 15px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Source Serif Pro";
 }
 
 .site-nav__list,
@@ -45,7 +45,7 @@
 
 .toggle-button {
   position: absolute;
-  top: 0.5rem;
+  top: 0.6rem;
   right: 1rem;
   display: none;
   flex-direction: column;
@@ -86,7 +86,7 @@
   .site-nav__mobile {
     background-color: black;
     color: white;
-    height: 30px;
+    height: 35px;
   }
 
   .toggle-button {
@@ -133,9 +133,6 @@
     display: flex;
     justify-content: center;
     height: 30px;
-  }
-
-  .site-logo__mobile {
     padding: 3px;
   }
 }
@@ -153,6 +150,7 @@
   background-color: white;
   height: 300px;
 }
+
 .searched {
   z-index: 1;
   background-color: white;
