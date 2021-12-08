@@ -35,9 +35,7 @@
             <script src="js_hamburger.js" defer></script>
             <div class="site-nav__mobile">
                 <div class="site-logo-container">
-                    <a class="site-logo__mobile">
                         <img class="mobile-logo-image" src="img/mobile-logo.svg" alt="logo">
-                    </a>
                 </div>
                 <a href="#" class="toggle-button">
                     <span class="bar"></span>
@@ -62,10 +60,9 @@
                 </ul>
                 <ul class="site-nav__list__right">
                     <li class="site-nav__item__right" id="site-nav__item">
-                        <a>
-                        <input type="search" class="site-nav__search">
-                        <i class="fas fa-search"></i>
-                        </a>
+                        <label class="site-nav__search-container">
+                            <input type="search" class="site-nav__search">
+                        </label>
                     </li>
                     <li class="site-nav__item__right" id="site-nav__item">
                         <a href="https://facebook.com" target="_blank" rel="noopener nofollow">
@@ -80,6 +77,11 @@
                 </ul>
             </div>
         </nav>
+        <div class="searched">
+            <div class="searched-post__container"></div>
+                <p class="searched__feedback searched__feedback--hidden"></p>
+            <button class="searched__more searched__more--hidden">Show more</button>
+        </div>
         <div class="site-logo">
             <img class="logo-image" src="img/logo.svg" alt="logo">
         </div>
