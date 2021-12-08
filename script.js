@@ -116,7 +116,7 @@ loginForm.addEventListener("submit", (e) => {
 
 /* to powinien byc osobny plik w sumie */
 const searched = document.querySelector(".searched");
-const searchInput = document.querySelector(".site-nav__search");
+const searchInput = document.querySelector(".navbar__search");
 const searchedPostsContainer = document.querySelector(
   ".searched-post__container"
 );
@@ -199,7 +199,7 @@ searchInput.addEventListener("search", (e) => {
 
 window.addEventListener("click", (e) => {
   const elementsClasses = e.target.className;
-  if (!/(searched|site-nav__search)/.test(elementsClasses)) {
+  if (!/(searched|navbar__search)/.test(elementsClasses)) {
     removeChildren(searchedPostsContainer);
     searched.classList.add("searched--hidden");
     feedback.classList.add("searched__feedback--hidden");

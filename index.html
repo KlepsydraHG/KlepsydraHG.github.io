@@ -26,55 +26,57 @@
 <div class="everything-but-login">
     <link rel="stylesheet" type="text/css" href="style/top.css" />
     <header>
-        <nav class="site-nav">
-            <script src="js_hamburger.js" defer></script>
-            <div class="site-nav__mobile">
-                <div class="site-logo-container">
-                    <img class="mobile-logo-image" src="img/mobile-logo.svg" alt="logo">
+        <nav class="navbar">
+            <div class="sticky">
+                <script src="js_hamburger.js" defer></script>
+                <div class="navbar__mobile">
+                    <div class="site-logo-container">
+                        <img class="mobile-logo-image" src="img/mobile-logo.svg" alt="logo">
+                    </div>
+                    <a href="#" class="toggle-button">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </a>
                 </div>
-                <a href="#" class="toggle-button">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </a>
-            </div>
-            <div class="site-nav__links">
-                <ul class="site-nav__list">
-                    <li class="site-nav__item" id="site-nav__item">
-                        <a class="site-nav__link" href="index.html">HOME PAGES</a>
-                    </li>
-                    <li class="site-nav__item" id="site-nav__item">
-                        <a class="site-nav__link" href="singlepost/index.html">SINGLE POST</a>
-                    </li>
-                    <li class="site-nav__item" id="site-nav__item">
-                        <a class="site-nav__link" href="#">CONTACT</a>
-                    </li>
-                    <li class="site-nav__item" id="site-nav__item">
-                        <a class="site-nav__link" href="#">ABOUT US</a>
-                    </li>
-                </ul>
-                <ul class="site-nav__list__right">
-                    <li class="site-nav__item__right" id="site-nav__item">
-                        <label class="site-nav__search-container">
-                            <input type="search" class="site-nav__search" placeholder="Search">
-                        </label>
-                        <div class="searched searched--hidden">
-                            <div class="searched-post__container"></div>
-                            <p class="searched__feedback searched__feedback--hidden"></p>
-                            <button class="searched__more searched__more--hidden">Show more</button>
-                        </div>
-                    </li>
-                    <li class="site-nav__item__right" id="site-nav__item">
-                        <a href="https://facebook.com" target="_blank" rel="noopener nofollow">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li class="site-nav__item__right" id="site-nav__item">
-                        <a href="https://twitter.com" target="_blank" rel="noopener nofollow">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                </ul>
+                <div class="navbar__links">
+                    <ul class="navbar__list">
+                        <li class="navbar__item" id="navbar__item">
+                            <a class="navbar__link" href="index.html">HOME PAGES</a>
+                        </li>
+                        <li class="navbar__item" id="navbar__item">
+                            <a class="navbar__link" href="singlepost/index.html">SINGLE POST</a>
+                        </li>
+                        <li class="navbar__item" id="navbar__item">
+                            <a class="navbar__link" href="#">CONTACT</a>
+                        </li>
+                        <li class="navbar__item" id="navbar__item">
+                            <a class="navbar__link" href="#">ABOUT US</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar__list-right">
+                        <li class="navbar__item-right" id="navbar__item">
+                            <label class="navbar__search-container">
+                                <input type="search" class="navbar__search" placeholder="Search">
+                            </label>
+                            <div class="searched searched--hidden">
+                                <div class="searched-post__container"></div>
+                                <p class="searched__feedback searched__feedback--hidden"></p>
+                                <button class="searched__more searched__more--hidden">Show more</button>
+                            </div>
+                        </li>
+                        <li class="navbar__item-right" id="navbar__item">
+                            <a href="https://facebook.com" target="_blank" rel="noopener nofollow">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="navbar__item-right" id="navbar__item">
+                            <a href="https://twitter.com" target="_blank" rel="noopener nofollow">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <div class="site-logo">
