@@ -4,32 +4,34 @@
 <head>
     <meta charset="utf-8" />
     <title>03.12.2021</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="diss na leśną by nieznany żołnierz" />
     <meta name="keywords" content="blog, diss, lesna" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <link rel="stylesheet" type="text/css" href="style/footer.css" />
-    <link rel="stylesheet" href="slider.css" />
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style/style.css" />
     <link rel="stylesheet" type="text/css" href="icons/css/fontello.css" />
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap");
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js" integrity="sha256-2JRzNxMJiS0aHOJjG+liqsEOuBb6++9cY4dSOyiijX4=" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <div class="everything-but-login">
-        <link rel="stylesheet" type="text/css" href="style/top.css" />
-        <header>
-            <nav class="site-nav">
+<div class="everything-but-login">
+    <link rel="stylesheet" type="text/css" href="style/top.css" />
+    <header>
+        <nav class="navbar">
+            <div class="sticky">
                 <script src="js_hamburger.js" defer></script>
-                <div class="site-nav__mobile">
+                <div class="navbar__mobile">
                     <div class="site-logo-container">
-                        <img class="mobile-logo-image" src="img/mobile-logo.svg" alt="logo" />
+                        <img class="mobile-logo-image" src="img/mobile-logo.svg" alt="logo">
                     </div>
                     <a href="#" class="toggle-button">
                         <span class="bar"></span>
@@ -37,133 +39,95 @@
                         <span class="bar"></span>
                     </a>
                 </div>
-                <div class="site-nav__links">
-                    <ul class="site-nav__list">
-                        <li class="site-nav__item" id="site-nav__item">
-                            <a class="site-nav__link" href="index.html">HOME PAGES</a>
+                <div class="navbar__links">
+                    <ul class="navbar__list">
+                        <li class="navbar__item" id="navbar__item">
+                            <a class="navbar__link" href="index.html">HOME PAGES</a>
                         </li>
-                        <li class="site-nav__item" id="site-nav__item">
-                            <a class="site-nav__link" href="singlepost/index.html">SINGLE POST</a
-                >
-              </li>
-              <li class="site-nav__item" id="site-nav__item">
-                <a class="site-nav__link" href="#">CONTACT</a>
+                        <li class="navbar__item" id="navbar__item">
+                            <a class="navbar__link" href="singlepost/index.html">SINGLE POST</a>
                         </li>
-                        <li class="site-nav__item" id="site-nav__item">
-                            <a class="site-nav__link" href="#">ABOUT US</a>
+                        <li class="navbar__item" id="navbar__item">
+                            <a class="navbar__link" href="#">CONTACT</a>
+                        </li>
+                        <li class="navbar__item" id="navbar__item">
+                            <a class="navbar__link" href="#">ABOUT US</a>
                         </li>
                     </ul>
-                    <ul class="site-nav__list__right">
-                        <li class="site-nav__item__right" id="site-nav__item">
-                            <label class="site-nav__search-container">
-                  <input
-                    type="search"
-                    class="site-nav__search"
-                    placeholder="Search"
-                  />
-                </label>
+                    <ul class="navbar__list-right">
+                        <li class="navbar__item-right" id="navbar__item">
+                            <label class="navbar__search-container">
+                                <input type="search" class="navbar__search" placeholder="Search">
+                            </label>
                             <div class="searched searched--hidden">
                                 <div class="searched-post__container"></div>
                                 <p class="searched__feedback searched__feedback--hidden"></p>
-                                <button class="searched__more searched__more--hidden">
-                    Show more
-                  </button>
+                                <button class="searched__more searched__more--hidden">Show more</button>
                             </div>
                         </li>
-                        <li class="site-nav__item__right" id="site-nav__item">
+                        <li class="navbar__item-right" id="navbar__item">
                             <a href="https://facebook.com" target="_blank" rel="noopener nofollow">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
                         </li>
-                        <li class="site-nav__item__right" id="site-nav__item">
+                        <li class="navbar__item-right" id="navbar__item">
                             <a href="https://twitter.com" target="_blank" rel="noopener nofollow">
                                 <i class="fab fa-twitter"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
-            </nav>
-            <div class="site-logo">
-                <img class="logo-image" src="img/logo.svg" alt="logo" />
             </div>
-        </header>
+        </nav>
+        <div class="site-logo">
+            <img class="logo-image" src="img/logo.svg" alt="logo">
+        </div>
+    </header>
 
-        <link rel="stylesheet" type="text/css" href="style/fit.css" />
-        <div class="imgs">
-            <div class="imgs_tile">
-                <div class="imgs_img">
-                    <img class="imgs_img" src="img/Fit_1.png" alt="chlop pozuje do zdjecia" width="100%" />
-                </div>
-                <div class="imgs_border">
-                    <p class="imgs_header">lorem ipsum dolor sit amet</p>
-                    <div class="imgs_bottext">Lorem Ipsum</div>
-                </div>
+    <link rel="stylesheet" type="text/css" href="style/fit.css" />
+    <div class="imgs">
+
+        <div class="imgs_tile">
+            <div class="imgs_img">
+                <img class="imgs_img" src="img/Fit_1.png" alt="chlop pozuje do zdjecia" width="100%">
             </div>
-            <div class="imgs_tile">
-                <div class="imgs_img">
-                    <img class="imgs_img" src="img/Fit_2.png" alt="sznurowki fajne takie" width="100%" />
-                </div>
-                <div class="imgs_border">
-                    <p class="imgs_header">lorem ipsum dolor sit amet</p>
-                    <div class="imgs_bottext">Lorem Ipsum</div>
-                </div>
+            <div class="imgs_border">
+                <p class="imgs_header">lorem ipsum dolor sit amet</p>
+                <div class="imgs_bottext">Lorem Ipsum</div>
             </div>
-            <div class="imgs_tile">
-                <div class="imgs_img">
-                    <img class="imgs_img" src="img/Fit_3.png" alt="pa jaka fajna garderoba" width="100%" />
-                </div>
-                <div class="imgs_border">
-                    <p class="imgs_header">lorem ipsum dolor sit amet</p>
-                    <div class="imgs_bottext">Lorem Ipsum</div>
-                </div>
+        </div>
+        <div class="imgs_tile">
+            <div class="imgs_img">
+                <img class="imgs_img" src="img/Fit_2.png" alt="sznurowki fajne takie" width="100%">
             </div>
-            <div class="imgs_tile">
-                <div class="imgs_img">
-                    <img class="imgs_img" src="img/Fit_4.png" alt="no buty, nic dodac nic ujac" width="100%" />
-                </div>
-                <div class="imgs_border">
-                    <p class="imgs_header">lorem ipsum dolor sit amet</p>
-                    <div class="imgs_bottext">Lorem Ipsum</div>
-                </div>
+            <div class="imgs_border">
+                <p class="imgs_header">lorem ipsum dolor sit amet</p>
+                <div class="imgs_bottext">Lorem Ipsum</div>
+            </div>
+        </div>
+        <div class="imgs_tile">
+            <div class="imgs_img">
+                <img class="imgs_img" src="img/Fit_3.png" alt="pa jaka fajna garderoba" width="100%">
+            </div>
+            <div class="imgs_border">
+                <p class="imgs_header">lorem ipsum dolor sit amet</p>
+                <div class="imgs_bottext">Lorem Ipsum</div>
+            </div>
+        </div>
+        <div class="imgs_tile">
+            <div class="imgs_img">
+                <img class="imgs_img" src="img/Fit_4.png" alt="no buty, nic dodac nic ujac" width="100%">
+            </div>
+            <div class="imgs_border">
+                <p class="imgs_header">lorem ipsum dolor sit amet</p>
+                <div class="imgs_bottext">Lorem Ipsum</div>
             </div>
         </div>
 
-        <link rel="stylesheet" type="text/css" href="style/main.css" />
-        <div class="main">
-            <link rel="stylesheet" type="text/css" href="style/mainleftcolumn.css" />
-            <div class="firstcolumn">
-                <div class="main-post__container">Loading posts...</div>
-                <div class="spacebetween">
-                    <a class="anewer" href="#">
-                        <p class="newerpost">← Newer Post</p>
-                    </a>
-                    <a class="aolder" href="#">
-                        <p class="olderpost">Older Post →</p>
-                    </a>
-                </div>
-            </div>
 
-            <link rel="stylesheet" type="text/css" href="style/mainrightcolumn.css" />
-            <div class="secondcolumn">
-                <div class="sidedivs">
-                    <div class="aboutme">
-                        <div class="aboutme_header">ABOUT ME</div>
-                        <div class="aboutme_main">
-                            <img class="aboutme_png" src="img/aboutme.png" width="330px" />
-                        </div>
-                        <div class="aboutme_footer">
-                            lorem ipsum dummy text lorem ipsum dummy text lorem ipsum dummy text lorem ipsum dummy text
-                        </div>
-                    </div>
 
-                    <div class="subscribe">
-                        <div class="subscribe_header">SUBSCRIBE</div>
-                        <div class="subscribe_main">
-                            Subscribe to Our newsletter for free Update every week
-                        </div>
-                        <div class="subscribe_mail_and_submit">
-                            <input type="email" id="email" name="email" placeholder="Your email" />
 
+<<<<<<< HEAD
                             <button class="subscribe_submit" type="submit">
                   SUBSCRIBE
                 </button>
@@ -273,22 +237,153 @@
             <p class="login__feedback login__feedback--hidden"></p>
         </form>
     </div>
+=======
+    </div>
+
+    <link rel="stylesheet" type="text/css" href="style/main.css" />
+    <div class="main">
+        <link rel="stylesheet" type="text/css" href="style/mainleftcolumn.css" />
+        <div class="firstcolumn">
+            <div class="main-post__container">Loading posts...</div>
+            <div class="spacebetween">
+                <a class="anewer" href="#">
+                    <p class="newerpost">← Newer Post</p>
+                </a>
+                <a class="aolder" href="#">
+                    <p class="olderpost">Older Post →</p>
+                </a>
+
+            </div>
+
+
+        </div>
+
+        <link rel="stylesheet" type="text/css" href="style/mainrightcolumn.css" />
+        <div class="secondcolumn">
+            <div class="sidedivs">
+
+                <div class="aboutme">
+                    <div class="aboutme_header">ABOUT ME</div>
+                    <div class="aboutme_main"><img class="aboutme_png" src="img/aboutme.png" width="330px" /></div>
+                    <div class="aboutme_footer">lorem ipsum dummy text lorem ipsum dummy text lorem ipsum dummy text lorem ipsum dummy text</div>
+                </div>
+
+                <div class="subscribe">
+                    <div class="subscribe_header">SUBSCRIBE</div>
+                    <div class="subscribe_main">Subscribe to Our newsletter for free Update every week</div>
+                    <div class="subscribe_mail_and_submit">
+                        <input type="email" id="email" name="email" placeholder="Your email">
+
+                        <button class="subscribe_submit" type="submit">SUBSCRIBE</button>
+                    </div>
+                </div>
+
+                <div class="popularposts">
+                    <div class="popularposts_header">POPULAR POSTS</div>
+                    <div class="popularposts_content">
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="category_header">CATEGORY</div>
+                    <div class="category_content">
+                        <ul class="ul">
+                        </ul>
+                        <div>
+                        </div>
+                    </div>
+
+                    <div class="slideads">
+                        <div class="slideads_header">SLIDE ADS</div>
+                        <div class="slideads_main">
+                            <img src="img/ads.png" width="330px">
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+
+        <p class="uptext">FOLLOW MY INSTAGRAM @MY INSTAGRAM</p>
+
+        <div class="photos_slider">
+            <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true,"autoPlay": 1500 }'>
+
+                <img class="carousel-cell" src="img/img1.png" alt="cos">
+                <img class="carousel-cell" src="img/img2.png" alt="cos">
+                <img class="carousel-cell" src="img/img3.png" alt="cos">
+                <img class="carousel-cell" src="img/img4.png" alt="cos">
+                <img class="carousel-cell" src="img/img5.png" alt="cos">
+                <img class="carousel-cell" src="img/img6.png" alt="cos">
+
+            </div>
+            <div class="photos">
+                <img class="photos__element" src="img/img1.png" alt="cos">
+                <img class="photos__element" src="img/img2.png" alt="cos">
+                <img class="photos__element" src="img/img3.png" alt="cos">
+                <img class="photos__element" src="img/img4.png" alt="cos">
+                <img class="photos__element" src="img/img5.png" alt="cos">
+                <img class="photos__element" src="img/img6.png" alt="cos">
+            </div>
+
+
+        </div>
+
+
+        <div class="icons">
+            <a class="icon icon-youtube" href="https://youtube.com" rel="noopener nofollow" target="_blank" title="YouTube"></a>
+            <a class="icon icon-facebook" href="https://facebook.com" rel="noopener nofollow" target="_blank" title="Facebook"></a>
+            <a class="icon icon-twitter" href="https://twitter.com" rel="noopener nofollow" target="_blank" title="Twitter"></a>
+            <a class="icon icon-pinterest" href="https://pinterest.com" rel="noopener nofollow" target="_blank" title="Pinterest"></a>
+            <a class="icon icon-whatsapp" href="https://whatsapp.com" rel="noopener nofollow" target="_blank" title="Whatsapp"></a>
+        </div>
+
+        <br>
+        <div class="copyright__container">
+            <br>
+            <p class="downtext">ZERO KM COPYRIGHT © 2018&nbsp;&nbsp;&nbsp;&nbsp;- &nbsp;&nbsp;<span class="behance">
+                    HTTPS://WWW.BEHANCE.NET/DWI_MBOJOWAE</span> </p>
+        </div>
+
+    </div>
+    </div>
+</div>
+<link rel="stylesheet" href="style/login.css">
+<div class="login__container">
+    <form class="login">
+        <!-- jakies ladne emotki by sie przydaly ale to pozniej -->
+        <h2 class="login__title">Please log in to gain access.</h2>
+        <input type="email" class="login__email" placeholder="Email">
+        <input type="password" class="login__password" placeholder="Password">
+        <button type="submit" class="login__submit">Log In</button>
+        <p class="login__feedback login__feedback--hidden"></p>
+    </form>
+</div>
+>>>>>>> e791508cd717d38b9fb0c601a926759772b571cf
     <template id="main-post">
-      <div class="mainpost">
-        <img class="mainpost__background" src="" alt="persone" />
-        <div class="text">
-          <span style="color: #fc7c57">in</span>
-                    <span class="mainpost__category"></span>
+        <div class="mainpost">
+            <img class="mainpost__background" src="" alt="persone">
+            <div class="text">
+                <span style="color:#fc7c57">in</span>
+                <span class="mainpost__category"></span>
             </div>
             <div class="text1">
                 <h3 class="mainpost__title"></h3>
             </div>
             <div class="text2">
-                <span style="color: #fc7c57">Posted on&nbsp;</span>
+                <span style="color:#fc7c57">Posted on&nbsp;</span>
                 <span class="mainpost__date"></span>
-                <span style="color: #fc7c57">&nbsp;by&nbsp;</span>
-                <img class="mainpost__author-avatar" src="" /> &nbsp;
-                <span class="mainpost__author-name"></span>
+                <span style="color:#fc7c57">&nbsp;by&nbsp;</span>
+                <img class="mainpost__author-avatar" src="">
+                &nbsp;<span class="mainpost__author-name"></span>
             </div>
             <div class="mainpost__content"></div>
             <div class="postfooter"></div>
@@ -300,6 +395,7 @@
                 <a class="icon icon-whatsapp" href="https://whatsapp.com" rel="noopener nofollow" target="_blank" title="Whatsapp"></a>
             </div>
         </div>
+<<<<<<< HEAD
         </template>
     <template id="searched-post">
       <div class="searched-post">
@@ -324,10 +420,41 @@
             <div class="popularposts_posted">Posted on</div>
             <div class="popularposts_date">August 17, 2017</div>
           </div>
+=======
+    </template>
+    <template id="searched-post">
+        <div class="searched-post">
+            <h1 class="searched-post__title"></h1>
+            <div class="searched-post__author">
+                <img class="searched-post__author-avatar" src="" alt="post's author">
+                <span class="searched-post__author-name"></span>
+            </div>
+>>>>>>> e791508cd717d38b9fb0c601a926759772b571cf
         </div>
-      </div>
+    </template>
+<<<<<<< HEAD
+    <script src="script.js"></script>
+=======
+    <template id="popular-post">
+        <div class="popularposts_img">
+            <img class="popularposts_png" src="">
+            <div>
+                <!--Ten div klasy nie potrzebuje, bo nie trzeba go edytować w css-->
+                <div class="popularposts_text">
+                </div>
+                <div class="popularposts_text_footer">
+                    <div class="popularposts_posted">Posted on</div>
+                    <div class="popularposts_date">August 17, 2017</div>
+                </div>
+            </div>
+        </div>
+    </template>
+    <template id="category">
+        <li class="li"><a class="link" href="google.com">Beard</a></li>
     </template>
     <script src="script.js"></script>
+
+>>>>>>> e791508cd717d38b9fb0c601a926759772b571cf
 </body>
 
 </html>
