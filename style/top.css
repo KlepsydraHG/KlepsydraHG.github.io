@@ -17,6 +17,7 @@
 
 .site-nav__item,
 .site-nav__item__right {
+  position: relative;
   flex: auto;
   display: block;
   color: white;
@@ -152,12 +153,19 @@
 }
 
 .searched {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: rgb(184, 184, 184) solid 1px;
   z-index: 1;
   background-color: white;
   position: absolute;
-  width: 100%;
+  width: 200px;
   max-height: 50vh;
   overflow-y: auto;
+}
+
+.searched--hidden {
+  display: none;
 }
 
 .searched__more {
@@ -194,8 +202,14 @@
 }
 
 .searched-post {
-  padding: 10px;
+  text-align: left;
+  color: black;
+  padding: 5px;
   border-bottom: rgb(184, 184, 184) 1px solid;
+}
+
+.searched-post:last-child {
+  border-bottom: none;
 }
 
 .searched-post:hover {
@@ -209,11 +223,11 @@
 }
 
 .searched-post__author {
-  margin-top: 10px;
+  margin-top: 5px;
   display: flex;
   /* justify-content: center; */
   align-items: center;
-  column-gap: 10px;
+  column-gap: 5px;
 }
 
 .searched-post__author-avatar {

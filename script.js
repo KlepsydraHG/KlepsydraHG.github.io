@@ -107,17 +107,15 @@ loginForm.addEventListener("submit", (e) => {
         return showLoginFeedback("Invalid email or password");
       } else {
         loginContainer.classList.add("login__container--hidden");
-        return setToken(res.token);
+        setToken(res.token);
+        return getMainPages(1);
       }
     });
   }
 });
 
-if (getToken()) {
-  loginContainer.classList.add("login__container--hidden");
-}
 /* to powinien byc osobny plik w sumie */
-
+const searched = document.querySelector(".searched");
 const searchInput = document.querySelector(".site-nav__search");
 const searchedPostsContainer = document.querySelector(
   ".searched-post__container"
@@ -173,11 +171,13 @@ const showSearchingFeedback = (message) => {
 searchInput.addEventListener("search", (e) => {
   const value = e.target.value;
   pageSearched = 1;
+  searched.classList.remove("searched--hidden");
   showMoreButton.classList.add("searched__more--hidden");
   if (value !== "" && value.length > 2) {
     showSearchingFeedback("Searching posts...");
     retrievePostsByKeyword(value)
       .then((page) => {
+        console.log(page);
         if (page.json.length === 0) {
           showSearchingFeedback("No posts were found!");
         } else {
@@ -201,6 +201,7 @@ window.addEventListener("click", (e) => {
   const elementsClasses = e.target.className;
   if (!/(searched|site-nav__search)/.test(elementsClasses)) {
     removeChildren(searchedPostsContainer);
+    searched.classList.add("searched--hidden");
     feedback.classList.add("searched__feedback--hidden");
   }
 });
@@ -293,3 +294,8 @@ const anchorOnClick = (e) => {
 newerPostsAnchor.addEventListener("click", anchorOnClick);
 
 olderPostsAnchor.addEventListener("click", anchorOnClick);
+
+if (getToken()) {
+  loginContainer.classList.add("login__container--hidden");
+  getMainPages(1);
+}
