@@ -295,7 +295,33 @@ newerPostsAnchor.addEventListener("click", anchorOnClick);
 
 olderPostsAnchor.addEventListener("click", anchorOnClick);
 
+/* to tez bedzie osobny plik */
+const popularPostsContainer = document.querySelector(".popularposts_content");
+const popularPostsTemplate = document.querySelector("#popular-post");
+const fillPopularPost = (post) => {
+  const clone = popularPostsTemplate.content.cloneNode(true);
+  const title = clone.querySelector(".popularposts_text");
+  const background = clone.querySelector(".popularposts_png");
+  const date = clone.querySelector(".popularposts_date");
+  title.textContent = post.Title;
+  background.src = post.Background;
+  date.textContent = post.PostDate;
+  return clone;
+};
+
+const createPopularPosts = () => {
+  retrievePopularPosts().then((res) => {
+    const posts = res.json;
+    console.log(posts);
+    posts.forEach((post) => {
+      const popularPost = fillPopularPost(post);
+      popularPostsContainer.appendChild(popularPost);
+    });
+  });
+};
+
 if (getToken()) {
   loginContainer.classList.add("login__container--hidden");
   getMainPages(1);
+  createPopularPosts();
 }
