@@ -40,12 +40,10 @@ const retrieve = (endpoint, authorization) => {
     .catch((err) => console.error(err));
 };
 
-const retrieveToken = () =>
+const login = (email, password) =>
   retrieve(
-    "https://trol-api.herokuapp.com/api/token",
-    false,
-    setToken,
-    "token"
+    `https://trol-api.herokuapp.com/api/login?email=${email}&password=${password}`,
+    false
   );
 
 //useless to chyba
@@ -85,12 +83,39 @@ const retrieveRelatedPosts = (id) =>
 const retrieveCategories = () =>
   retrieve(`https://trol-api.herokuapp.com/api/categories`, true);
 
-if (!getToken()) {
-  retrieveToken().then(() => getMainPages(1));
-} else {
-  getMainPages(1);
-}
+const loginContainer = document.querySelector(".login__container");
+const loginForm = document.querySelector(".login__container");
+const loginEmail = document.querySelector(".login__email");
+const loginPassword = document.querySelector(".login__password");
+const loginFeedback = document.querySelector(".login__feedback");
 
+const showLoginFeedback = (message) => {
+  loginFeedback.textContent = message;
+  loginFeedback.classList.remove("login__feedback--hidden");
+};
+
+loginForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  loginFeedback.classList.add("login__feedback--hidden");
+  const email = loginEmail.value;
+  const password = loginPassword.value;
+  if (email === "" && password === "") {
+    return showLoginFeedback("Password and email can't be empty");
+  } else {
+    login(email, password).then((res) => {
+      if (res === undefined) {
+        return showLoginFeedback("Invalid email or password");
+      } else {
+        loginContainer.classList.add("login__container--hidden");
+        return setToken(res.token);
+      }
+    });
+  }
+});
+
+if (getToken()) {
+  loginContainer.classList.add("login__container--hidden");
+}
 /* to powinien byc osobny plik w sumie */
 
 const searchInput = document.querySelector(".site-nav__search");
