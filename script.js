@@ -20,26 +20,6 @@ const setToken = (token) => {
   getToken();
 };
 
-const retrieve = (endpoint, authorization) => {
-  const headers = authorization
-    ? {
-        Authorization: `Bearer ${token}`,
-      }
-    : {};
-  return fetch(endpoint, {
-    headers,
-  })
-    .then((res) => res.json())
-    .then((json) => {
-      if (json.status === "200") {
-        return json;
-      } else {
-        throw new Error(json.message);
-      }
-    })
-    .catch((err) => console.error(err));
-};
-
 const login = (email, password) =>
   retrieve(
     `https://trol-api.herokuapp.com/api/login?email=${email}&password=${password}`,
@@ -88,31 +68,6 @@ const loginForm = document.querySelector(".login__container");
 const loginEmail = document.querySelector(".login__email");
 const loginPassword = document.querySelector(".login__password");
 const loginFeedback = document.querySelector(".login__feedback");
-
-const showLoginFeedback = (message) => {
-  loginFeedback.textContent = message;
-  loginFeedback.classList.remove("login__feedback--hidden");
-};
-
-loginForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-  loginFeedback.classList.add("login__feedback--hidden");
-  const email = loginEmail.value;
-  const password = loginPassword.value;
-  if (email === "" && password === "") {
-    return showLoginFeedback("Password and email can't be empty");
-  } else {
-    login(email, password).then((res) => {
-      if (res === undefined) {
-        return showLoginFeedback("Invalid email or password");
-      } else {
-        loginContainer.classList.add("login__container--hidden");
-        setToken(res.token);
-        return getMainPages(1);
-      }
-    });
-  }
-});
 
 /* to powinien byc osobny plik w sumie */
 const searched = document.querySelector(".searched");
@@ -344,8 +299,20 @@ const createCategories = () => {
   });
 };
 
-if (getToken()) {
-  loginContainer.classList.add("login__container--hidden");
+if (!getToken()) {
+  login("trolintermeda@trol.pl", "tajnehaslo")
+    .then((json) => {
+      console.log(json);
+      if (json !== undefined) {
+        setToken(json.token);
+      }
+    })
+    .then(() => {
+      getMainPages(1);
+      createPopularPosts();
+      createCategories();
+    });
+} else {
   getMainPages(1);
   createPopularPosts();
   createCategories();
