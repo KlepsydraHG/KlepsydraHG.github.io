@@ -68,41 +68,11 @@
 
 /*media queries*/
 
-@media (max-width: 700px) {
-    .imgs_border {
-        font-size: 120%;
-    }
-    .imgs_bottext {
-        margin-top: 1px;
-        font-size: 100%;
-    }
-}
-
-@media (max-width: 640px) {
-    .imgs_border {
-        font-size: 16px;
-    }
-    .imgs_bottext {
-        margin-top: 1px;
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 560px) {
-    .imgs_bottext {
-        margin-top: 1px;
-        font-size: 80%;
-    }
-    .imgs_border {
-        font-size: 13px;
-    }
-}
-
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
-/*zamiana na mniejsze prostokaty /zostawic */
+/*zmiana ukladu */
 
 @media (max-width: 500px) {
     .imgs {
@@ -169,7 +139,7 @@
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
-/*media queries*/
+/*rwd basic*/
 
 @media (max-width: 945px) {
     .imgs_border {
@@ -204,6 +174,16 @@
 @media (max-width: 640px) {
     .imgs_border {
         font-size: 16px;
+    }
+    .imgs_bottext {
+        margin-top: 1px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 555px) {
+    .imgs_border {
+        font-size: 14px;
     }
     .imgs_bottext {
         margin-top: 1px;
