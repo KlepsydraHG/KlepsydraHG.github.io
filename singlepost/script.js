@@ -1,6 +1,8 @@
 const id = window.location.hash.substring(2);
 const firstColumn = document.querySelector(".firstcolumn");
 const mainPostTemplate = document.querySelector("#main-post");
+const description = document.querySelector(".description");
+const authorTemplate = document.querySelector("#author");
 
 const fillPost = (data) => {
   const clone = mainPostTemplate.content.cloneNode(true);
@@ -21,26 +23,26 @@ const fillPost = (data) => {
   return clone;
 };
 
-// const fillAuthor = (data) => {
-//   const clone = authorTemplate.content.cloneNode(true);
-//   const avatar = clone.querySelector(".author__image");
-//   const name = clone.querySelector(".author__name");
-//   const bio = clone.querySelector(".author__bio");
-//   avatar.src = data.avatar;
-//   name.textContent = data.avatar;
-//   bio.textContent = data.bio;
-//   return clone;
-// };
+const fillAuthor = (data) => {
+  const clone = authorTemplate.content.cloneNode(true);
+  const avatar = clone.querySelector(".author__image");
+  const name = clone.querySelector(".author__name");
+  const bio = clone.querySelector(".author__bio");
+  avatar.src = "https://trol-api.herokuapp.com/api/imgs/" + data.Avatar;
+  name.textContent = data.AuthorName;
+  bio.textContent = data.Bio;
+  return clone;
+};
 
-const createMainPost = () =>
+const createMainPostAndAuthor = () =>
   retrieve(`https://trol-api.herokuapp.com/api/posts/${id}`, true).then(
     (res) => {
       const filledPost = fillPost(res.json);
       firstColumn.appendChild(filledPost);
-      //   fillAuthor(x.json);
+      const filledAuthor = fillAuthor(res.json);
+      description.appendChild(filledAuthor);
     }
   );
-
 if (!getToken()) {
   login("trolintermeda@trol.pl", "tajnehaslo")
     .then((json) => {
@@ -49,8 +51,8 @@ if (!getToken()) {
       }
     })
     .then(() => {
-      createMainPost();
+      createMainPostAndAuthor();
     });
 } else {
-  createMainPost();
+  createMainPostAndAuthor();
 }
