@@ -1,0 +1,29 @@
+.aboutme {
+    display: flexbox;
+    background-color: white;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+}
+
+.aboutme__header {
+    width: 100%;
+    margin: auto;
+}
+
+.profilepicture {
+    
+}
+
+.aboutme__main {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.aboutme__fotter {
+    border-top: solid .5px grey;
+    width: 100%;
+    margin: auto;
+    padding: .5rem;
+}
