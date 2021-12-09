@@ -1,0 +1,15 @@
+.textOnBackground {
+    position: relative;
+}
+
+header .text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    text-decoration: underline red;
+}
+
+.textOnBackground div {
+
+}

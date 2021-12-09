@@ -23,61 +23,62 @@
 </head>
 
 <body>
+<div class="everything-but-login">
     <link rel="stylesheet" type="text/css" href="style/top.css" />
     <header>
-        <nav class="site-nav">
-            <script src="js_hamburger.js" defer></script>
-            <div class="site-nav__mobile">
-                <div class="site-logo-container">
-                    <a class="site-logo__mobile">
+        <nav class="navbar">
+            <div class="sticky">
+                <script src="js_hamburger.js" defer></script>
+                <div class="navbar__mobile">
+                    <div class="site-logo-container">
                         <img class="mobile-logo-image" src="img/mobile-logo.svg" alt="logo">
+                    </div>
+                    <a href="#" class="toggle-button">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
                     </a>
                 </div>
-                <a href="#" class="toggle-button">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </a>
-            </div>
-            <div class="site-nav__links">
-                <ul class="site-nav__list">
-                    <li class="site-nav__item" id="site-nav__item">
-                        <a class="site-nav__link" href="index.html">HOME PAGES</a>
-                    </li>
-                    <li class="site-nav__item" id="site-nav__item">
-                        <a class="site-nav__link" href="singlepost/index.html">SINGLE POST</a>
-                    </li>
-                    <li class="site-nav__item" id="site-nav__item">
-                        <a class="site-nav__link" href="#">CONTACT</a>
-                    </li>
-                    <li class="site-nav__item" id="site-nav__item">
-                        <a class="site-nav__link" href="#">ABOUT US</a>
-                    </li>
-                </ul>
-                <ul class="site-nav__list__right">
-                    <li class="site-nav__item__right" id="site-nav__item">
-                        <label class="site-nav__search-container">
-                            <input type="search" class="site-nav__search">
-                        </label>
-                    </li>
-                    <li class="site-nav__item__right" id="site-nav__item">
-                        <a href="https://facebook.com" target="_blank" rel="noopener nofollow">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li class="site-nav__item__right" id="site-nav__item">
-                        <a href="https://twitter.com" target="_blank" rel="noopener nofollow">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                </ul>
+                <div class="navbar__links">
+                    <ul class="navbar__list">
+                        <li class="navbar__item" id="navbar__item">
+                            <a class="navbar__link" href="index.html">HOME PAGES</a>
+                        </li>
+                        <li class="navbar__item" id="navbar__item">
+                            <a class="navbar__link" href="singlepost/index.html">SINGLE POST</a>
+                        </li>
+                        <li class="navbar__item" id="navbar__item">
+                            <a class="navbar__link" href="#">CONTACT</a>
+                        </li>
+                        <li class="navbar__item" id="navbar__item">
+                            <a class="navbar__link" href="aboutme/index.html">ABOUT US</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar__list-right">
+                        <li class="navbar__item-right" id="navbar__item">
+                            <label class="navbar__search-container">
+                                <input type="search" class="navbar__search" placeholder="Search">
+                            </label>
+                            <div class="searched searched--hidden">
+                                <div class="searched-post__container"></div>
+                                <p class="searched__feedback searched__feedback--hidden"></p>
+                                <button class="searched__more searched__more--hidden">Show more</button>
+                            </div>
+                        </li>
+                        <li class="navbar__item-right" id="navbar__item">
+                            <a href="https://facebook.com" target="_blank" rel="noopener nofollow">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="navbar__item-right" id="navbar__item">
+                            <a href="https://twitter.com" target="_blank" rel="noopener nofollow">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-        <div class="searched">
-            <div class="searched-post__container"></div>
-            <p class="searched__feedback searched__feedback--hidden"></p>
-            <button class="searched__more searched__more--hidden">Show more</button>
-        </div>
         <div class="site-logo">
             <img class="logo-image" src="img/logo.svg" alt="logo">
         </div>
@@ -169,56 +170,6 @@
                 <div class="popularposts">
                     <div class="popularposts_header">POPULAR POSTS</div>
                     <div class="popularposts_content">
-                        <div class="popularposts_img">
-
-                            <img class="popularposts_png" src="img/Popular_Post_Thumbnail1.png">
-                            <div>
-                                <!--Ten div klasy nie potrzebuje, bo nie trzeba go edytować w css-->
-                                <div class="popularposts_text">
-                                    Being A traveler in The World, Just like A lion Without Beard
-                                </div>
-                                <div class="popularposts_text_footer">
-                                    <div class="popularposts_posted">Posted on</div>
-                                    <div class="popularposts_date">August 17, 2017</div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="popularposts_img">
-
-                            <img class="popularposts_png" src="img/Popular_Post_Thumbnail2.png">
-                            <div>
-                                <!--Ten div klasy nie potrzebuje, bo nie trzeba go edytować w css-->
-                                <div class="popularposts_text">
-                                    Lorem Ipsum Dolor Sit met, Just a Dummy text for Content
-                                </div>
-                                <div class="popularposts_text_footer">
-                                    <div class="popularposts_posted">Posted on</div>
-                                    <div class="popularposts_date">August 17, 2017</div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="popularposts_img">
-
-                            <img class="popularposts_png" src="img/Popular_Post_Thumbnail3.png">
-                            <div>
-                                <!--Ten div klasy nie potrzebuje, bo nie trzeba go edytować w css-->
-                                <div class="popularposts_text">
-                                    Just a Dummy text for Content, Lorem Ipsum
-                                </div>
-                                <div class="popularposts_text_footer">
-                                    <div class="popularposts_posted">Posted on</div>
-                                    <div class="popularposts_date">August 17, 2017</div>
-                                </div>
-
-                            </div>
-                        </div>
-
-
-
                     </div>
                 </div>
 
@@ -226,17 +177,7 @@
                     <div class="category_header">CATEGORY</div>
                     <div class="category_content">
                         <ul class="ul">
-                            <li class="li"><a class="link" href="google.com">Beard</a></li><br>
-                            <li class="li"><a class="link" href="google.com">Travel</a></li><br>
-                            <li class="li"><a class="link" href="google.com">Sun Rise</a></li><br>
-                            <li class="li"><a class="link" href="google.com">Village</a></li><br>
-                            <li class="li"><a class="link" href="google.com">Night Fall</a></li><br>
-                            <li class="li"><a class="link" href="google.com">City</a></li><br>
-                            <li class="li"><a class="link" href="google.com">Local Food</a></li>
                         </ul>
-
-
-
                         <div>
                         </div>
                     </div>
@@ -303,6 +244,8 @@
 
     </div>
     </div>
+</div>
+<link rel="stylesheet" href="style/login.css">
     <template id="main-post">
         <div class="mainpost">
             <img class="mainpost__background" src="" alt="persone">
@@ -340,6 +283,24 @@
             </div>
         </div>
     </template>
+    <template id="popular-post">
+        <div class="popularposts_img">
+            <img class="popularposts_png" src="">
+            <div>
+                <!--Ten div klasy nie potrzebuje, bo nie trzeba go edytować w css-->
+                <div class="popularposts_text">
+                </div>
+                <div class="popularposts_text_footer">
+                    <div class="popularposts_posted">Posted on</div>
+                    <div class="popularposts_date">August 17, 2017</div>
+                </div>
+            </div>
+        </div>
+    </template>
+    <template id="category">
+        <li class="li"><a class="link" href="google.com">Beard</a></li>
+    </template>
+    <script src="shared.js"></script>
     <script src="script.js"></script>
 
 </body>
