@@ -35,6 +35,56 @@ const setToken = (token) => {
   getToken();
 };
 
+const retrievePopularPosts = () =>
+  retrieve(`https://trol-api.herokuapp.com/api/posts/popular`, true);
+
+const popularPostsContainer = document.querySelector(".popularposts_content");
+const popularPostsTemplate = document.querySelector("#popular-post");
+const fillPopularPost = (post) => {
+  const clone = popularPostsTemplate.content.cloneNode(true);
+  const title = clone.querySelector(".popularposts_text");
+  const background = clone.querySelector(".popularposts_png");
+  const date = clone.querySelector(".popularposts_date");
+  title.textContent = post.Title;
+  background.src = "https://trol-api.herokuapp.com/api/imgs/" + post.Background;
+  date.textContent = post.PostDate;
+  return clone;
+};
+
+const createPopularPosts = () => {
+  retrievePopularPosts().then((res) => {
+    const posts = res.json;
+    posts.forEach((post) => {
+      const popularPost = fillPopularPost(post);
+      popularPostsContainer.appendChild(popularPost);
+    });
+  });
+};
+
+const retrieveCategories = () =>
+  retrieve(`https://trol-api.herokuapp.com/api/categories`, true);
+
+const categoriesList = document.querySelector(".ul");
+const categoryTemplate = document.querySelector("#category");
+
+const fillCategory = (text) => {
+  const clone = categoryTemplate.content.cloneNode(true);
+  const link = clone.querySelector(".link");
+  link.textContent = text;
+
+  return clone;
+};
+
+const createCategories = () => {
+  retrieveCategories().then((res) => {
+    const categories = res.json;
+    categories.forEach((category) => {
+      const categoryElement = fillCategory(category.name);
+      categoriesList.appendChild(categoryElement);
+    });
+  });
+};
+
 const login = (email, password) =>
   retrieve(
     `https://trol-api.herokuapp.com/api/login?email=${email}&password=${password}`,

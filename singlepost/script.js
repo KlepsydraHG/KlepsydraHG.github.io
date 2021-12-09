@@ -79,8 +79,10 @@ if (!getToken()) {
     .then(() => {
       createMainPostAndAuthor();
       createRelatedPosts();
+      createCategories();
     });
 } else {
   createMainPostAndAuthor();
   createRelatedPosts();
+  createCategories();
 }
