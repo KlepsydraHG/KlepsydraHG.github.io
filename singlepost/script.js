@@ -51,7 +51,6 @@ const createRelatedPosts = () => {
     (res) => {
       const posts = res.json;
       posts.forEach((post) => {
-        console.log(post);
         const filledRelatedPost = fillRelatedPost(post);
         relatedPostsContainer.appendChild(filledRelatedPost);
       });
@@ -88,3 +87,8 @@ if (!getToken()) {
   createCategories();
   createPopularPosts();
 }
+
+window.addEventListener("hashchange", (e) => {
+  //po co sie meczyc xD
+  window.location.reload();
+});
