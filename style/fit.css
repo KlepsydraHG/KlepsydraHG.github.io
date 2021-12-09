@@ -181,6 +181,16 @@
     }
 }
 
+@media (max-width: 555px) {
+    .imgs_border {
+        font-size: 14px;
+    }
+    .imgs_bottext {
+        margin-top: 1px;
+        font-size: 12px;
+    }
+}
+
 @media (max-width: 500px) {
     .imgs_bottext {
         margin-top: 1px;
