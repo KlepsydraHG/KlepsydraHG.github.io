@@ -32,8 +32,25 @@ const fillPost = (data) => {
 //   return clone;
 // };
 
-retrieve(`https://trol-api.herokuapp.com/api/posts/${id}`, true).then((res) => {
-  const filledPost = fillPost(res.json);
-  firstColumn.appendChild(filledPost);
-  //   fillAuthor(x.json);
-});
+const createMainPost = () =>
+  retrieve(`https://trol-api.herokuapp.com/api/posts/${id}`, true).then(
+    (res) => {
+      const filledPost = fillPost(res.json);
+      firstColumn.appendChild(filledPost);
+      //   fillAuthor(x.json);
+    }
+  );
+
+if (!getToken()) {
+  login("trolintermeda@trol.pl", "tajnehaslo")
+    .then((json) => {
+      if (json !== undefined) {
+        setToken(json.token);
+      }
+    })
+    .then(() => {
+      createMainPost();
+    });
+} else {
+  createMainPost();
+}

@@ -1,7 +1,8 @@
 let token;
 
 const retrieve = (endpoint, authorization) => {
-  console.log(token, "x");
+  if (!token) {
+  }
   const headers = authorization
     ? {
         Authorization: `Bearer ${token}`,
@@ -12,7 +13,6 @@ const retrieve = (endpoint, authorization) => {
     headers,
   })
     .then((res) => {
-      console.log(res);
       return res.json();
     })
     .then((json) => {
@@ -40,13 +40,3 @@ const login = (email, password) =>
     `https://trol-api.herokuapp.com/api/login?email=${email}&password=${password}`,
     false
   );
-
-if (!getToken()) {
-  console.log("x");
-  login("trolintermeda@trol.pl", "tajnehaslo").then((json) => {
-    console.log(json);
-    if (json !== undefined) {
-      setToken(json.token);
-    }
-  });
-}

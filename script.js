@@ -100,7 +100,6 @@ searchInput.addEventListener("search", (e) => {
     showSearchingFeedback("Searching posts...");
     retrievePostsByKeyword(value)
       .then((page) => {
-        console.log(page);
         if (page.json.length === 0) {
           showSearchingFeedback("No posts were found!");
         } else {
@@ -251,22 +250,33 @@ const fillCategory = (text) => {
   const clone = categoryTemplate.content.cloneNode(true);
   const link = clone.querySelector(".link");
   link.textContent = text;
-  console.log(text);
+
   return clone;
 };
 
 const createCategories = () => {
   retrieveCategories().then((res) => {
     const categories = res.json;
-    console.log(categories);
     categories.forEach((category) => {
-      console.log(category);
       const categoryElement = fillCategory(category.name);
       categoriesList.appendChild(categoryElement);
     });
   });
 };
-
-getMainPages(1);
-createPopularPosts();
-createCategories();
+if (!getToken()) {
+  login("trolintermeda@trol.pl", "tajnehaslo")
+    .then((json) => {
+      if (json !== undefined) {
+        setToken(json.token);
+      }
+    })
+    .then(() => {
+      getMainPages(1);
+      createPopularPosts();
+      createCategories();
+    });
+} else {
+  getMainPages(1);
+  createPopularPosts();
+  createCategories();
+}
