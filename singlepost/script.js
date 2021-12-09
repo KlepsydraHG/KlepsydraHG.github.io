@@ -80,9 +80,11 @@ if (!getToken()) {
       createMainPostAndAuthor();
       createRelatedPosts();
       createCategories();
+      createPopularPosts();
     });
 } else {
   createMainPostAndAuthor();
   createRelatedPosts();
   createCategories();
+  createPopularPosts();
 }
