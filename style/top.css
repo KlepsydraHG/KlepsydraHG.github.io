@@ -119,8 +119,7 @@
   }
 
   .navbar__links li a {
-    padding: 0.5rem 1rem;
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .navbar__links.active {

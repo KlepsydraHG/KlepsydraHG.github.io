@@ -1,16 +1,14 @@
 .main .sidedivs {
-	width: 400px;
+	width: 100%;   /*zmiany*/
 	margin-top: -5px;
 }
 
 .main .aboutme {
-	position: relative;
-	float: left;
-	height: 385px;
-	width: 400px;
+	float:left;   /*zmiany*/
+	width: 110%;
 	background-color: white;
-	margin: 25px 0px 25px 0px;
 	padding-bottom: 25px;
+	margin-bottom: 25px;
 }
 
 .main .aboutme_header {
@@ -27,18 +25,18 @@
 }
 
 .main .aboutme_main {
-	width: 330px;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 10px;
 }
 
 .main .aboutme_png {
-	width: 330px;
+	width: 100%; /*zmiana*/
 }
 
 .main .aboutme_footer {
-	width: 285px;
+	width: 93%;  /*zmiana*/
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 5px;
@@ -49,10 +47,8 @@
 }
 
 .main .subscribe {
-	position: relative;
 	float: left;
-	height: 270px;
-	width: 400px;
+	width: 110%;
 	background-color: #fc7c57;
 	margin: 0px 0px 25px 0px;
 }
@@ -104,6 +100,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 10px;
+	margin-bottom: 10px;
 	cursor: pointer;
 	font-weight: 600;
 	font-size: 110%;
@@ -117,10 +114,8 @@
 }
 
 .main .popularposts {
-	position: relative;
-	float: left;
-	height: 445px;
-	width: 400px;
+	float:left;
+	width: 110%;
 	background-color: white;
 	margin-bottom: 25px;
 
@@ -142,12 +137,11 @@
 }
 
 .main .popularposts_content {
-	display: block;
-	margin-left: auto;
+	display: inline-block;
+	margin-left: 20px;
 	margin-right: auto;
 	background-color: white;
-	height: 300px;
-	width: 330px;
+	height: 90%;
 }
 
 .main .popularposts_png {
@@ -157,8 +151,7 @@
 
 .main .popularposts_content .popularposts_img {
 	margin-right: 5px;
-	width: 330px;
-	height: 110px;
+	width: 70%;
 	display: flex;
 	margin-bottom: 10px;
 
@@ -211,11 +204,9 @@
 }
 
 .main .slideads {
-	position: relative;
-	float: right;
-	margin: 0px 0px 25px 0px;
-	height: 425px;
-	width: 400px;
+	float: left;
+	margin: 0px 10px 25px 0px;
+	width:110%;
 	background-color: white;
 
 }
@@ -233,18 +224,19 @@
 .main .slideads_main {
 	margin-left: auto;
 	margin-right: auto;
-	width: 330px;
-	height: 320px;
+	width: 90%;
 
 }
+.main .slideads img{
+	margin-bottom:10px;
+}
+
 
 .main .category {
-	position: relative;
-	float: right;
-	margin: 0px 0px 25px 0px;
-	height: 370px;
-	width: 400px;
+	float: left;
+	width: 110%;
 	background-color: white;
+	margin-bottom:20px; 
 }
 
 .main .category_header {
