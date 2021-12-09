@@ -34,6 +34,32 @@ const fillAuthor = (data) => {
   return clone;
 };
 
+const fillRelatedPost = (data) => {
+  const clone = relatedPostTemplate.content.cloneNode(true);
+  const background = clone.querySelector(".related-post__background");
+  const title = clone.querySelector(".related-post__title");
+  background.src = "https://trol-api.herokuapp.com/api/imgs/" + data.Background;
+  title.textContent = data.Title;
+  return clone;
+};
+
+const relatedPostTemplate = document.querySelector("#related-post");
+const relatedPostsContainer = document.querySelector(".pictures");
+
+const createRelatedPosts = () => {
+  retrieve(`https://trol-api.herokuapp.com/api/posts/${id}/related`, true).then(
+    (res) => {
+      const posts = res.json;
+      posts.forEach((post) => {
+        console.log(post);
+        const filledRelatedPost = fillRelatedPost(post);
+        relatedPostsContainer.appendChild(filledRelatedPost);
+      });
+    }
+  );
+  relatedPostsContainer;
+};
+
 const createMainPostAndAuthor = () =>
   retrieve(`https://trol-api.herokuapp.com/api/posts/${id}`, true).then(
     (res) => {
@@ -52,7 +78,9 @@ if (!getToken()) {
     })
     .then(() => {
       createMainPostAndAuthor();
+      createRelatedPosts();
     });
 } else {
   createMainPostAndAuthor();
+  createRelatedPosts();
 }
