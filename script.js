@@ -175,7 +175,7 @@ const fillMainPost = (post) => {
   const authorsAvatar = clone.querySelector(".mainpost__author-avatar");
   const authorsName = clone.querySelector(".mainpost__author-name");
   const content = clone.querySelector(".mainpost__content");
-  background.src = post.Background;
+  background.src = "https://trol-api.herokuapp.com/api/imgs/" + post.Background;
   category.textContent = post.CategoryTitle;
   title.textContent = post.Title;
   date.textContent = post.PostDate;
@@ -259,7 +259,7 @@ const fillPopularPost = (post) => {
   const background = clone.querySelector(".popularposts_png");
   const date = clone.querySelector(".popularposts_date");
   title.textContent = post.Title;
-  background.src = post.Background;
+  background.src = "https://trol-api.herokuapp.com/api/imgs/" + post.Background;
   date.textContent = post.PostDate;
   return clone;
 };
