@@ -1,4 +1,8 @@
+let token;
+
 const retrieve = (endpoint, authorization) => {
+  if (!token) {
+  }
   const headers = authorization
     ? {
         Authorization: `Bearer ${token}`,
@@ -9,7 +13,6 @@ const retrieve = (endpoint, authorization) => {
     headers,
   })
     .then((res) => {
-      console.log(res);
       return res.json();
     })
     .then((json) => {
@@ -21,3 +24,19 @@ const retrieve = (endpoint, authorization) => {
     })
     .catch((err) => console.error(err));
 };
+
+const getToken = () => {
+  token = localStorage.getItem("token");
+  return token;
+};
+
+const setToken = (token) => {
+  localStorage.setItem("token", token);
+  getToken();
+};
+
+const login = (email, password) =>
+  retrieve(
+    `https://trol-api.herokuapp.com/api/login?email=${email}&password=${password}`,
+    false
+  );

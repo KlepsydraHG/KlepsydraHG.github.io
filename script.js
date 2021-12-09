@@ -1,4 +1,3 @@
-let token;
 const firstColumn = document.querySelector(".firstcolumn");
 const mainPostsContainer = document.querySelector(".main-post__container");
 const mainPostTemplate = document.querySelector("#main-post");
@@ -9,31 +8,6 @@ const removeChildren = (element) => {
     element.firstChild.remove();
   }
 };
-
-const getToken = () => {
-  token = localStorage.getItem("token");
-  return token;
-};
-
-const setToken = (token) => {
-  localStorage.setItem("token", token);
-  getToken();
-};
-
-const login = (email, password) =>
-  retrieve(
-    `https://trol-api.herokuapp.com/api/login?email=${email}&password=${password}`,
-    false
-  );
-
-//useless to chyba
-// const retrieveAllPosts = () =>
-//   retrieve(
-//     "https://trol-api.herokuapp.com/api/posts",
-//     true,
-//     getNumberOfPages,
-//     "json"
-//   );
 
 const retrievePostsPage = (page) => {
   const after = (page - 1) * limitPerPage;
@@ -53,12 +27,6 @@ const retrievePostsByKeyword = (keyword, page = 1) => {
     true
   );
 };
-
-const retrievePost = (id) =>
-  retrieve(`https://trol-api.herokuapp.com/api/posts/${id}`, true);
-
-const retrieveRelatedPosts = (id) =>
-  retrieve(`https://trol-api.herokuapp.com/api/posts/${id}/related`, true);
 
 const retrieveCategories = () =>
   retrieve(`https://trol-api.herokuapp.com/api/categories`, true);
@@ -86,7 +54,7 @@ const fillSearchedPost = (post) => {
   const authorsAvatar = clone.querySelector(".searched-post__author-avatar");
   const authorsName = clone.querySelector(".searched-post__author-name");
   title.textContent = post.Title;
-  authorsAvatar.src = post.Avatar;
+  authorsAvatar.src = "https://trol-api.herokuapp.com/api/imgs/" + post.Avatar;
   authorsName.textContent = post.AuthorName;
   return clone;
 };
@@ -132,7 +100,6 @@ searchInput.addEventListener("search", (e) => {
     showSearchingFeedback("Searching posts...");
     retrievePostsByKeyword(value)
       .then((page) => {
-        console.log(page);
         if (page.json.length === 0) {
           showSearchingFeedback("No posts were found!");
         } else {
@@ -179,7 +146,7 @@ const fillMainPost = (post) => {
   category.textContent = post.CategoryTitle;
   title.textContent = post.Title;
   date.textContent = post.PostDate;
-  authorsAvatar.src = post.Avatar;
+  authorsAvatar.src = "https://trol-api.herokuapp.com/api/imgs/" + post.Avatar;
   authorsName.textContent = post.AuthorName;
   content.textContent = post.Content_shortened;
   return clone;
@@ -283,26 +250,22 @@ const fillCategory = (text) => {
   const clone = categoryTemplate.content.cloneNode(true);
   const link = clone.querySelector(".link");
   link.textContent = text;
-  console.log(text);
+
   return clone;
 };
 
 const createCategories = () => {
   retrieveCategories().then((res) => {
     const categories = res.json;
-    console.log(categories);
     categories.forEach((category) => {
-      console.log(category);
       const categoryElement = fillCategory(category.name);
       categoriesList.appendChild(categoryElement);
     });
   });
 };
-
 if (!getToken()) {
   login("trolintermeda@trol.pl", "tajnehaslo")
     .then((json) => {
-      console.log(json);
       if (json !== undefined) {
         setToken(json.token);
       }
