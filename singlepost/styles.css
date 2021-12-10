@@ -113,7 +113,7 @@ body {
     font-size: 17px;
     color: rgb(143, 143, 143);
     padding: 5px;
-    margin-left: 58px;
+    margin-left: 82px;
     font-family: 'Source Serif Pro';
 }
 
@@ -253,6 +253,9 @@ body {
     }
     .pictures li{
         width: 40%;
+    }
+    .quotations_text_p{
+        font-size:1.4em;
     }
 }
 
