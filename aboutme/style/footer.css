@@ -1,5 +1,6 @@
 .photos {
     text-align: center;
+    margin-top: 30px;
 }
 
 .carousel-cell {
@@ -41,6 +42,7 @@
     font-family: "Oswald", sans-serif;
     font-weight: bold;
     padding-bottom: 60px;
+    margin-top: 30px;
 }
 
 span.behance {
