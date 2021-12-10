@@ -1,15 +1,22 @@
 .textOnBackground {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     position: relative;
 }
 
-header .text {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    color: white;
-    text-decoration: underline red;
+.background {
+    width: 100%;
 }
 
-.textOnBackground div {
+.textOnBackground .text {
+    position: absolute;
+    font-size: 6vw;
+    font-weight: 600;
+    color: white;
+    border-bottom: 4px solid #fc7c57;
+}
 
+.textOnBackground img {
+    text-shadow: 2px 2px 5px black;
 }

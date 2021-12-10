@@ -1,0 +1,5 @@
+@media screen and (max-width: 768px) {
+    header, main, footer, .aboutme{
+        width: 100%;
+    }
+}

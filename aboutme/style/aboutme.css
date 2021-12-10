@@ -2,17 +2,16 @@
     display: flexbox;
     background-color: white;
     flex-direction: column;
-    width: 60%;
+    width: 60vw;
     margin: auto;
 }
 
 .aboutme__header {
-    width: 100%;
     margin: auto;
 }
 
-.profilepicture {
-    
+.aboutme__header img {
+    width: 100%;
 }
 
 .aboutme__main {
@@ -21,7 +20,16 @@
     margin: auto;
 }
 
-.aboutme__fotter {
+.aboutme__main h2 {
+    font-weight: bold;
+    text-decoration: underline black;
+}
+
+.aboutme__main h2, p {
+    padding: 25px;
+}
+
+.aboutme__footer {
     border-top: solid .5px grey;
     width: 100%;
     margin: auto;
