@@ -1,20 +1,20 @@
 .main .sidedivs {
-	width: 100%;   /*zmiany*/
+	width: 100%;   
 	margin-top: -5px;
 }
 
 .main .aboutme {
-	float:left;   /*zmiany*/
+	float:left;   
 	width: 110%;
 	background-color: white;
 	padding-bottom: 25px;
 	margin-bottom: 25px;
+	margin-top:20px;
 }
 
 .main .aboutme_header {
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 15px;
 	height: 25px;
 	width: 90px;
 	/*background-color: grey;*/
@@ -32,11 +32,11 @@
 }
 
 .main .aboutme_png {
-	width: 100%; /*zmiana*/
+	width: 100%; 
 }
 
 .main .aboutme_footer {
-	width: 93%;  /*zmiana*/
+	width: 93%;  
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 5px;
@@ -58,17 +58,16 @@
 	margin-right: auto;
 	margin-top: 15px;
 	padding-bottom: 5px;
-	height: 25px;
-	width: 100px;
+	width:30%;
 	/*background-color: grey;*/
-	font-size: 130%;
+	font-size: 22px;
 	text-align: center;
 	border-bottom: 4px solid white;
 	color: white;
 }
 
 .main .subscribe_main {
-	width: 330px;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 15px;
@@ -80,8 +79,7 @@
 .main .subscribe_mail_and_submit input,
 .main .subscribe_mail_and_submit textarea {
 	display: block;
-	width: 100%;
-	max-width: 315px;
+	width: 85%;
 	padding: 5px;
 	font-size: 18px;
 	border: 1px solid gray;
@@ -94,8 +92,7 @@
 	background-color: black;
 	color: white;
 	display: block;
-	width: 100%;
-	max-width: 327px;
+	width: 90%;
 	padding: 10px;
 	margin-left: auto;
 	margin-right: auto;
@@ -124,8 +121,7 @@
 .main .popularposts_header {
 	text-align: center;
 	font-size: 120%;
-	width: 130px;
-	height: 25px;
+	width: 70%;
 	display: block;
 	margin-top: 15px;
 	margin-left: auto;
@@ -145,51 +141,44 @@
 }
 
 .main .popularposts_png {
-	height: 100px;
-	width: 140px;
+	width: 90%;
 }
 
 .main .popularposts_content .popularposts_img {
 	margin-right: 5px;
-	width: 70%;
-	display: flex;
+	width: 90%;
 	margin-bottom: 10px;
 
 
 }
 
 .main .popularposts_content .popularposts_text {
-	height: 70px;
-	width: 179px;
+	width: 100%;
 	font-weight: 600;
 	font-size: 100%;
-	margin-left: 10px;
 	margin-bottom: 5px;
 }
 
 .main .popularposts_content .popularposts_text_footer {
-	height: 30px;
+	width: 100%;
 	font-size: 90%;
-	margin-left: 10px;
 	margin-top: 10px;
 }
 
 .main .popularposts_content .popularposts_posted {
-	width: 60px;
-	height: 25px;
-	display: inline;
+	width: 100%;
 	font-style: italic;
 	color: #fc7c57;
 	font-family: 'Source Serif Pro';
 }
 
 .main .popularposts_content .popularposts_date {
-	width: 80px;
-	height: 25px;
-	display: inline;
+	width: 90%;
+	display: inline-block;
 	font-style: italic;
 	color: gray;
 	font-family: 'Source Serif Pro';
+	margin-bottom:5px;
 }
 
 
