@@ -10,17 +10,17 @@ const removeChildren = (element) => {
 };
 
 const retrievePostsPage = (page) => {
-  const after = (page - 1) * limitPerPage;
+  const offset = (page - 1) * limitPerPage;
   return retrieve(
-    `https://trol-api.herokuapp.com/api/posts?after=${after}&limit=${limitPerPage}`,
+    `https://trol-api.herokuapp.com/api/posts?offset=${offset}&limit=${limitPerPage}`,
     true
   );
 };
 
 const retrievePostsByKeyword = (keyword, page = 1) => {
-  const after = (page - 1) * limitPerPage;
+  const offset = (page - 1) * limitPerPage;
   return retrieve(
-    `https://trol-api.herokuapp.com/api/posts?search=${keyword}&after=${after}&limit=${limitPerPage}`,
+    `https://trol-api.herokuapp.com/api/posts?search=${keyword}&offset=${offset}&limit=${limitPerPage}`,
     true
   );
 };
