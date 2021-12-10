@@ -284,3 +284,68 @@
     text-decoration: none;
     color: #fc7c57;
 }
+
+@media screen and (max-width: 1902px) {
+    .photos__element {
+        width: 14%;
+        height: 260px;
+    }
+}
+
+@media screen and (max-width: 1620px) {
+    .photos__element {
+        width: 13%;
+        height: 260px;
+    }
+}
+@media (min-width:801px) and (max-width:1080px){
+    .maine .sidedivs{
+        margin-left: -55px;
+
+        
+        
+    }
+    .aboutme{
+        transform: scale(0.9);
+        
+    }
+    .subscribe{
+        transform: scale(0.9);
+    }
+    .popularposts{
+        transform: scale(0.9);
+    }
+    .category{
+        transform: scale(0.9);
+    }
+    .slideads{
+        transform: scale(0.9);
+    }
+
+    
+    
+
+ 
+}
+@media screen and (max-width:500px){
+    .maine .sidedivs{
+        margin-left: -190px
+
+        
+        
+    }
+    .aboutme{
+        transform: scale(0.75);
+        
+    }
+    .subscribe{
+        transform: scale(0.75);
+    }
+    .popularposts{
+        transform: scale(0.75);
+    }
+    .category{
+        transform: scale(0.75);
+    }
+ 
+}

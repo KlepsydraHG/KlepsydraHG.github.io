@@ -19,4 +19,48 @@
 .main .secondcolumn {
   display: flex;
   flex-direction: column;
+  height: 2050px;
 }
+@media (min-width:801px) and (max-width:1080px){
+  .main .secondcolumn{
+      margin-left: -247px;
+      
+      
+  }
+  
+
+
+}
+@media screen and (max-width:500px){
+  .main .secondcolumn{
+      margin-left: -190px;
+      
+      
+      
+  }
+  
+
+
+}
+@media screen and (max-width:800px){
+  .main {
+display: flex;
+flex-direction: column;
+width: 100%;      
+      
+  }
+  
+
+
+}
+@media (min-width:501px) and (max-width:800px){
+  .main .secondcolumn{
+      margin-left: -100px;
+      
+      
+  }
+  
+
+
+}
+
