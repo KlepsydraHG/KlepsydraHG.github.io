@@ -4,6 +4,8 @@
     flex-direction: column;
     width: 60vw;
     margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .aboutme__header {
