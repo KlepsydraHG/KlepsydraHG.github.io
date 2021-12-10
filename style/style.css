@@ -11,15 +11,7 @@ a {
   color: inherit;
 }
 body {
-  overflow: hidden;
   background-color: #d9d9d9;
   margin: 0px;
   font-family: Oswald;
-  box-sizing: border-box;
-}
-
-.everything-but-login {
-  height: 100vh;
-  width: 100vw;
-  overflow: auto;
 }
