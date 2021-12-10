@@ -136,6 +136,7 @@ const fillMainPost = (post) => {
   const authorsAvatar = clone.querySelector(".mainpost__author-avatar");
   const authorsName = clone.querySelector(".mainpost__author-name");
   const content = clone.querySelector(".mainpost__content");
+  const links = clone.querySelectorAll(".mainpost__link");
   background.src = "https://trol-api.herokuapp.com/api/imgs/" + post.Background;
   category.textContent = post.CategoryTitle;
   title.textContent = post.Title;
@@ -143,6 +144,9 @@ const fillMainPost = (post) => {
   authorsAvatar.src = "https://trol-api.herokuapp.com/api/imgs/" + post.Avatar;
   authorsName.textContent = post.AuthorName;
   content.textContent = post.Content_shortened;
+  links.forEach((link) => {
+    link.href = "/singlepost/#/" + post.ID;
+  });
   return clone;
 };
 

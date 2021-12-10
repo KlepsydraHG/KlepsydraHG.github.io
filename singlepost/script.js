@@ -39,7 +39,11 @@ const fillRelatedPost = (data) => {
   const background = clone.querySelector(".related-post__background");
   const title = clone.querySelector(".related-post__title");
   background.src = "https://trol-api.herokuapp.com/api/imgs/" + data.Background;
+  const links = clone.querySelectorAll(".related-post__link");
   title.textContent = data.Title;
+  links.forEach((link) => {
+    link.href = "/singlepost/#/" + data.ID;
+  });
   return clone;
 };
 

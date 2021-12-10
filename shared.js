@@ -45,9 +45,13 @@ const fillPopularPost = (post) => {
   const title = clone.querySelector(".popularposts_text");
   const background = clone.querySelector(".popularposts_png");
   const date = clone.querySelector(".popularposts_date");
+  const links = clone.querySelectorAll(".popularposts__link");
   title.textContent = post.Title;
   background.src = "https://trol-api.herokuapp.com/api/imgs/" + post.Background;
   date.textContent = post.PostDate;
+  links.forEach((link) => {
+    link.href = "/singlepost/#/" + post.ID;
+  });
   return clone;
 };
 
