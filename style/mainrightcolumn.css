@@ -284,17 +284,3 @@
     text-decoration: none;
     color: #fc7c57;
 }
-
-@media screen and (max-width: 1902px) {
-    .photos__element {
-        width: 14%;
-        height: 260px;
-    }
-}
-
-@media screen and (max-width: 1620px) {
-    .photos__element {
-        width: 13%;
-        height: 260px;
-    }
-}
