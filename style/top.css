@@ -89,7 +89,7 @@
     .toggle-button {
         display: flex;
     }
-    #navbar__item {
+    .item {
         padding: 0 0;
     }
     .navbar__links {
