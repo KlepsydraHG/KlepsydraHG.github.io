@@ -170,8 +170,9 @@ body {
     float: right;
     width: 45%;
     height: 155px;
-    margin-right: 30px;
-    margin-bottom: 40px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-left: 10px;
     border: 1px lightgray solid;
     font-family: 'Source Serif Pro';
     font-size: 0.95em;
@@ -179,7 +180,7 @@ body {
 
 .username {
     float: left;
-    width: 40%;
+    width: 45%;
     height: 33px;
     margin-left: 10px;
     border: 1px lightgray solid;
@@ -189,7 +190,7 @@ body {
 
 .email {
     float: left;
-    width: 40%;
+    width: 45%;
     height: 33px;
     margin: 10px;
     border: 1px lightgray solid;
@@ -200,7 +201,7 @@ body {
 .button {
     background-color: hsl(16, 94%, 70%);
     color: white;
-    width: 41%;
+    width: 46%;
     height: 48px;
     border-color: white;
     font-family: calibri;
@@ -212,27 +213,46 @@ body {
 
 @media screen and (max-width: 900px) {
     .pictures li {
-        width: 46%;
+        width: 46.5%;
     }
 
 
 }
-
-@media screen and (max-width: 744px) {
+@media screen and (max-width:797px){ 
+    .button{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 768px) {
     .textarea {
-        width: 44%;
+        width: 45%;
     }
 
     .username {
-        width: 36%;
+        width: 45%;
     }
 
     .email {
-        width: 36%
+        width: 45%
     }
 
     .button {
-        width: 38%
+        width: 45.5%
+    }
+    .description{ 
+        width:100%;
+        margin:0 0 20px 0;
+    }
+    .comment{ 
+        width:100%;
+        margin:0 0 20px 0;
+    }
+    .relatedposts{
+        width: 100%;
+        margin:0 0 20px 0;
+    }
+    .pictures li{
+        width: 40%;
     }
 }
 
@@ -254,39 +274,64 @@ body {
     }
 }
 
-@media screen and (max-width:459px) {
+@media screen and (max-width:575px) {
     .textarea {
-        width: 39%;
+        width: 45%;
     }
 
     .username {
-        width: 30%;
+        width: 44%;
+        height:40px;
     }
 
     .email {
-        width: 28%
+        width: 44%;
+        height:40px;
+        margin-bottom:5px;
     }
 
     .button {
-        width: 90%
+        width: 45%
+    }
+    .pictures li{
+        width: 46.5%;
     }
 }
-
-@media screen and (max-width:356px) {
+@media screen and (max-width:473px) { 
     .textarea {
-        width: 36%;
+        width: 45%;
     }
 
     .username {
-        width: 26%;
+        width: 42%;
+        height: 50px;
+        margin-bottom: 20px;
     }
 
     .email {
-        width: 25%
+        width: 42%;
+        height: 50px;
     }
 
     .button {
-        width: 90%
+        width: 95%
+    }
+} 
+@media screen and (max-width:356px) {
+    .textarea {
+        width: 43%;
+    }
+
+    .username {
+        width: 41%;
+    }
+
+    .email {
+        width: 41%
+    }
+
+    .button {
+        width: 95%
     }
 }
 
