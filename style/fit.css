@@ -7,7 +7,7 @@
 
 .imgs .imgs_tile {
     width: 25%;
-    height: 500px;
+    height: 570px;
     background-color: white;
     position: relative;
     display: inline-block;
@@ -29,7 +29,7 @@
     padding-top: 15px;
     text-align: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: 23px;
 }
 
 .imgs_bottext {
@@ -47,7 +47,7 @@
 }
 
 .imgs_img {
-    height: 350px;
+    height: 450px;
     object-fit: cover;
     clip-path: polygon( 50% 95%, 55% 100%, 100% 100%, 100% 0, 0 0, 0 100%, 45% 100%);
     cursor: pointer;
@@ -67,18 +67,6 @@
 
 
 /*rwd basic*/
-
-@media screen and (max-width: 2560px) {
-    .imgs .imgs_tile {
-        height: 750px;
-    }
-    .imgs_border {
-        font-size: 30px;
-    }
-    .imgs_img {
-        height: 600px;
-    }
-}
 
 @media screen and (max-width: 1440px) {
     .imgs .imgs_tile {
