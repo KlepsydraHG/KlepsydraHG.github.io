@@ -145,7 +145,7 @@ const fillMainPost = (post) => {
   authorsName.textContent = post.AuthorName;
   content.textContent = post.Content_shortened;
   links.forEach((link) => {
-    link.href = "/singlepost/#/" + post.ID;
+    link.href = "singlepost/index.html#" + post.ID;
   });
   return clone;
 };

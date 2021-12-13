@@ -1,4 +1,5 @@
-const id = window.location.hash.substring(2);
+const id = window.location.hash.substring(1);
+console.log(id);
 const firstColumn = document.querySelector(".firstcolumn");
 const mainPostTemplate = document.querySelector("#main-post");
 const description = document.querySelector(".description");
@@ -42,7 +43,7 @@ const fillRelatedPost = (data) => {
   const links = clone.querySelectorAll(".related-post__link");
   title.textContent = data.Title;
   links.forEach((link) => {
-    link.href = "/singlepost/#/" + data.ID;
+    link.href = "index.html#" + data.ID;
   });
   return clone;
 };

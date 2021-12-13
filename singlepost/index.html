@@ -55,10 +55,10 @@
                             <a class="navbar__link" href="../index.html">HOME PAGES</a>
                         </li>
                         <li class="navbar__item item">
-                            <a class="navbar__link" href="index.html">SINGLE POST</a>
+                            <a class="navbar__link" href="javascript:void(0);">SINGLE POST</a>
                         </li>
                         <li class="navbar__item item">
-                            <a class="navbar__link" href="#">CONTACT</a>
+                            <a class="navbar__link" href="javascript:void(0);">CONTACT</a>
                         </li>
                         <li class="navbar__item item">
                             <a class="navbar__link" href="../aboutme/index.html">ABOUT US</a>
@@ -127,48 +127,27 @@
                 </div>
 
                 <div class="subscribe">
-                    <form>
-                    <div class="subscribe_header">SUBSCRIBE</div>
-                    <div class="subscribe_main">Subscribe to Our newsletter for free Update every week</div>
-                    <div class="subscribe_mail_and_submit">
-                        <input type="email" id="email" name="email" placeholder="Your email">
-
-                        <button class="subscribe_submit" type="submit">SUBSCRIBE</button>
+                    <div class="subscribe__header">SUBSCRIBE</div>
+                    <div class="subscribe__main">
+                        Subscribe to Our newsletter for free Update every week
+                        <input class="subscribe__input" type="email" name="email" placeholder="Your email">
+                        <button class="subscribe__button" type="submit">SUBSCRIBE</button>
                     </div>
-                    </form>
                 </div>
 
                 <div class="popularposts">
-                    <div class="popularposts_header">POPULAR POSTS</div>
-                    <div class="popularposts_content">
-                        
-
-
+                    <div class="popularposts__header">POPULAR POSTS</div>
+                    <div class="popularposts__content">
                     </div>
                 </div>
 
-                <div class="category">
-                    <div class="category_header">CATEGORY</div>
-                    <div class="category_content">
-                        <ul class="ul">
-
-                        </ul>
-
-
-
-        
-                    </div>
-                </div>
-                    <div class="slideads">
-                        <div class="slideads_header">SLIDE ADS</div>
-                        <div class="slideads_main">
-                            <img src="img/ads.png" width="100%">
-                        </div>
-                    </div>
-
-                
-
-
+                <div class="categories">
+                    <div class="categories__header">CATEGORY</div>
+                    <ul class="categories__content"></ul>
+            </div>
+            <div class="slideads">
+                <div class="slideads__header">SLIDE ADS</div>
+                <img src="img/ads.png" class="slideads__img">
             </div>
 
         </div>    
@@ -295,23 +274,21 @@
                 <a class="related-post__link related-post__title"></a>
     </li>
     </template>
-    <template id="category">
-        <li class="li"><a class="link" href="google.com">Beard</a></li>
-    </template>
     <template id="popular-post">
         <div class="popularpost">
             <a class="popularpost__link"><img class="popularpost__img" src=""></a>
-            <div>
+            <div class="popularpost__content">
                 <!--Ten div klasy nie potrzebuje, bo nie trzeba go edytować w css-->
-                <a class="popularpost__link popularposts_text">
-
+                <a class="popularpost__link">
+                    <h3 class="popularpost__title">
+    
+                    </h3>
                 </a>
-                <div class="popularposts_text_footer">
-                    <div class="popularpost_post-date">Posted on</div>
-                    <div class="popularpost__date">August 17, 2017</div>
-                </div>
+                <p class="popularpost__paragraph"><span class="orange">Posted on </span><span class="popularpost__date"></span></p>
             </div>
-        </div>
+    </template>
+    <template id="category">
+        <li class="category"><a class="category__link orange" href="google.com">Beard</a></li>
     </template>
     <script src="../js/shared.js"></script>
     <script src="script.js"></script>

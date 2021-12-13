@@ -1,4 +1,5 @@
 let token;
+const hasSinglePostInLink = location.href.includes("singlepost");
 
 const retrieve = (endpoint, authorization) => {
   if (!token) {
@@ -52,7 +53,9 @@ const fillPopularPost = (post) => {
   background.src = "https://trol-api.herokuapp.com/api/imgs/" + post.Background;
   date.textContent = post.PostDate;
   links.forEach((link) => {
-    link.href = "/singlepost/#/" + post.ID;
+    link.href = hasSinglePostInLink
+      ? "index.html#" + post.ID
+      : "singlepost/index.html#" + post.ID;
   });
   return clone;
 };
