@@ -1,12 +1,9 @@
 .main {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+  margin: 30px;
   display: grid;
-  grid-template-columns: 50% 25%;
+  grid-template-columns: 800px 300px;
   column-gap: 30px;
   justify-content: center;
-  clear: both;
 }
 
 .posts-container {
@@ -21,8 +18,26 @@
   flex-direction: column;
 }
 
+@media (max-width: 1200px) {
+  .main {
+    margin: 20px;
+    column-gap: 20px;
+    grid-template-columns: 700px 250px;
+  }
+}
+
 @media (max-width: 1050px) {
   .main {
-    grid-template-columns: 50% 30%;
+    margin: 20px;
+    column-gap: 20px;
+    grid-template-columns: 600px 200px;
+  }
+}
+
+@media (max-width: 900px) {
+  .main {
+    margin: 30px;
+    row-gap: 30px;
+    grid-template-columns: 1fr;
   }
 }

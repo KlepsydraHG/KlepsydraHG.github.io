@@ -26,14 +26,15 @@
 }
 
 .main .aboutme_main {
+  height: 100%;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 10px;
 }
 
 .main .aboutme_png {
+  object-fit: scale-down;
   width: 100%;
+  height: 100%;
 }
 
 .main .aboutme_footer {
@@ -118,7 +119,6 @@
 .main .popularposts {
   position: relative;
   float: left;
-  height: 445px;
   width: 100%;
   background-color: white;
   margin-bottom: 25px;
@@ -144,7 +144,6 @@
   margin-left: auto;
   margin-right: auto;
   background-color: white;
-  height: 300px;
   width: 100%;
 }
 
@@ -154,9 +153,9 @@
 }
 
 .main .popularposts_content .popularposts_img {
+  display: flex;
   margin-right: 5px;
   width: 100%;
-  height: 110px;
   display: flex;
   margin-bottom: 10px;
 }
@@ -203,34 +202,34 @@
   width: 190px;
 }
 
-.main .slideads {
+.slideads,
+.aboutme {
+  box-sizing: border-box;
+  row-gap: 20px;
   position: relative;
   float: right;
-  margin: 0px 0px 25px 0px;
-  height: 425px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
   background-color: white;
 }
 
-.slideads_img {
+.slideads__img,
+.aboutme__img {
+  max-width: 300px;
   width: 100%;
 }
 
-.main .slideads_header {
-  margin: 15px auto 15px auto;
+.slideads__header,
+.aboutme__header {
   width: 95px;
   height: 30px;
   text-align: center;
   border-bottom: 4px solid black;
   font-size: 130%;
   font-weight: bold;
-}
-
-.main .slideads_main {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: 320px;
 }
 
 .main .category {
@@ -300,5 +299,12 @@
   .photos__element {
     width: 13%;
     height: 260px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .popularposts_img {
+    flex-direction: column;
+    display: flex;
   }
 }
