@@ -40,14 +40,14 @@ const setToken = (token) => {
 const retrievePopularPosts = () =>
   retrieve(`https://trol-api.herokuapp.com/api/posts/popular`, true);
 
-const popularPostsContainer = document.querySelector(".popularposts_content");
+const popularPostsContainer = document.querySelector(".popularposts__content");
 const popularPostsTemplate = document.querySelector("#popular-post");
 const fillPopularPost = (post) => {
   const clone = popularPostsTemplate.content.cloneNode(true);
-  const title = clone.querySelector(".popularposts_text");
-  const background = clone.querySelector(".popularposts_png");
-  const date = clone.querySelector(".popularposts_date");
-  const links = clone.querySelectorAll(".popularposts__link");
+  const title = clone.querySelector(".popularpost__title");
+  const background = clone.querySelector(".popularpost__img");
+  const date = clone.querySelector(".popularpost__date");
+  const links = clone.querySelectorAll(".popularpost__link");
   title.textContent = post.Title;
   background.src = "https://trol-api.herokuapp.com/api/imgs/" + post.Background;
   date.textContent = post.PostDate;
@@ -70,12 +70,12 @@ const createPopularPosts = () => {
 const retrieveCategories = () =>
   retrieve(`https://trol-api.herokuapp.com/api/categories`, true);
 
-const categoriesList = document.querySelector(".ul");
+const categoriesList = document.querySelector(".categories__content");
 const categoryTemplate = document.querySelector("#category");
 
 const fillCategory = (text) => {
   const clone = categoryTemplate.content.cloneNode(true);
-  const link = clone.querySelector(".link");
+  const link = clone.querySelector(".category__link");
   link.textContent = text;
 
   return clone;

@@ -139,11 +139,11 @@
   height: 90%;
 }
 
-.main .popularposts_png {
+.main .popularpost__img {
   width: 90%;
 }
 
-.main .popularposts_content .popularposts_img {
+.main .popularposts_content .popularpost {
   margin-right: 5px;
   width: 90%;
   margin-bottom: 10px;
@@ -162,14 +162,14 @@
   margin-top: 10px;
 }
 
-.main .popularposts_content .popularposts_posted {
+.main .popularposts_content .popularpost_post-date {
   width: 100%;
   font-style: italic;
   color: #fc7c57;
   font-family: "Source Serif Pro";
 }
 
-.main .popularposts_content .popularposts_date {
+.main .popularposts_content .popularpost__date {
   width: 90%;
   display: inline-block;
   font-style: italic;

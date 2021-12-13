@@ -1,550 +1,525 @@
 * {
-    margin: 0;
-    padding: 0;
-
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #d9d9d9;
-    font-family: 'Oswald';
+  background-color: #d9d9d9;
+  font-family: "Oswald";
 }
 
 .quotations {
-    background-image: url("img/background.png");
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 240px;
-    display: flex;
-    justify-content: center;
+  background-image: url("img/background.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 240px;
+  display: flex;
+  justify-content: center;
 }
 
 .quotations_text {
-    margin-top: auto;
-    margin-bottom: auto;
-    text-shadow: 2px 2px 5px black;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-shadow: 2px 2px 5px black;
 }
 
 .quotations_text_p {
-    font-size: 36px;
-    font-weight: 600;
-    color: white;
-    border-bottom: 4px solid #fc7c57;
+  font-size: 36px;
+  font-weight: 600;
+  color: white;
+  border-bottom: 4px solid #fc7c57;
 }
 
 .description {
-    background-color: white;
-    margin: 20px 40px;
-    width: 58.5%;
-    display: inline-block;
-
+  background-color: white;
+  margin: 20px 40px;
+  width: 58.5%;
+  display: inline-block;
 }
-.author{
-    width: 37px;
-    height: 37px;
+.author {
+  width: 37px;
+  height: 37px;
 }
 
 .description header h2 {
-    text-align: center;
-    text-decoration: underline 4px;
-    margin: 20px;
-    padding: 5px;
-    font-size: 24px;
+  text-align: center;
+  text-decoration: underline 4px;
+  margin: 20px;
+  padding: 5px;
+  font-size: 24px;
 }
 
 .description .profile {
-    display: inline-block;
-    margin: 15px;
+  display: inline-block;
+  margin: 15px;
 }
 
 .description .nickname {
-    padding: 0px;
-    margin-left: 58px;
-    font-size: 24px;
+  padding: 0px;
+  margin-left: 58px;
+  font-size: 24px;
 }
 
 .description .content {
-    font-size: 17px;
-    color: rgb(143, 143, 143);
-    padding: 5px;
-    margin-left: 58px;
-    margin-bottom: 35px;
-    font-family: 'Source Serif Pro';
+  font-size: 17px;
+  color: rgb(143, 143, 143);
+  padding: 5px;
+  margin-left: 58px;
+  margin-bottom: 35px;
+  font-family: "Source Serif Pro";
 }
 
 .description img {
-    width: 13%;
+  width: 13%;
 }
 
 .comment {
-    background-color: white;
-    margin: 20px 40px;
-    width: 58.5%;
-    display: inline-block;
+  background-color: white;
+  margin: 20px 40px;
+  width: 58.5%;
+  display: inline-block;
 }
 
 .comment header h2 {
-    text-align: center;
-    text-decoration: underline 4px;
-    margin: 20px;
-    padding: 5px;
-    font-size: 24px;
+  text-align: center;
+  text-decoration: underline 4px;
+  margin: 20px;
+  padding: 5px;
+  font-size: 24px;
 }
 
 .comment .profile {
-    display: inline-block;
-    margin: 15px;
+  display: inline-block;
+  margin: 15px;
 }
 
 .comment .nickname {
-    padding: 0px;
-    margin-left: 58px;
-    font-size: 24px;
+  padding: 0px;
+  margin-left: 58px;
+  font-size: 24px;
 }
 
 .date {
-    text-decoration: wavy;
-    font-size: 14px;
-    color: #cecece;
-    margin-left: 15px;
-    font-weight: 500;
+  text-decoration: wavy;
+  font-size: 14px;
+  color: #cecece;
+  margin-left: 15px;
+  font-weight: 500;
 }
 
 .comment .content {
-    font-size: 17px;
-    color: rgb(143, 143, 143);
-    padding: 5px;
-    margin-left: 82px;
-    font-family: 'Source Serif Pro';
+  font-size: 17px;
+  color: rgb(143, 143, 143);
+  padding: 5px;
+  margin-left: 82px;
+  font-family: "Source Serif Pro";
 }
 
 .comment img {
-    width: 11%;
-    padding-bottom: 95px;
+  width: 11%;
+  padding-bottom: 95px;
 }
 
 .border {
-    border-bottom: 1px rgb(212, 208, 208) dashed;
-    padding: 13px;
-    margin-left: 45px;
-    margin-right: 45px;
+  border-bottom: 1px rgb(212, 208, 208) dashed;
+  padding: 13px;
+  margin-left: 45px;
+  margin-right: 45px;
 }
 
 .relatedposts {
-    width: 58.5%;
-    margin: 20px 40px;
-    background-color: white;
+  width: 58.5%;
+  margin: 20px 40px;
+  background-color: white;
 }
 
 .pictures {
-    text-align: center;
-    margin: 10px;
-    padding: 0;
+  text-align: center;
+  margin: 10px;
+  padding: 0;
 }
 
 .pictures li {
-    width: 40%;
-    margin: 20px 5%;
-    display: inline-block;
+  width: 40%;
+  margin: 20px 5%;
+  display: inline-block;
 }
 
 .pictures li img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .relatedposts h2 {
-    text-align: center;
-    text-decoration: underline 3px;
+  text-align: center;
+  text-decoration: underline 3px;
 }
 
 .relatedposts ul p {
-    font-family: 'Source Serif Pro';
-    color: #2c2c2c;
-    font-size: 1.1em;
+  font-family: "Source Serif Pro";
+  color: #2c2c2c;
+  font-size: 1.1em;
 }
 
 .leave {
-    margin: 20px;
+  margin: 20px;
 }
 
 .textarea {
-    float: right;
-    width: 45%;
-    height: 155px;
-    margin-right: 10px;
-    margin-bottom: 0px;
-    margin-left: 10px;
-    border: 1px lightgray solid;
-    font-family: 'Source Serif Pro';
-    font-size: 0.95em;
+  float: right;
+  width: 45%;
+  height: 155px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  border: 1px lightgray solid;
+  font-family: "Source Serif Pro";
+  font-size: 0.95em;
 }
 
 .username {
-    float: left;
-    width: 45%;
-    height: 33px;
-    margin-left: 10px;
-    border: 1px lightgray solid;
-    font-family: 'Source Serif Pro';
-    font-size: 0.95em;
+  float: left;
+  width: 45%;
+  height: 33px;
+  margin-left: 10px;
+  border: 1px lightgray solid;
+  font-family: "Source Serif Pro";
+  font-size: 0.95em;
 }
 
 .email {
-    float: left;
-    width: 45%;
-    height: 33px;
-    margin: 10px;
-    border: 1px lightgray solid;
-    font-family: 'Source Serif Pro';
-    font-size: 0.95em;
+  float: left;
+  width: 45%;
+  height: 33px;
+  margin: 10px;
+  border: 1px lightgray solid;
+  font-family: "Source Serif Pro";
+  font-size: 0.95em;
 }
 
 .button {
-    background-color: hsl(16, 94%, 70%);
-    color: white;
-    width: 46%;
-    height: 48px;
-    border-color: white;
-    font-family: calibri;
-    font-size: 15px;
-    border-radius: 7px;
-    margin: 10px;
-    font-weight: 550;
+  background-color: hsl(16, 94%, 70%);
+  color: white;
+  width: 46%;
+  height: 48px;
+  border-color: white;
+  font-family: calibri;
+  font-size: 15px;
+  border-radius: 7px;
+  margin: 10px;
+  font-weight: 550;
 }
 
 @media screen and (max-width: 900px) {
-    .pictures li {
-        width: 46.5%;
-    }
-
-
+  .pictures li {
+    width: 46.5%;
+  }
 }
-@media screen and (max-width:797px){ 
-    .button{
-        width: 45%;
-    }
+@media screen and (max-width: 797px) {
+  .button {
+    width: 45%;
+  }
 }
 @media screen and (max-width: 768px) {
-    .textarea {
-        width: 45%;
-    }
+  .textarea {
+    width: 45%;
+  }
 
-    .username {
-        width: 45%;
-    }
+  .username {
+    width: 45%;
+  }
 
-    .email {
-        width: 45%
-    }
+  .email {
+    width: 45%;
+  }
 
-    .button {
-        width: 45.5%
-    }
-    .description{ 
-        width:100%;
-        margin:0 0 20px 0;
-    }
-    .comment{ 
-        width:100%;
-        margin:0 0 20px 0;
-    }
-    .relatedposts{
-        width: 100%;
-        margin:0 0 20px 0;
-    }
-    .pictures li{
-        width: 40%;
-    }
-    .quotations_text_p{
-        font-size:1.4em;
-    }
+  .button {
+    width: 45.5%;
+  }
+  .description {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+  .comment {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+  .relatedposts {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+  .pictures li {
+    width: 40%;
+  }
+  .quotations_text_p {
+    font-size: 1.4em;
+  }
 }
 
 @media screen and (max-width: 566px) {
-    .textarea {
-        width: 42%;
-    }
+  .textarea {
+    width: 42%;
+  }
 
-    .username {
-        width: 33%;
-    }
+  .username {
+    width: 33%;
+  }
 
-    .email {
-        width: 33%
-    }
+  .email {
+    width: 33%;
+  }
 
-    .button {
-        width: 90%
-    }
+  .button {
+    width: 90%;
+  }
 }
 
-@media screen and (max-width:575px) {
-    .textarea {
-        width: 45%;
-    }
+@media screen and (max-width: 575px) {
+  .textarea {
+    width: 45%;
+  }
 
-    .username {
-        width: 44%;
-        height:40px;
-    }
+  .username {
+    width: 44%;
+    height: 40px;
+  }
 
-    .email {
-        width: 44%;
-        height:40px;
-        margin-bottom:5px;
-    }
+  .email {
+    width: 44%;
+    height: 40px;
+    margin-bottom: 5px;
+  }
 
-    .button {
-        width: 45%
-    }
-    .pictures li{
-        width: 46.5%;
-    }
+  .button {
+    width: 45%;
+  }
+  .pictures li {
+    width: 46.5%;
+  }
 }
-@media screen and (max-width:473px) { 
-    .textarea {
-        width: 45%;
-    }
+@media screen and (max-width: 473px) {
+  .textarea {
+    width: 45%;
+  }
 
-    .username {
-        width: 42%;
-        height: 50px;
-        margin-bottom: 20px;
-    }
+  .username {
+    width: 42%;
+    height: 50px;
+    margin-bottom: 20px;
+  }
 
-    .email {
-        width: 42%;
-        height: 50px;
-    }
+  .email {
+    width: 42%;
+    height: 50px;
+  }
 
-    .button {
-        width: 95%
-    }
-} 
-@media screen and (max-width:356px) {
-    .textarea {
-        width: 43%;
-    }
+  .button {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 356px) {
+  .textarea {
+    width: 43%;
+  }
 
-    .username {
-        width: 41%;
-    }
+  .username {
+    width: 41%;
+  }
 
-    .email {
-        width: 41%
-    }
+  .email {
+    width: 41%;
+  }
 
-    .button {
-        width: 95%
-    }
+  .button {
+    width: 95%;
+  }
 }
 
 @media screen and (max-width: 307px) {
-    .textarea {
-        width: 33%;
-    }
+  .textarea {
+    width: 33%;
+  }
 
-    .username {
-        width: 24%;
-    }
+  .username {
+    width: 24%;
+  }
 
-    .email {
-        width: 23%
-    }
+  .email {
+    width: 23%;
+  }
 
-    .button {
-        width: 90%
-    }
+  .button {
+    width: 90%;
+  }
 }
 
 .mainpost {
-    width: 100%; /*zmiana*/
-    flex: auto;
-    background-color: white;
-    margin-top: 25px;
-    font-family: 'Oswald';
-    margin: 20px 20px;
-
+  width: 100%; /*zmiana*/
+  flex: auto;
+  background-color: white;
+  margin-top: 25px;
+  font-family: "Oswald";
+  margin: 20px 20px;
 }
 
 .image {
-    position: relative;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-    width:96%;
-    margin:10px 0px 0px 10px; /*zmiana*/
-
+  position: relative;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  width: 96%;
+  margin: 10px 0px 0px 10px; /*zmiana*/
 }
 
 .image:hover {
-    transform: scale(1);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1);
-    z-index: 0;
-    transition: all 100ms linear;
+  transform: scale(1);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1);
+  z-index: 0;
+  transition: all 100ms linear;
 }
-
 
 .text {
-
-    color: grey;
-    margin: 30px;
-
+  color: grey;
+  margin: 30px;
 }
 
-
-
-
-
 .text1 {
-    font-weight: 1500;
-    margin: 30px;
+  font-weight: 1500;
+  margin: 30px;
 }
 
 .text2 {
-
-    color: grey;
-    margin: 30px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-
+  color: grey;
+  margin: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .text3 {
-
-    margin: 30px;
-    font-family: 'Source Serif Pro';
-
+  margin: 30px;
+  font-family: "Source Serif Pro";
 }
 
 .footer1 {
-    margin-top: 30px;
-    border-top: 2px dotted gray;
-
+  margin-top: 30px;
+  border-top: 2px dotted gray;
 }
 
 .block {
-    background-color: #F5F5F5;
-    width: 90%;
-    margin: 20px;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-    font-family: 'Source Serif Pro';
+  background-color: #f5f5f5;
+  width: 90%;
+  margin: 20px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-family: "Source Serif Pro";
 }
 
 .block:hover {
-    transform: scale(1);
-    -webkit-transform: scale(1.03);
-    -moz-transform: scale(1);
-    z-index: 0;
-    transition: all 100ms linear;
+  transform: scale(1);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1);
+  z-index: 0;
+  transition: all 100ms linear;
 }
 
 .block-text {
-    text-align: center;
-    margin: 15px;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: larger;
-    /*font-style: italic;  jak poprawi sie ten myslnik to pochylimy*/
-
+  text-align: center;
+  margin: 15px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  /*font-style: italic;  jak poprawi sie ten myslnik to pochylimy*/
 }
 
 .text4 {
-    margin: 30px;
-    font-family: 'Source Serif Pro';
+  margin: 30px;
+  font-family: "Source Serif Pro";
 }
 
 .text5 {
-    margin: 30px;
+  margin: 30px;
 }
 
 .text6 {
-    margin: 30px;
-    font-family: 'Source Serif Pro';
+  margin: 30px;
+  font-family: "Source Serif Pro";
 }
 
 .text7 {
-    margin: 30px;
+  margin: 30px;
 }
 
 .text8 {
-    margin: 30px;
-    font-family: 'Source Serif Pro';
+  margin: 30px;
+  font-family: "Source Serif Pro";
 }
 
 .minus {
-   
-    color: #fc7c57;
-    border: 2px solid;
-    height: 1px;
-    width: 20px;
-    background-color: #fc7c57;
-    margin-bottom: 23px;
+  color: #fc7c57;
+  border: 2px solid;
+  height: 1px;
+  width: 20px;
+  background-color: #fc7c57;
+  margin-bottom: 23px;
 }
 
 .icons {
-    display: flex;
-    align-items: center;
-    font-size: 30px;
-    margin: 50px;
-    text-align: center;
-    justify-content: center;
-    color: black;
-
-
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  margin: 50px;
+  text-align: center;
+  justify-content: center;
+  color: black;
 }
-    
 
 .icon {
-    border-radius: 50%;
-    background-color: #F5F5F5;
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    position: relative;
-    margin-left: 15px;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    text-decoration: none;
-    color: black;
-    margin-bottom:20px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  position: relative;
+  margin-left: 15px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 20px;
 }
 
 .icon:before {
-    top: 50%;
-    position: absolute;
-    margin-left: 0 !important;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  top: 50%;
+  position: absolute;
+  margin-left: 0 !important;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .icon:hover {
-    background-color: #fc7c57;
-    color: white;
-    transition: all 200ms linear;
-    transform: scale(1);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1);
-    z-index: 0;
+  background-color: #fc7c57;
+  color: white;
+  transition: all 200ms linear;
+  transform: scale(1);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1);
+  z-index: 0;
 }
 
 .icon:active {
-    transform: scale(1);
-    -webkit-transform: scale(0.1);
-    -moz-transform: scale(1);
-    z-index: 0;
-
+  transform: scale(1);
+  -webkit-transform: scale(0.1);
+  -moz-transform: scale(1);
+  z-index: 0;
 }

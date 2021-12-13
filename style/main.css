@@ -1,7 +1,7 @@
 .main {
   margin: 30px;
   display: grid;
-  grid-template-columns: 800px 300px;
+  grid-template-columns: 700px 340px;
   column-gap: 30px;
   justify-content: center;
 }
@@ -13,8 +13,10 @@
   margin: 30px;
 }
 
-.main .secondcolumn {
+.secondcolumn,
+.main-post__container {
   display: flex;
+  row-gap: 25px;
   flex-direction: column;
 }
 
@@ -22,7 +24,7 @@
   .main {
     margin: 20px;
     column-gap: 20px;
-    grid-template-columns: 700px 250px;
+    grid-template-columns: 700px 270px;
   }
 }
 
@@ -30,7 +32,7 @@
   .main {
     margin: 20px;
     column-gap: 20px;
-    grid-template-columns: 600px 200px;
+    grid-template-columns: 600px 220px;
   }
 }
 

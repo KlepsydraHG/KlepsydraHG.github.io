@@ -153,29 +153,23 @@
                 </div>
 
                 <div class="subscribe">
-                    <div class="subscribe_header">SUBSCRIBE</div>
-                    <div class="subscribe_main">Subscribe to Our newsletter for free Update every week</div>
-                    <div class="subscribe_mail_and_submit">
-                        <input type="email" id="email" name="email" placeholder="Your email">
-
-                        <button class="subscribe_submit" type="submit">SUBSCRIBE</button>
+                    <div class="subscribe__header">SUBSCRIBE</div>
+                    <div class="subscribe__main">
+                        Subscribe to Our newsletter for free Update every week
+                        <input class="subscribe__input" type="email" name="email" placeholder="Your email">
+                        <button class="subscribe__button" type="submit">SUBSCRIBE</button>
                     </div>
                 </div>
 
                 <div class="popularposts">
-                    <div class="popularposts_header">POPULAR POSTS</div>
-                    <div class="popularposts_content">
+                    <div class="popularposts__header">POPULAR POSTS</div>
+                    <div class="popularposts__content">
                     </div>
                 </div>
 
-                <div class="category">
-                    <div class="category_header">CATEGORY</div>
-                    <div class="category_content">
-                        <ul class="ul">
-                        </ul>
-                        <div>
-                        </div>
-                    </div>
+                <div class="categories">
+                    <div class="categories__header">CATEGORY</div>
+                    <ul class="categories__content"></ul>
             </div>
             <div class="slideads">
                 <div class="slideads__header">SLIDE ADS</div>
@@ -265,7 +259,7 @@
 </template>
 <template id="searched-post">
     <div class="searched-post">
-        <a class="popularposts__link searched-post__title"></a>
+        <a class="searched-post__link searched-post__title"></a>
         <div class="searched-post__author">
             <img class="searched-post__author-avatar" src="" alt="post's author">
             <span class="searched-post__author-name"></span>
@@ -273,21 +267,20 @@
     </div>
 </template>
 <template id="popular-post">
-    <div class="popularposts_img">
-        <a class="popularposts__link"><img class="popularposts_png" src=""></a>
-        <div>
+    <div class="popularpost">
+        <a class="popularpost__link"><img class="popularpost__img" src=""></a>
+        <div class="popularpost__content">
             <!--Ten div klasy nie potrzebuje, bo nie trzeba go edytować w css-->
-            <a class="popularposts__link popularposts_text">
+            <a class="popularpost__link">
+                <h3 class="popularpost__title">
 
+                </h3>
             </a>
-            <div class="popularposts_text_footer">
-                <div class="popularposts_posted">Posted on</div>
-                <div class="popularposts_date">August 17, 2017</div>
-            </div>
+            <p class="popularpost__paragraph"><span class="orange">Posted on </span><span class="popularpost__date"></span></p>
         </div>
 </template>
 <template id="category">
-    <li class="li"><a class="link" href="google.com">Beard</a></li>
+    <li class="category"><a class="category__link orange" href="google.com">Beard</a></li>
 </template>
 <script src="js/shared.js"></script>
 <script src="js/script.js"></script>
