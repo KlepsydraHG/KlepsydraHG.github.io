@@ -3,15 +3,17 @@ let token;
 const retrieve = (endpoint, authorization) => {
   if (!token) {
   }
-  const headers = authorization
+  const options = authorization
     ? {
-        Authorization: `Bearer ${token}`,
-        "Content-Type": "text/html; charset=iso-8859-1",
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
       }
-    : {};
-  return fetch(endpoint, {
-    headers,
-  })
+    : {
+        method: "POST",
+      };
+  return fetch(endpoint, options)
     .then((res) => {
       return res.json();
     })
