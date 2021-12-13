@@ -9,14 +9,23 @@
     width: 100%;
 }
 
-.textOnBackground .text {
-    position: absolute;
-    font-size: 6vw;
-    font-weight: 600;
-    color: white;
-    border-bottom: 4px solid #fc7c57;
-}
-
 .textOnBackground img {
     text-shadow: 2px 2px 5px black;
 }
+
+.textOnBackground .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    border-bottom: 4px solid #fc7c57;
+  }
+
+  @media screen and (max-width: 768px) {
+    .textOnBackground .text {
+        font-size: 20px;
+    }
+  }

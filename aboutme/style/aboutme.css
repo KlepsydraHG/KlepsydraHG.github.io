@@ -27,13 +27,26 @@
     text-decoration: underline black;
 }
 
-.aboutme__main h2, p {
+.aboutme__main h2 {
     padding: 25px;
+    font-weight: bold;
+}
+
+.aboutme p {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    padding: 10px 20px 40px;
 }
 
 .aboutme__footer {
-    border-top: solid .5px grey;
+    border-top: dotted .5px grey;
     width: 100%;
     margin: auto;
     padding: .5rem;
+    display: inline-block;
+    padding: 20px;
+}
+.aboutme__footer a {
+    margin: auto;
 }

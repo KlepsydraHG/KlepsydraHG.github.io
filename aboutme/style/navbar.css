@@ -128,7 +128,7 @@
 .site-logo img {
     position: relative;
     left: 50%;
-    top: 30%;
+    top: 20%;
     transform: translateX(-50%);
     padding: 15px;
 }
@@ -136,7 +136,7 @@
 .site-logo {
     margin: auto;
     background-color: white;
-    height: 300px;
+    height: 30vh;
 }
 
 .searched {
