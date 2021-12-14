@@ -84,14 +84,22 @@ span.behance {
     text-align: center;
     justify-content: center;
     color: black;
+    column-gap: 15px;
 }
-
+@media screen and (max-width: 1830px) {
+    .photos__element {
+   object-fit: cover;
+   width: 14%;
+   height: 280px;
+    }
+}
 @media screen and (max-width: 1440px) {
     .carousel-cell {
         display: inline-block;
         margin: 18px 20px;
         width: 20%;
         height: 300px;
+        object-fit: cover;
     }
     .main-carousel {
         z-index: 1;
