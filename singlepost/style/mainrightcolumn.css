@@ -16,11 +16,12 @@
   background: #fc7c57;
 }
 
-.slideads__img{
+.slideads__img,
+.aboutme__img {
   /* max-width: 300px; */
   width: 100%;
 }
-.aboutme_png{
+.aboutme_png {
   width: 100%;
 }
 

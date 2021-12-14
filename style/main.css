@@ -6,13 +6,6 @@
   justify-content: center;
 }
 
-.posts-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 30px;
-}
-
 .secondcolumn,
 .main-post__container {
   display: flex;

@@ -1,6 +1,6 @@
 const id = window.location.hash.substring(1);
 console.log(id);
-const firstColumn = document.querySelector(".firstcolumn");
+const postContainer = document.querySelector(".main-post__container");
 const mainPostTemplate = document.querySelector("#main-post");
 const description = document.querySelector(".description");
 const authorTemplate = document.querySelector("#author");
@@ -68,7 +68,7 @@ const createMainPostAndAuthor = () =>
   retrieve(`https://trol-api.herokuapp.com/api/posts/${id}`, true).then(
     (res) => {
       const filledPost = fillPost(res.json);
-      firstColumn.appendChild(filledPost);
+      postContainer.appendChild(filledPost);
       const filledAuthor = fillAuthor(res.json);
       description.appendChild(filledAuthor);
     }
