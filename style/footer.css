@@ -41,7 +41,7 @@
     font-family: "Oswald", sans-serif;
     font-weight: bold;
     padding-bottom: 25px;
-    margin-top: 5px;
+    margin-top: 20px;
 }
 
 span.behance {
@@ -79,8 +79,8 @@ span.behance {
     display: flex;
     align-items: center;
     font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-top: 13px;
+    margin-bottom: 25px;
     text-align: center;
     justify-content: center;
     color: black;
@@ -99,7 +99,7 @@ span.behance {
         margin: 18px 20px;
         width: 20%;
         height: 300px;
-        object-fit: cover;
+         object-fit: cover;
     }
     .main-carousel {
         z-index: 1;
