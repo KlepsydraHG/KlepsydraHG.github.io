@@ -3,7 +3,7 @@
     color: white;
     text-decoration: none;
     font-size: 14px;
-    font-family: "Oswald";
+    font-family: "Source Serif Pro";
 }
 
 .navbar__list,
@@ -44,25 +44,14 @@
     padding: 5px 5px 5px 30px;
 }
 
-.toggle-button {
-    position: absolute;
-    top: 0.6rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 15px;
-}
-
 .toggle-button .bar {
-    height: 3px;
+    height: 5px;
     width: 100%;
     background-color: white;
     border-radius: 10px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 851px) {
     .navbar__links {
         background-color: black;
         width: 100%;
@@ -80,14 +69,13 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .navbar__mobile {
         background-color: black;
         color: white;
-        height: 35px;
-    }
-    .toggle-button {
+        height: 10vh;
         display: flex;
+        padding: 5px 20px;
     }
     .item {
         padding: 0 0;
@@ -107,6 +95,7 @@
     }
     .navbar__links li {
         text-align: center;
+        margin: 5px;
     }
     .navbar__links li a {
         font-size: 15px;
@@ -117,18 +106,29 @@
     .site-logo {
         display: none;
     }
-    .site-logo-container {
-        display: flex;
+    .navbar__mobile img {
+        width: 100%;
         justify-content: center;
-        height: 30px;
-        padding: 3px;
+    }
+    .navbar__mobile a {
+        display: flex;
+        justify-content: end;
+        top: 0.6rem;
+        right: 1rem;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50px;
+        height: 5vh;
+    }
+    .navbar__mobile div {
+        align-self: center;
     }
 }
 
 .site-logo img {
     position: relative;
     left: 50%;
-    top: 30%;
+    top: 20%;
     transform: translateX(-50%);
     padding: 15px;
 }
@@ -136,7 +136,7 @@
 .site-logo {
     margin: auto;
     background-color: white;
-    height: 300px;
+    height: 30vh;
 }
 
 .searched {
