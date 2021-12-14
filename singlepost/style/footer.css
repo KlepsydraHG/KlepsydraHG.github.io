@@ -13,6 +13,11 @@
 .photos__element {
     display: inline-block;
     margin: 18px 20px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .photos__element:hover {
