@@ -127,11 +127,11 @@ body {
   margin-right: 45px;
 }
 
-.relatedposts {
+/*.relatedposts {
   width: 58.5%;
   margin: 20px 40px;
   background-color: white;
-}
+}*/
 
 .pictures {
   text-align: center;
@@ -149,16 +149,16 @@ body {
   max-width: 100%;
 }
 
-.relatedposts h2 {
+/*.relatedposts h2 {
   text-align: center;
   text-decoration: underline 3px;
-}
+}*/
 
-.relatedposts ul p {
+/*.relatedposts ul p {
   font-family: "Source Serif Pro";
   color: #2c2c2c;
   font-size: 1.1em;
-}
+}*/
 
 .leave {
   margin: 20px;
@@ -219,7 +219,7 @@ body {
     width: 45%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   .textarea {
     width: 45%;
   }
@@ -296,20 +296,27 @@ body {
     width: 46.5%;
   }
 }
+@media screen and (max-width:535px){
+  .button{
+    width: 95%;
+  }
+}
 @media screen and (max-width: 473px) {
   .textarea {
-    width: 45%;
+    width: 44%;
   }
 
   .username {
-    width: 42%;
+    width: 42.4%;
     height: 50px;
     margin-bottom: 20px;
+    margin-left:0;
   }
 
   .email {
-    width: 42%;
+    width: 42.4%;
     height: 50px;
+    margin-left:0
   }
 
   .button {
@@ -322,33 +329,15 @@ body {
   }
 
   .username {
-    width: 41%;
+    width: 42%;
   }
 
   .email {
-    width: 41%;
+    width: 42%;
   }
 
   .button {
     width: 95%;
-  }
-}
-
-@media screen and (max-width: 307px) {
-  .textarea {
-    width: 33%;
-  }
-
-  .username {
-    width: 24%;
-  }
-
-  .email {
-    width: 23%;
-  }
-
-  .button {
-    width: 90%;
   }
 }
 
