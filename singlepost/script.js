@@ -2,7 +2,7 @@ const id = window.location.hash.substring(1);
 console.log(id);
 const postContainer = document.querySelector(".main-post__container");
 const mainPostTemplate = document.querySelector("#main-post");
-const description = document.querySelector(".description");
+const description = document.querySelector(".description__content");
 const authorTemplate = document.querySelector("#author");
 
 const fillPost = (data) => {
@@ -13,7 +13,7 @@ const fillPost = (data) => {
   const date = clone.querySelector(".main-post__date");
   const authorsName = clone.querySelector(".main-post__author-name");
   const authorsAvatar = clone.querySelector(".main-post__author-avatar");
-  const content = clone.querySelector(".main-post__content");
+  const content = clone.querySelector(".main-post__text");
   category.textContent = data.CategoryTitle;
   img.src = "https://trol-api.herokuapp.com/api/imgs/" + data.Background;
   title.textContent = data.Title;
