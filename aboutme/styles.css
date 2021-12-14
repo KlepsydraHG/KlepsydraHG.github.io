@@ -1,13 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 body {
     background-color: #d9d9d9;
     font-family: 'Oswald';
-
 }
 
 .icons {
@@ -18,8 +16,6 @@ body {
     text-align: center;
     justify-content: center;
     color: black;
-
-
 }
 
 .icon {
@@ -63,7 +59,6 @@ body {
     -webkit-transform: scale(0.1);
     -moz-transform: scale(1);
     z-index: 0;
-
 }
 
 .aboutme__header {
