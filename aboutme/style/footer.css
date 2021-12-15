@@ -65,8 +65,8 @@ span.behance {
     width: 100%;
     text-align: center;
 }
-.icon {
-   
+.icons_footer .icon {
+   margin: 0px;
     width: 40px;
     height: 40px;
  
@@ -89,7 +89,6 @@ span.behance {
 
 .icons_footer {
     display: flex;
-    align-items: center;
     font-size: 20px;
     margin-top: 13px;
     margin-bottom: 25px;
