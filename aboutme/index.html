@@ -1,36 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link rel="stylesheet" type="text/css" href="../icons/css/fontello.css" />
-    <link rel="stylesheet" type="text/css" href="style/footer.css" />
-    <link rel="stylesheet" type="text/css" href="style/slider.css" />
-    <link rel="stylesheet" type="text/css" href="style/navbar.css" />
-    <link rel="stylesheet" type="text/css" href="style/textOnBackground.css" />
-    <link rel="stylesheet" type="text/css" href="style/aboutme.css" />
-    <link rel="stylesheet" type="text/css" href="style/fit.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
-    />
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js"
-      integrity="sha256-2JRzNxMJiS0aHOJjG+liqsEOuBb6++9cY4dSOyiijX4="
-      crossorigin="anonymous"
-    ></script>
-    <script src="../js/hamburger.js" defer></script>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap");
-    </style>
-    <title>About Me</title>
-  </head>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" type="text/css" href="../icons/css/fontello.css" />
+  <link rel="stylesheet" type="text/css" href="style/footer.css" />
+  <link rel="stylesheet" type="text/css" href="style/slider.css" />
+  <link rel="stylesheet" type="text/css" href="style/navbar.css" />
+  <link rel="stylesheet" type="text/css" href="style/textOnBackground.css" />
+  <link rel="stylesheet" type="text/css" href="style/aboutme.css" />
+  <link rel="stylesheet" type="text/css" href="style/fit.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js"
+    integrity="sha256-2JRzNxMJiS0aHOJjG+liqsEOuBb6++9cY4dSOyiijX4=" crossorigin="anonymous"></script>
+  <script src="../js/hamburger.js" defer></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap");
+  </style>
+  <title>About Me</title>
+
+  <script>
+    var sentences = new Array(
+      "About Me",
+      "Oszustwo nie poplaca, panie Ciborski",
+      "About Me",
+      "Oszustwo nie poplaca, panie Michalak",
+      "About Me",
+      "Oszustwo nie poplaca, panie Wypychowski",
+      "About Me",
+      "Oszustwo nie poplaca, panie Kowal",
+      "About Me",
+      "Oszustwo nie poplaca, panie Mikołajczak",
+      "About Me",
+      "Oszustwo nie poplaca, panie Lukas",
+      "About Me",
+      "Oszustwo nie poplaca, panie Ratajczak"
+    );
+  </script>
+</head>
 
 
 <body>
@@ -94,7 +105,11 @@
     </div>
     <div class="textOnBackground">
       <img class="background" src="img/background.png" alt="background" style="height:240px;" />
-      <div class="text">About Me</div>
+      <div class="text">
+        <script>
+          document.write(sentences[Math.floor(Math.random() * sentences.length)]);
+        </script>
+      </div>
     </div>
   </header>
 
@@ -153,7 +168,7 @@
         <img class="photos__element" src="img/img4.png" alt="men2">
         <img class="photos__element" src="img/img5.png" alt="guys">
         <img class="photos__element" src="img/img6.png" alt="men_in_hat">
-    </div>
+      </div>
 
 
     </div>
@@ -180,18 +195,18 @@
     </div>
 
   </div>
- 
+
   <template id="searched-post">
     <a class="searched-post__link">
-        <div class="searched-post">
-            <h1 class="searched-post__title"></h1>
-            <div class="searched-post__author">
-                <img class="searched-post__author-avatar" src="" alt="post's author">
-                <span class="searched-post__author-name"></span>
-            </div>
+      <div class="searched-post">
+        <h1 class="searched-post__title"></h1>
+        <div class="searched-post__author">
+          <img class="searched-post__author-avatar" src="" alt="post's author">
+          <span class="searched-post__author-name"></span>
         </div>
+      </div>
     </a>
-</template>
+  </template>
   <script src="../js/shared.js"></script>
   <script src="script.js"></script>
 </body>
