@@ -1,4 +1,5 @@
 let token;
+const hasAboutMeInLink = location.href.includes("aboutme");
 const hasSinglePostInLink = location.href.includes("singlepost");
 const limitPerPage = 5;
 
@@ -128,11 +129,17 @@ let pageSearched = 1;
 const fillSearchedPost = (post) => {
   const clone = searchedPostTemplate.content.cloneNode(true);
   const title = clone.querySelector(".searched-post__title");
+  const link = clone.querySelector(".searched-post__link");
   const authorsAvatar = clone.querySelector(".searched-post__author-avatar");
   const authorsName = clone.querySelector(".searched-post__author-name");
   title.textContent = post.Title;
   authorsAvatar.src = "https://trol-api.herokuapp.com/api/imgs/" + post.Avatar;
   authorsName.textContent = post.AuthorName;
+  link.href = hasSinglePostInLink
+  ? "index.html#" + post.ID
+  : hasAboutMeInLink
+  ? "../singlepost/index.html#" + post.ID
+  : "singlepost/index.html#" + post.ID;
   return clone;
 };
 
