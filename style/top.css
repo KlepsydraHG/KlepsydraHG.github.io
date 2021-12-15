@@ -66,10 +66,6 @@
     display: none;
   }
 
-  .navbar__link:active {
-    background-color: green;
-  }
-
   .navbar__item:hover {
     background-color: gray;
   }
