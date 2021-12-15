@@ -49,7 +49,7 @@ const fillRelatedPost = (data) => {
 };
 
 const relatedPostTemplate = document.querySelector("#related-post");
-const relatedPostsContainer = document.querySelector(".pictures");
+const relatedPostsContainer = document.querySelector(".related-post__container");
 
 const createRelatedPosts = () => {
   retrieve(`https://trol-api.herokuapp.com/api/posts/${id}/related`, true).then(
