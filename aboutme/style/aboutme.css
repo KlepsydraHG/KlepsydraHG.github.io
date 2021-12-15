@@ -8,6 +8,27 @@
     margin-bottom: 30px;
 }
 
+.aboutme__header {
+    background-image: url("../img/backgroundblur.png");
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme__author {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fc7c57;
+}
+
 .aboutme__main {
     text-align: center;
     width: 100%;
