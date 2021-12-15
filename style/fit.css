@@ -11,8 +11,6 @@
     background-color: white;
     position: relative;
     display: inline-block;
-
-
 }
 
 .imgs .imgs_tile:hover {
@@ -76,7 +74,7 @@
 
 /*rwd basic*/
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1509px) {
     .imgs .imgs_tile {
         height: 470px;
     }
@@ -90,9 +88,9 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1330px) {
     .imgs .imgs_tile {
-        height: 440px;
+        height: 460px;
     }
 
     .imgs_border {
@@ -115,7 +113,7 @@
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 525px) {
     .imgs .imgs_tile {
         width: 50%;
         height: 360px;
