@@ -97,6 +97,7 @@ span.behance {
     justify-content: center;
     color: black;
     column-gap: 15px;
+    height: 40px;
 }
 
 @media screen and (max-width: 1830px) {
