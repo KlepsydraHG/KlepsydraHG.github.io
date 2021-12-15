@@ -11,7 +11,7 @@
     background-color: white;
     position: relative;
     display: inline-block;
-    
+
 
 }
 
@@ -32,7 +32,7 @@
     text-align: center;
     justify-content: center;
     font-size: 23px;
-    border-left: 1px rgba(226, 218, 218, 0.767) solid; 
+    border-left: 1px rgba(226, 218, 218, 0.767) solid;
 }
 
 .imgs_bottext {
@@ -43,7 +43,7 @@
     font-family: "Source Serif Pro";
     font-size: 60%;
     font-style: italic;
-    
+
 }
 
 .imgs_tile:hover>.imgs_border>.imgs_header {
@@ -53,10 +53,10 @@
 .imgs_img {
     height: 450px;
     object-fit: cover;
-    clip-path: polygon( 50% 95%, 55% 100%, 100% 100%, 100% 0, 0 0, 0 100%, 45% 100%);
+    clip-path: polygon(50% 95%, 55% 100%, 100% 100%, 100% 0, 0 0, 0 100%, 45% 100%);
     cursor: pointer;
     width: 100%;
-    
+
 }
 
 .imgs_header {
@@ -67,7 +67,7 @@
     border-bottom: 1px solid red;
     text-transform: uppercase;
     margin-bottom: 5px;
-    
+
 }
 
 
@@ -80,9 +80,11 @@
     .imgs .imgs_tile {
         height: 470px;
     }
+
     .imgs_border {
         font-size: 20px;
     }
+
     .imgs_img {
         height: 350px;
     }
@@ -92,9 +94,10 @@
     .imgs .imgs_tile {
         height: 440px;
     }
+
     .imgs_border {
         font-size: 15px;
-        height: 90px;
+        height: 108px;
     }
 }
 
@@ -102,9 +105,11 @@
     .imgs .imgs_tile {
         height: 420px;
     }
+
     .imgs_img {
         height: 300px;
     }
+
     .imgs_border {
         height: 120px;
     }
@@ -115,9 +120,11 @@
         width: 50%;
         height: 360px;
     }
+
     .imgs_img {
         height: 250px;
     }
+
     .imgs_border {
         font-size: 15px;
         height: 110px;
@@ -132,17 +139,21 @@
         position: relative;
         display: inline-block;
     }
+
     .imgs_img {
         height: 260px;
     }
+
     .imgs_border {
         font-size: 17px;
     }
+
     .imgs_bottext {
         font-size: 80%;
     }
+
     .imgs_border {
-        border-left: 0; 
+        border-left: 0;
     }
 }
 
@@ -151,12 +162,15 @@
         width: 100%;
         height: 375px;
     }
+
     .imgs_img {
         height: 260px;
     }
+
     .imgs_border {
         font-size: 17px;
     }
+
     .imgs_bottext {
         font-size: 80%;
     }

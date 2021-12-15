@@ -3,7 +3,6 @@
     color: white;
     text-decoration: none;
     font-size: 14px;
-    font-family: "Source Serif Pro";
 }
 
 .navbar__list,
@@ -58,12 +57,15 @@
         display: flex;
         justify-content: space-evenly;
     }
+
     .navbar__mobile {
         display: none;
     }
+
     .navbar__link:active {
         background-color: green;
     }
+
     .navbar__item:hover {
         background-color: gray;
     }
@@ -77,39 +79,49 @@
         display: flex;
         padding: 5px 20px;
     }
+
     .item {
         padding: 0 0;
     }
+
     .navbar__links {
         display: none;
         width: 100%;
         flex-direction: column;
     }
+
     .navbar {
         align-items: flex-start;
         position: sticky;
     }
+
     .navbar__links ul {
         width: 100%;
         flex-direction: column;
     }
+
     .navbar__links li {
         text-align: center;
         margin: 5px;
     }
+
     .navbar__links li a {
         font-size: 15px;
     }
+
     .navbar__links.active {
         display: flex;
     }
+
     .site-logo {
         display: none;
     }
+
     .navbar__mobile img {
         width: 100%;
         justify-content: center;
     }
+
     .navbar__mobile a {
         display: flex;
         justify-content: end;
@@ -120,6 +132,7 @@
         width: 50px;
         height: 5vh;
     }
+
     .navbar__mobile div {
         align-self: center;
     }
