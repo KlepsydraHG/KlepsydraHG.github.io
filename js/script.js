@@ -4,11 +4,12 @@ const mainPostTemplate = document.querySelector("#main-post");
 
 const retrievePostsPage = (page) => {
   const offset = (page - 1) * limitPerPage;
-  console.log(offset);
-  return retrieve(
-    `https://trol-api.herokuapp.com/api/posts?offset=${offset}&limit=${limitPerPage}`,
-    true
-  );
+  return offset < 0
+    ? undefined
+    : retrieve(
+        `https://trol-api.herokuapp.com/api/posts?offset=${offset}&limit=${limitPerPage}`,
+        true
+      );
 };
 
 const loginContainer = document.querySelector(".login__container");

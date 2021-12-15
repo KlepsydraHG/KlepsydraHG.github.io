@@ -50,7 +50,6 @@ const retrievePopularPosts = () =>
 
 const retrievePostsByKeyword = (keyword, page = 1) => {
   const offset = (page - 1) * limitPerPage;
-  console.log(offset, keyword, page);
   return retrieve(
     `https://trol-api.herokuapp.com/api/posts?search=${keyword}&offset=${offset}&limit=${limitPerPage}`,
     true
