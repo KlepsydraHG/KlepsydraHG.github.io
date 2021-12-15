@@ -143,15 +143,14 @@
     left: 50%;
     top: 20%;
     transform: translateX(-50%);
-    padding: 15px;
+    padding: 10px;
+    margin:20px;
 }
 
 .site-logo {
     margin: auto;
     background-color: white;
-    height: 30vh;
 }
-
 .searched {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
