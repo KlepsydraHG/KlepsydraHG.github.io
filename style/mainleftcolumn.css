@@ -85,24 +85,21 @@ font-style: italic;
   color: black;
 }
 
-/*bomba spacebetween*/
-
 .spacebetween {
   text-align: center;
-  margin-top: 80px;
-  margin-bottom: 55px;
+  margin-top: 25px;
+
 }
 
 .newerpost {
   display: inline-flex;
   text-align: left;
   font-size: 15px;
-  position: relative;
+  margin-right: 540px;
 }
 
 .olderpost {
   position: relative;
-  z-index: 1;
   text-align: right;
   display: inline-flex;
   font-size: 15px;
