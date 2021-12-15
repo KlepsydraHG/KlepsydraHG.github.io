@@ -1,324 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <title>Doradca IT Blog</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="diss na leśną by nieznany żołnierz" />
-    <meta name="keywords" content="blog, diss, lesna" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="../icons/css/fontello.css" />
     <link rel="stylesheet" type="text/css" href="style/footer.css" />
-    <link rel="stylesheet" href="slider.css">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" type="text/css" href="style/slider.css" />
+    <link rel="stylesheet" type="text/css" href="style/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="style/textOnBackground.css" />
+    <link rel="stylesheet" type="text/css" href="style/aboutme.css" />
+    <link rel="stylesheet" type="text/css" href="style/fit.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style/style.css" />
-    <link rel="stylesheet" type="text/css" href="icons/css/fontello.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js"
-        integrity="sha256-2JRzNxMJiS0aHOJjG+liqsEOuBb6++9cY4dSOyiijX4=" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js"
+      integrity="sha256-2JRzNxMJiS0aHOJjG+liqsEOuBb6++9cY4dSOyiijX4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/hamburger.js" defer></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap");
     </style>
+    <title>About Me</title>
+  </head>
 
-</head>
 
 <body>
-    <link rel="stylesheet" type="text/css" href="style/top.css" />
-    <header>
-        <nav class="navbar">
-            <div class="sticky">
-                <div class="navbar__mobile">
-                    <img class="mobile-logo-image" src="img/mobile-logo.svg" alt="logo">
-                    <div>
-                        <a href="javascript:void(0);" class="toggle-button">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="navbar__links">
-                    <ul class="navbar__list">
-                        <li class="navbar__item item">
-                            <a class="navbar__link" href="javascript:void(0);">HOME PAGE</a>
-                        </li>
-                        <li class="navbar__item item">
-                            <a class="navbar__link" href="singlepost/index.html#1">SINGLE POST</a>
-                        </li>
-                        <li class="navbar__item item">
-                            <a class="navbar__link" href="javascript:void(0);">CONTACT</a>
-                        </li>
-                        <li class="navbar__item item">
-                            <a class="navbar__link" href="aboutme/index.html">ABOUT ME</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar__list-right">
-                        <li class="navbar__item-right item">
-                            <label class="navbar__search-container">
-                                <input type="search" class="navbar__search" placeholder="Search">
-                            </label>
-                            <div class="searched searched--hidden">
-                                <div class="searched-post__container"></div>
-                                <p class="searched__feedback searched__feedback--hidden"></p>
-                                <button class="searched__more searched__more--hidden">Show more</button>
-                            </div>
-                        </li>
-                        <li class="navbar__item-right item">
-                            <a
-                              class="navbar__icon"
-                              href="https://facebook.com"
-                              target="_blank"
-                              rel="noopener nofollow"
-                            >
-                              <i class="fab fa-facebook-f"></i>
-                            </a>
-                          </li>
-                          <li class="navbar__item-right item">
-                            <a
-                              class="navbar__icon"
-                              href="https://twitter.com"
-                              target="_blank"
-                              rel="noopener nofollow"
-                            >
-                              <i class="fab fa-twitter"></i>
-                            </a>
-                          </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="site-logo">
-            <a href="javascript:void(0);"><img class="logo-image" src="img/logo.svg" alt="logo" /></a>
-        </div>
-    </header>
-
-    <link rel="stylesheet" type="text/css" href="style/fit.css" />
-    <div class="imgs">
-
-        <div class="imgs_tile">
-            <div class="imgs_img">
-                <img class="imgs_img" src="img/Fit_1.png" alt="chlop pozuje do zdjecia">
-            </div>
-            <div class="imgs_border">
-                <p class="imgs_header">lorem ipsum dolor sit amet</p>
-                <div class="imgs_bottext">Lorem Ipsum</div>
-            </div>
-        </div>
-        <div class="imgs_tile">
-            <div class="imgs_img">
-                <img class="imgs_img" src="img/Fit_2.png" alt="sznurowki fajne takie" >
-            </div>
-            <div class="imgs_border">
-                <p class="imgs_header">lorem ipsum dolor sit amet</p>
-                <div class="imgs_bottext">Lorem Ipsum</div>
-            </div>
-        </div>
-        <div class="imgs_tile">
-            <div class="imgs_img">
-                <img class="imgs_img" src="img/Fit_3.png" alt="pa jaka fajna garderoba" >
-            </div>
-            <div class="imgs_border">
-                <p class="imgs_header">lorem ipsum dolor sit amet</p>
-                <div class="imgs_bottext">Lorem Ipsum</div>
-            </div>
-        </div>
-        <div class="imgs_tile">
-            <div class="imgs_img">
-                <img class="imgs_img" src="img/Fit_4.png" alt="no buty, nic dodac nic ujac" >
-            </div>
-            <div class="imgs_border">
-                <p class="imgs_header">lorem ipsum dolor sit amet</p>
-                <div class="imgs_bottext">Lorem Ipsum</div>
-            </div>
-        </div>
-
-
-
-
-    </div>
-
-    <link rel="stylesheet" type="text/css" href="style/main.css" />
-    <div class="main">
-        <link rel="stylesheet" type="text/css" href="style/mainleftcolumn.css" />
-        <div class="firstcolumn">
-            <div class="main-post__container">Loading posts...</div>
-            <div class="spacebetween">
-                <a class="anewer" href="javascript:void(0);">
-                    <p class="newerpost">← Newer Post</p>
-                </a>
-                <a class="aolder" href="javascript:void(0);">
-                    <p class="olderpost">Older Post →</p>
-                </a>
-
-            </div>
-
-
-        </div>
-
-        <link rel="stylesheet" type="text/css" href="style/mainrightcolumn.css" />
-        <div class="secondcolumn">
-
-            <div class="aboutme">
-                <div class="aboutme__header">ABOUT ME</div>
-                <img class="aboutme__img" src="img/aboutme.jpeg" alt="about"/>
-                <div class="aboutme__footer">Trener Technik Informacyjnych i Komunikacyjnych
-                    Egzaminator ECDL oraz EPP E-urzędnik
-                    Doradca w zakresie zastosowania ICT w biznesie oraz administracji
-                    Doradca w zakresie pozyskiwania funduszy UE
-                    Specjalista ds. rzeczoznawstwa samochodowego
-                    <p>Gamer-boy</p>
-                </div>
-            </div>
-
-            <div class="subscribe">
-                <div class="subscribe__header">SUBSCRIBE</div>
-                <div class="subscribe__main">
-                    Subscribe to Our newsletter for free Update every week
-                    <input class="subscribe__input" type="email" name="email" placeholder="Your email">
-                    <button class="subscribe__button" type="submit">SUBSCRIBE</button>
-                </div>
-            </div>
-
-            <div class="popularposts">
-                <div class="popularposts__header">POPULAR POSTS</div>
-                <div class="popularposts__content">
-                </div>
-            </div>
-
-            <div class="categories">
-                <div class="categories__header">CATEGORY</div>
-                <ul class="categories__content"></ul>
-            </div>
-            <div class="slideads">
-                <div class="slideads__header">SLIDE ADS</div>
-                <img src="img/ads.png" class="slideads__img" alt="ads">
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <div class="footer">
-
-        <p class="uptext">FOLLOW MY INSTAGRAM @MY INSTAGRAM</p>
-
-        <div class="photos_slider">
-            <div class="main-carousel"
-                data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true,"autoPlay": 1500 }'>
-
-                <img class="carousel-cell" src="img/img1.png" alt="skateboard">
-                <img class="carousel-cell" src="img/img2.png" alt="men">
-                <img class="carousel-cell" src="img/img3.png" alt="road">
-                <img class="carousel-cell" src="img/img4.png" alt="men2">
-                <img class="carousel-cell" src="img/img5.png" alt="guys">
-                <img class="carousel-cell" src="img/img6.png" alt="men_in_hat">
-
-            </div>
-            <div class="photos">
-                <img class="photos__element" src="img/img1.png" alt="skateboard">
-                <img class="photos__element" src="img/img2.png" alt="men">
-                <img class="photos__element" src="img/img3.png" alt="road">
-                <img class="photos__element" src="img/img4.png" alt="men2">
-                <img class="photos__element" src="img/img5.png" alt="guys">
-                <img class="photos__element" src="img/img6.png" alt="men_in_hat">
-            </div>
-
-
-        </div>
-
-
-        <div class="icons_footer">
-            <a class="icon icon-youtube" href="https://youtube.com" rel="noopener nofollow" target="_blank"
-                title="YouTube"></a>
-            <a class="icon icon-facebook" href="https://facebook.com" rel="noopener nofollow" target="_blank"
-                title="Facebook"></a>
-            <a class="icon icon-twitter" href="https://twitter.com" rel="noopener nofollow" target="_blank"
-                title="Twitter"></a>
-            <a class="icon icon-pinterest" href="https://pinterest.com" rel="noopener nofollow" target="_blank"
-                title="Pinterest"></a>
-            <a class="icon icon-whatsapp" href="https://whatsapp.com" rel="noopener nofollow" target="_blank"
-                title="Whatsapp"></a>
-        </div>
-
-
-        <div class="copyright__container">
-
-            <p class="downtext">ZERO KM COPYRIGHT © 2018&nbsp;&nbsp;&nbsp;&nbsp;- &nbsp;&nbsp;<span class="behance">
-                    HTTPS://WWW.BEHANCE.NET/DWI_MBOJOWAE</span> </p>
-        </div>
-
-    </div>
-   
-    <template id="main-post">
-        <div class="mainpost">
-            <a href="" class="mainpost__link">
-                <img class="mainpost__background" src="" alt="persone">
+  <header>
+    <nav class="navbar">
+      <div class="sticky">
+        <div class="navbar__mobile">
+          <img class="mobile-logo-image" src="img/mobile-logo.svg" alt="logo" />
+          <div>
+            <a href="javascript:void(0);" class="toggle-button">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
             </a>
-            <div class="text">
-                <span class="orange">in</span>
-                <span class="mainpost__category"></span>
-            </div>
-            <div class="text1">
-                <a class="mainpost__title mainpost__link"></a>
-            </div>
-            <div class="text2">
-                <span class="orange">Posted on&nbsp;</span>
-                <span class="mainpost__date"></span>
-                <div class="mainpost__author">
-                    <span class="orange">&nbsp;by&nbsp;</span>
-                    <img class="mainpost__author-avatar" src="">
-                    &nbsp;<span class="mainpost__author-name"></span>
-                </div>
-            </div>
-            <div class="mainpost__content"></div>
-            <div class="postfooter"></div>
-            <div class="icons">
-                <a class="icon icon-youtube" href="https://youtube.com" rel="noopener nofollow" target="_blank"
-                    title="YouTube"></a>
-                <a class="icon icon-facebook" href="https://facebook.com" rel="noopener nofollow" target="_blank"
-                    title="Facebook"></a>
-                <a class="icon icon-twitter" href="https://twitter.com" rel="noopener nofollow" target="_blank"
-                    title="Twitter"></a>
-                <a class="icon icon-pinterest" href="https://pinterest.com" rel="noopener nofollow" target="_blank"
-                    title="Pinterest"></a>
-                <a class="icon icon-whatsapp" href="https://whatsapp.com" rel="noopener nofollow" target="_blank"
-                    title="Whatsapp"></a>
-            </div>
+          </div>
         </div>
-    </template>
-    <template id="searched-post">
-        <div class="searched-post">
-            <a class="searched-post__link searched-post__title"></a>
-            <div class="searched-post__author">
-                <img class="searched-post__author-avatar" src="" alt="post's author">
-                <span class="searched-post__author-name"></span>
-            </div>
+        <div class="navbar__links">
+          <ul class="navbar__list">
+            <li class="navbar__item item">
+              <a class="navbar__link" href="../index.html">HOME PAGE</a>
+            </li>
+            <li class="navbar__item item">
+              <a class="navbar__link" href="../singlepost/index.html#1">SINGLE POST</a>
+            </li>
+            <li class="navbar__item item">
+              <a class="navbar__link" href="javascript:void(0);">CONTACT</a>
+            </li>
+            <li class="navbar__item item">
+              <a class="navbar__link" href="javascript:void(0);">ABOUT ME</a>
+            </li>
+          </ul>
+          <ul class="navbar__list-right">
+            <li class="navbar__item-right item">
+              <label class="navbar__search-container">
+                <input type="search" class="navbar__search" placeholder="Search" />
+              </label>
+              <div class="searched searched--hidden">
+                <div class="searched-post__container"></div>
+                <p class="searched__feedback searched__feedback--hidden"></p>
+                <button class="searched__more searched__more--hidden">
+                  Show more
+                </button>
+              </div>
+            </li>
+            <li class="navbar__item-right item">
+              <a class="navbar__icon" href="https://facebook.com" target="_blank" rel="noopener nofollow">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="navbar__item-right item">
+              <a class="navbar__icon" href="https://twitter.com" target="_blank" rel="noopener nofollow">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-    </template>
-    <template id="popular-post">
-        <div class="popularpost">
-            <a class="popularpost__link"><img class="popularpost__img" src=""></a>
-            <div class="popularpost__content">
-                <!--Ten div klasy nie potrzebuje, bo nie trzeba go edytować w css-->
-                <a class="popularpost__link">
-                    <h3 class="popularpost__title">
+      </div>
+    </nav>
+    <div class="site-logo">
+      <a href="../index.html"><img class="logo-image" src="img/logo.svg" alt="logo" /></a>
+    </div>
+    <div class="textOnBackground">
+      <img class="background" src="img/backgroundblur.png" alt="background" />
+      <div class="text">About Me</div>
+    </div>
+  </header>
 
-                    </h3>
-                </a>
-                <p class="popularpost__paragraph"><span class="orange">Posted on </span><span
-                        class="popularpost__date"></span></p>
-            </div>
-            </div>
-    </template>
-    <template id="category">
-        <li class="category"><a class="category__link orange" href="google.com">Beard</a></li>
-    </template>
-    <script src="js/shared.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/hamburger.js"></script>
+  <main>
+    <div class="aboutme">
+      <div class="aboutme__header">
+        <div class="aboutme__author">
+          <img class="aboutme__author" src="img/author.png" alt="author" />
+        </div>
+      </div>
+      <div class="aboutme__main">
+        <h2>SEBASTIAN SIKORA</h2>
+        <p>
+          Trener Technik Informacyjnych i Komunikacyjnych Egzaminator ECDL oraz EPP E-urzędnik Doradca w zakresie
+          zastosowania ICT w biznesie oraz administracji Doradca w zakresie pozyskiwania funduszy UE Specjalista ds.
+          rzeczoznawstwa samochodowego
+          Gamer-boy
+        </p>
+      </div>
+      <div class="aboutme__footer icons">
+        <a class="icon icon-youtube" href="https://youtube.com" rel="noopener nofollow" target="_blank"
+          title="YouTube"></a>
+        <a class="icon icon-facebook" href="https://facebook.com" rel="noopener nofollow" target="_blank"
+          title="Facebook"></a>
+        <a class="icon icon-twitter" href="https://twitter.com" rel="noopener nofollow" target="_blank"
+          title="Twitter"></a>
+        <a class="icon icon-pinterest" href="https://pinterest.com" rel="noopener nofollow" target="_blank"
+          title="Pinterest"></a>
+        <a class="icon icon-whatsapp" href="https://whatsapp.com" rel="noopener nofollow" target="_blank"
+          title="Whatsapp"></a>
+      </div>
+    </div>
+  </main>
 
+  <div class="footer">
+
+    <p class="uptext">FOLLOW MY INSTAGRAM @MY INSTAGRAM</p>
+
+    <div class="photos_slider">
+      <div class="main-carousel"
+        data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true,"autoPlay": 1500 }'>
+
+        <img class="carousel-cell" src="img/img1.png" alt="skateboard">
+        <img class="carousel-cell" src="img/img2.png" alt="men">
+        <img class="carousel-cell" src="img/img3.png" alt="road">
+        <img class="carousel-cell" src="img/img4.png" alt="men2">
+        <img class="carousel-cell" src="img/img5.png" alt="guys">
+        <img class="carousel-cell" src="img/img6.png" alt="men_in_hat">
+
+
+      </div>
+      <div class="photos">
+        <img class="photos__element" src="img/img1.png" alt="skateboard">
+        <img class="photos__element" src="img/img2.png" alt="men">
+        <img class="photos__element" src="img/img3.png" alt="road">
+        <img class="photos__element" src="img/img4.png" alt="men2">
+        <img class="photos__element" src="img/img5.png" alt="guys">
+        <img class="photos__element" src="img/img6.png" alt="men_in_hat">
+    </div>
+
+
+    </div>
+
+
+    <div class="icons_footer">
+      <a class="icon icon-youtube" href="https://youtube.com" rel="noopener nofollow" target="_blank"
+        title="YouTube"></a>
+      <a class="icon icon-facebook" href="https://facebook.com" rel="noopener nofollow" target="_blank"
+        title="Facebook"></a>
+      <a class="icon icon-twitter" href="https://twitter.com" rel="noopener nofollow" target="_blank"
+        title="Twitter"></a>
+      <a class="icon icon-pinterest" href="https://pinterest.com" rel="noopener nofollow" target="_blank"
+        title="Pinterest"></a>
+      <a class="icon icon-whatsapp" href="https://whatsapp.com" rel="noopener nofollow" target="_blank"
+        title="Whatsapp"></a>
+    </div>
+
+
+    <div class="copyright__container">
+
+      <p class="downtext">ZERO KM COPYRIGHT © 2018&nbsp;&nbsp;&nbsp;&nbsp;- &nbsp;&nbsp;<span class="behance">
+          HTTPS://WWW.BEHANCE.NET/DWI_MBOJOWAE</span> </p>
+    </div>
+
+  </div>
+ 
+  <template id="searched-post">
+    <div class="searched-post">
+      <a class="searched-post__link searched-post__title"></a>
+      <div class="searched-post__author">
+        <img
+          class="searched-post__author-avatar"
+          src=""
+          alt="post's author"
+        />
+        <span class="searched-post__author-name"></span>
+      </div>
+    </div>
+  </template>
+  <script src="../js/shared.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
