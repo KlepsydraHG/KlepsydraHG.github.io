@@ -95,6 +95,7 @@
   }
 
   .navbar {
+    z-index: 2;
     align-items: flex-start;
     position: sticky;
   }
@@ -238,4 +239,12 @@
   object-fit: cover;
   border: #fc7c57 solid 1px;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 850px) {
+  .searched {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
 }
