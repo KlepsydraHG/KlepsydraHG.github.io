@@ -168,31 +168,33 @@ const showSearchingFeedback = (message) => {
   feedback.textContent = message;
 };
 
-searchInput.addEventListener("search", (e) => {
-  const value = e.target.value;
-  pageSearched = 1;
-  searched.classList.remove("searched--hidden");
-  showMoreButton.classList.add("searched__more--hidden");
-  if (value !== "" && value.length > 2) {
-    showSearchingFeedback("Searching posts...");
-    retrievePostsByKeyword(value)
-      .then((page) => {
-        if (page.json.length === 0) {
-          showSearchingFeedback("No posts were found!");
-        } else {
-          feedback.classList.add("searched__feedback--hidden");
-          createSearchedPosts(page.json);
-        }
-      })
-      .then(() =>
-        retrievePostsByKeyword(value, pageSearched + 1).then((page) => {
-          if (page !== undefined && page.json.length !== 0) {
-            showMoreButton.classList.remove("searched__more--hidden");
+searchInput.addEventListener("keydown", (e) => {
+  if (!e.repeat && e.key === "Enter") {
+    const value = e.target.value;
+    pageSearched = 1;
+    searched.classList.remove("searched--hidden");
+    showMoreButton.classList.add("searched__more--hidden");
+    if (value !== "" && value.length > 2) {
+      showSearchingFeedback("Searching posts...");
+      retrievePostsByKeyword(value)
+        .then((page) => {
+          if (page.json.length === 0) {
+            showSearchingFeedback("No posts were found!");
+          } else {
+            feedback.classList.add("searched__feedback--hidden");
+            createSearchedPosts(page.json);
           }
         })
-      );
-  } else {
-    showSearchingFeedback("Input more characters!");
+        .then(() =>
+          retrievePostsByKeyword(value, pageSearched + 1).then((page) => {
+            if (page !== undefined && page.json.length !== 0) {
+              showMoreButton.classList.remove("searched__more--hidden");
+            }
+          })
+        );
+    } else {
+      showSearchingFeedback("Input more characters!");
+    }
   }
 });
 
