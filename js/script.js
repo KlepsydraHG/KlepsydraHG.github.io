@@ -1,26 +1,12 @@
 const firstColumn = document.querySelector(".firstcolumn");
 const mainPostsContainer = document.querySelector(".main-post__container");
 const mainPostTemplate = document.querySelector("#main-post");
-const limitPerPage = 5;
-
-const removeChildren = (element) => {
-  while (element.firstChild) {
-    element.firstChild.remove();
-  }
-};
 
 const retrievePostsPage = (page) => {
   const offset = (page - 1) * limitPerPage;
+  console.log(offset);
   return retrieve(
     `https://trol-api.herokuapp.com/api/posts?offset=${offset}&limit=${limitPerPage}`,
-    true
-  );
-};
-
-const retrievePostsByKeyword = (keyword, page = 1) => {
-  const offset = (page - 1) * limitPerPage;
-  return retrieve(
-    `https://trol-api.herokuapp.com/api/posts?search=${keyword}&offset=${offset}&limit=${limitPerPage}`,
     true
   );
 };
@@ -30,97 +16,6 @@ const loginForm = document.querySelector(".login__container");
 const loginEmail = document.querySelector(".login__email");
 const loginPassword = document.querySelector(".login__password");
 const loginFeedback = document.querySelector(".login__feedback");
-
-/* to powinien byc osobny plik w sumie */
-const searched = document.querySelector(".searched");
-const searchInput = document.querySelector(".navbar__search");
-const searchedPostsContainer = document.querySelector(
-  ".searched-post__container"
-);
-const searchedPostTemplate = document.querySelector("#searched-post");
-const showMoreButton = document.querySelector(".searched__more");
-const feedback = document.querySelector(".searched__feedback");
-let pageSearched = 1;
-
-const fillSearchedPost = (post) => {
-  const clone = searchedPostTemplate.content.cloneNode(true);
-  const title = clone.querySelector(".searched-post__title");
-  const authorsAvatar = clone.querySelector(".searched-post__author-avatar");
-  const authorsName = clone.querySelector(".searched-post__author-name");
-  title.textContent = post.Title;
-  authorsAvatar.src = "https://trol-api.herokuapp.com/api/imgs/" + post.Avatar;
-  authorsName.textContent = post.AuthorName;
-  return clone;
-};
-
-const createSearchedPosts = (posts) => {
-  posts.forEach((post) => {
-    const postFilled = fillSearchedPost(post);
-    searchedPostsContainer.appendChild(postFilled);
-  });
-};
-
-showMoreButton.addEventListener("click", () => {
-  const value = searchInput.value;
-  retrievePostsByKeyword(value, ++pageSearched)
-    .then((page) => {
-      createSearchedPosts(page.json);
-    })
-    .then(() =>
-      retrievePostsByKeyword(value, pageSearched + 1).then((page) => {
-        if (page !== undefined && page.json.length !== 0) {
-          showMoreButton.classList.remove("searched-post__more--hidden");
-        } else {
-          showMoreButton.classList.add("searched-post__more--hidden");
-        }
-      })
-    );
-});
-
-//trzeba tu troche poczyszcic
-
-const showSearchingFeedback = (message) => {
-  removeChildren(searchedPostsContainer);
-  feedback.classList.remove("searched__feedback--hidden");
-  feedback.textContent = message;
-};
-
-searchInput.addEventListener("search", (e) => {
-  const value = e.target.value;
-  pageSearched = 1;
-  searched.classList.remove("searched--hidden");
-  showMoreButton.classList.add("searched__more--hidden");
-  if (value !== "" && value.length > 2) {
-    showSearchingFeedback("Searching posts...");
-    retrievePostsByKeyword(value)
-      .then((page) => {
-        if (page.json.length === 0) {
-          showSearchingFeedback("No posts were found!");
-        } else {
-          feedback.classList.add("searched__feedback--hidden");
-          createSearchedPosts(page.json);
-        }
-      })
-      .then(() =>
-        retrievePostsByKeyword(value, pageSearched + 1).then((page) => {
-          if (page !== undefined && page.json.length !== 0) {
-            showMoreButton.classList.remove("searched__more--hidden");
-          }
-        })
-      );
-  } else {
-    showSearchingFeedback("Input more characters!");
-  }
-});
-
-window.addEventListener("click", (e) => {
-  const elementsClasses = e.target.className;
-  if (!/(searched|navbar__search)/.test(elementsClasses)) {
-    removeChildren(searchedPostsContainer);
-    searched.classList.add("searched--hidden");
-    feedback.classList.add("searched__feedback--hidden");
-  }
-});
 
 /* to powinien byc osobny plik tez */
 

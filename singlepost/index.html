@@ -79,15 +79,25 @@
                             </div>
                         </li>
                         <li class="navbar__item-right item">
-                            <a href="https://facebook.com" target="_blank" rel="noopener nofollow">
-                                <i class="fab fa-facebook-f"></i>
+                            <a
+                              class="navbar__icon"
+                              href="https://facebook.com"
+                              target="_blank"
+                              rel="noopener nofollow"
+                            >
+                              <i class="fab fa-facebook-f"></i>
                             </a>
-                        </li>
-                        <li class="navbar__item-right item">
-                            <a href="https://twitter.com" target="_blank" rel="noopener nofollow">
-                                <i class="fab fa-twitter"></i>
+                          </li>
+                          <li class="navbar__item-right item">
+                            <a
+                              class="navbar__icon"
+                              href="https://twitter.com"
+                              target="_blank"
+                              rel="noopener nofollow"
+                            >
+                              <i class="fab fa-twitter"></i>
                             </a>
-                        </li>
+                          </li>
                     </ul>
                 </div>
             </div>
@@ -303,8 +313,21 @@
     <template id="category">
         <li class="category"><a class="category__link orange" href="google.com">Beard</a></li>
     </template>
-    <script src="../js/shared.js"></script>
-    <script src="script.js"></script>
+    <template id="searched-post">
+        <div class="searched-post">
+          <a class="searched-post__link searched-post__title"></a>
+          <div class="searched-post__author">
+            <img
+              class="searched-post__author-avatar"
+              src=""
+              alt="post's author"
+            />
+            <span class="searched-post__author-name"></span>
+          </div>
+        </div>
+      </template>
+      <script src="../js/shared.js"></script>
+      <script src="script.js"></script>
     <script src="../js/hamburger.js"></script>
 </body>
 
