@@ -99,7 +99,8 @@
   display: grid;
   grid-template-columns: 100px 1fr;
   column-gap: 20px;
-  row-gap: 10px;
+  row-gap: 5px;
+  grid-template-rows: 40px 1fr;
   grid-template-areas:
     "avatar name"
     "avatar content";
@@ -139,4 +140,48 @@
   font-size: 0.9rem;
   font-family: "Source Serif Pro";
   color: #727272;
+}
+
+.comment-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+  grid-template-areas:
+  "name content"
+  "email content"
+  "button content";
+}
+
+.comment-form__comment-textarea {
+
+  grid-area: content;
+}
+
+.comment-form__name-input {
+  grid-area: name;
+}
+
+.comment-form__email-input {
+  grid-area: email;
+}
+
+.comment-form__email-input, .comment-form__name-input, .comment-form__comment-textarea {
+  border: 1px rgb(191, 187, 187) solid;
+  padding: 10px 10px 10px 15px;
+  font-family: "Source Serif Pro";
+  font-size: 1rem;
+}
+
+.comment-form__email-button {
+  grid-area: button;
+  background: #fc7c57;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  font-family: Oswald;
+  font-weight: 700;
+  font-size: 1rem;
+  color: white;
 }

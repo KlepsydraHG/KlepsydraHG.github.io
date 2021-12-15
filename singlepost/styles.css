@@ -164,7 +164,7 @@ body {
   margin: 20px;
 }
 
-.textarea {
+/* .textarea {
   float: right;
   width: 45%;
   height: 155px;
@@ -194,8 +194,8 @@ body {
   border: 1px lightgray solid;
   font-family: "Source Serif Pro";
   font-size: 0.95em;
-}
-
+} */
+/* 
 .button {
   background-color: hsl(16, 94%, 70%);
   color: white;
@@ -339,7 +339,7 @@ body {
   .button {
     width: 95%;
   }
-}
+} */
 
 .image {
   position: relative;
