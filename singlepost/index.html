@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="../icons/css/fontello.css">
     <link rel="stylesheet" type="text/css" href="style/navbar.css">
@@ -19,7 +20,7 @@
         integrity="sha256-2JRzNxMJiS0aHOJjG+liqsEOuBb6++9cY4dSOyiijX4=" crossorigin="anonymous"></script>
 
     <!--Jezeli masz jakis cytat nowy, wklej go do nowej linii w skrypcie. Pamietaj o cudzyslowiu-->
-    <script type="text/javascript">
+    <script >
         var sentences = new Array(
             "Ja mam tu plik .css zapisany w gimpie",
             "ale ja nie mam tego like cos tam",
@@ -111,7 +112,7 @@
     <div class="quotations">
         <div class="quotations_text">
             <div class="quotations_text_p">
-                <script type="text/javascript">
+                <script >
                     document.write(sentences[Math.floor(Math.random() * sentences.length)]);
                 </script>
             </div>
@@ -178,7 +179,7 @@
         <div class="secondcolumn">
             <div class="aboutme">
                 <div class="aboutme__header">ABOUT ME</div>
-                <img class="aboutme__img" src="../img/aboutme.jpeg" />
+                <img class="aboutme__img" src="../img/aboutme.jpeg" alt="about" />
                 <div class="aboutme__footer">Trener Technik Informacyjnych i Komunikacyjnych
                     Egzaminator ECDL oraz EPP E-urzędnik
                     Doradca w zakresie zastosowania ICT w biznesie oraz administracji
@@ -209,7 +210,7 @@
             </div>
             <div class="slideads">
                 <div class="slideads__header">SLIDE ADS</div>
-                <img src="img/ads.png" class="slideads__img">
+                <img src="img/ads.png" class="slideads__img" alt="ads">
             </div>
         </div>
     </div>
@@ -274,7 +275,7 @@
                         class="main-post__category"></span>&nbsp; - &nbsp;
                     <span style="color:#fc7c57"> Posted on </span> &nbsp; <span class="main-post__date"></span> &nbsp; -
                     &nbsp;
-                    </span><span style="color:#fc7c57">&nbsp; by &nbsp; </span><img
+                     <span style="color:#fc7c57">&nbsp; by &nbsp; </span><img
                         class="main-post__author-avatar author" src=""> &nbsp;<span
                         class="main-post__author-name"></span></div>
                 <div class="main-post__text"></div>
@@ -298,7 +299,7 @@
         <h2 class="nickname author__name"></h2>
         <p class="content author__bio"></p>
 
-        </div>
+       
     </template>
     <template id="related-post">
         <li class="related-post"><a class="related-post__link"><img src="" alt="picture1"
@@ -318,6 +319,7 @@
                 </a>
                 <p class="popularpost__paragraph"><span class="orange">Posted on </span><span
                         class="popularpost__date"></span></p>
+            </div>
             </div>
     </template>
     <template id="category">
