@@ -3,3 +3,14 @@
         width: 100%;
     }
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    background-color: #d9d9d9;
+    font-family: 'Oswald';
+}

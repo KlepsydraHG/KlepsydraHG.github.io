@@ -23,10 +23,10 @@
     font-weight: 600;
     color: white;
     border-bottom: 4px solid #fc7c57;
-  }
+}
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .textOnBackground .text {
         font-size: 20px;
     }
-  }
+}

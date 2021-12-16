@@ -1,19 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    outline: none;
-}
-
-body {
-    background-color: #d9d9d9;
-    font-family: 'Oswald';
-}
-
 .icons {
     display: flex;
     align-items: center;
     font-size: 30px;
-    margin: 50px;
     text-align: center;
     justify-content: center;
     color: black;
@@ -61,4 +49,3 @@ body {
     -moz-transform: scale(1);
     z-index: 0;
 }
-
