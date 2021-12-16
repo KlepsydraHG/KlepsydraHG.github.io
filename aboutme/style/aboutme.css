@@ -55,10 +55,73 @@
     width: 100%;
     margin: auto;
     padding: .5rem;
-    display: inline-block;
-    padding: 20px;
+    padding: 50px;
 }
 
 .aboutme__footer a {
-    margin: auto;
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    color: black;
+    column-gap: 15px;
+    height: 40px;
+    display: inline-block;
+}
+
+.icons {
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+    justify-content: space-evenly;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.icon {
+    border-radius: 50%;
+    background-color: #F5F5F5;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    justify-content: center;
+    margin-left: 15px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    color: black;
+}
+
+.icon:before {
+    top: 50%;
+    position: absolute;
+    margin-left: 0 !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon:hover {
+    background-color: #fc7c57;
+    color: white;
+    transition: all 200ms linear;
+    transform: scale(1);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1);
+    z-index: 0;
+}
+
+.icon:active {
+    transform: scale(1);
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(1);
+    z-index: 0;
+}
+
+.aboutme__footer .icon {
+     width: 40px;
+     height: 40px;
 }
