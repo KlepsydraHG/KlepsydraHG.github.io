@@ -1,6 +1,11 @@
 .mainpost {
   background-color: white;
   font-family: "Oswald";
+  overflow: hidden;
+}
+.mainpost__link{
+  display: flex;
+  overflow: hidden;
 }
 
 .mainpost__author-avatar {
