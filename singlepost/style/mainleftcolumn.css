@@ -90,6 +90,8 @@
 
 .author__bio,
 .comment__content {
+  word-wrap: break-word;
+  word-break: break-all;
   grid-area: content;
   font-family: "Source Serif Pro";
   color: #727272;
@@ -195,10 +197,11 @@
 
 .related-post__container {
   margin-top: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   column-gap: 30px;
   list-style-type: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .related-post__background {
@@ -230,7 +233,7 @@
 
 @media screen and (max-width: 600px) {
   .related-post__container {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     row-gap: 20px
   }
 }

@@ -50,15 +50,19 @@ const fillRelatedPost = (data) => {
 
 const relatedPostTemplate = document.querySelector("#related-post");
 const relatedPostsContainer = document.querySelector(".related-post__container");
+const relatedPostsMessage = document.querySelector(".related-post__message")
 
 const createRelatedPosts = () => {
   retrieve(`https://trol-api.herokuapp.com/api/posts/${id}/related`, true).then(
     (res) => {
       const posts = res.json;
-      posts.forEach((post) => {
-        const filledRelatedPost = fillRelatedPost(post);
-        relatedPostsContainer.appendChild(filledRelatedPost);
-      });
+      if(posts.length > 0) {
+        relatedPostsMessage.remove()
+        posts.forEach((post) => {
+          const filledRelatedPost = fillRelatedPost(post);
+          relatedPostsContainer.appendChild(filledRelatedPost);
+        });
+      }
     }
   );
   relatedPostsContainer;
