@@ -11,6 +11,7 @@
 
 .textOnBackground img {
     text-shadow: 2px 2px 5px black;
+    object-fit: cover;
 }
 
 .textOnBackground .text {
