@@ -54,8 +54,7 @@
     border-top: dotted .5px grey;
     width: 100%;
     margin: auto;
-    padding: .5rem;
-    padding: 50px;
+    padding: 20px;
 }
 
 .aboutme__footer a {
@@ -75,7 +74,6 @@
     text-align: center;
     justify-content: space-evenly;
     color: black;
-    padding-bottom: 20px;
 }
 
 .icon {
