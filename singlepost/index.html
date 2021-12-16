@@ -20,7 +20,7 @@
         integrity="sha256-2JRzNxMJiS0aHOJjG+liqsEOuBb6++9cY4dSOyiijX4=" crossorigin="anonymous"></script>
 
     <!--Jezeli masz jakis cytat nowy, wklej go do nowej linii w skrypcie. Pamietaj o cudzyslowiu-->
-    <script >
+    <script>
         var sentences = new Array(
             "Ja mam tu plik .css zapisany w gimpie",
             "ale ja nie mam tego like cos tam",
@@ -61,9 +61,7 @@
                         <li class="navbar__item item">
                             <a class="navbar__link" href="javascript:void(0);">SINGLE POST</a>
                         </li>
-                        <li class="navbar__item item">
-                            <a class="navbar__link" href="javascript:void(0);">CONTACT</a>
-                        </li>
+
                         <li class="navbar__item item">
                             <a class="navbar__link" href="../aboutme/index.html">ABOUT ME</a>
                         </li>
@@ -80,25 +78,15 @@
                             </div>
                         </li>
                         <li class="navbar__item-right item">
-                            <a
-                              class="navbar__icon"
-                              href="https://facebook.com"
-                              target="_blank"
-                              rel="noopener nofollow"
-                            >
-                              <i class="fab fa-facebook-f"></i>
+                            <a class="navbar__icon" href="https://facebook.com" target="_blank" rel="noopener nofollow">
+                                <i class="fab fa-facebook-f"></i>
                             </a>
-                          </li>
-                          <li class="navbar__item-right item">
-                            <a
-                              class="navbar__icon"
-                              href="https://twitter.com"
-                              target="_blank"
-                              rel="noopener nofollow"
-                            >
-                              <i class="fab fa-twitter"></i>
+                        </li>
+                        <li class="navbar__item-right item">
+                            <a class="navbar__icon" href="https://twitter.com" target="_blank" rel="noopener nofollow">
+                                <i class="fab fa-twitter"></i>
                             </a>
-                          </li>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -112,7 +100,7 @@
     <div class="quotations">
         <div class="quotations_text">
             <div class="quotations_text_p">
-                <script >
+                <script>
                     document.write(sentences[Math.floor(Math.random() * sentences.length)]);
                 </script>
             </div>
@@ -153,10 +141,12 @@
                 <div>
                     <h2 class="leave">Leave comment</h2>
                     <form class="comment-form">
-                        <textarea class="comment-form__comment-textarea" id="comment" placeholder="Comment..."></textarea>
-                        <input class="comment-form__name-input" type="text" id="username" name="username" placeholder="Name..." required
-                            class="username">
-                        <input class="comment-form__email-input" type="email" id="email" name="email" placeholder="Email..." required class="email">
+                        <textarea class="comment-form__comment-textarea" id="comment"
+                            placeholder="Comment..."></textarea>
+                        <input class="comment-form__name-input" type="text" id="username" name="username"
+                            placeholder="Name..." required class="username">
+                        <input class="comment-form__email-input" type="email" id="email" name="email"
+                            placeholder="Email..." required class="email">
                         <button class="comment-form__email-button" type="submit">SUBMIT COMMENT</button>
                     </form>
                 </div>
@@ -225,10 +215,10 @@
                 <img class="carousel-cell" src="img/img4.png" alt="men2">
                 <img class="carousel-cell" src="img/img5.png" alt="guys">
                 <img class="carousel-cell" src="img/img6.png" alt="men_in_hat">
-        
-        
-              </div>
-              <div class="photos">
+
+
+            </div>
+            <div class="photos">
                 <img class="photos__element" src="img/img1.png" alt="skateboard">
                 <img class="photos__element" src="img/img2.png" alt="men">
                 <img class="photos__element" src="img/img3.png" alt="road">
@@ -273,9 +263,8 @@
                         class="main-post__category"></span>&nbsp; - &nbsp;
                     <span style="color:#fc7c57"> Posted on </span> &nbsp; <span class="main-post__date"></span> &nbsp; -
                     &nbsp;
-                     <span style="color:#fc7c57">&nbsp; by &nbsp; </span><img
-                        class="main-post__author-avatar author" src=""> &nbsp;<span
-                        class="main-post__author-name"></span></div>
+                    <span style="color:#fc7c57">&nbsp; by &nbsp; </span><img class="main-post__author-avatar author"
+                        src=""> &nbsp;<span class="main-post__author-name"></span></div>
                 <div class="main-post__text"></div>
             </div>
             <div class="icons">
@@ -297,7 +286,7 @@
         <h2 class="nickname author__name"></h2>
         <p class="content author__bio"></p>
 
-       
+
     </template>
     <template id="related-post">
         <li class="related-post"><a class="related-post__link"><img src="" alt="picture1"
@@ -318,24 +307,24 @@
                 <p class="popularpost__paragraph"><span class="orange">Posted on </span><span
                         class="popularpost__date"></span></p>
             </div>
-            </div>
+        </div>
     </template>
     <template id="category">
         <li class="category"><a class="category__link orange" href="google.com">Beard</a></li>
     </template>
     <template id="searched-post">
-      <a class="searched-post__link">
-          <div class="searched-post">
-              <h1 class="searched-post__title"></h1>
-              <div class="searched-post__author">
-                  <img class="searched-post__author-avatar" src="" alt="post's author">
-                  <span class="searched-post__author-name"></span>
-              </div>
-          </div>
-      </a>
-  </template>
-      <script src="../js/shared.js"></script>
-      <script src="script.js"></script>
+        <a class="searched-post__link">
+            <div class="searched-post">
+                <h1 class="searched-post__title"></h1>
+                <div class="searched-post__author">
+                    <img class="searched-post__author-avatar" src="" alt="post's author">
+                    <span class="searched-post__author-name"></span>
+                </div>
+            </div>
+        </a>
+    </template>
+    <script src="../js/shared.js"></script>
+    <script src="script.js"></script>
     <script src="../js/hamburger.js"></script>
 </body>
 
