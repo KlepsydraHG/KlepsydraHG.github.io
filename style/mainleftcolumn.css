@@ -1,5 +1,4 @@
 .mainpost {
-<<<<<<< HEAD
   background-color: white;
   font-family: "Oswald";
   overflow: hidden;
@@ -7,10 +6,8 @@
 .mainpost__link{
   display: flex;
   overflow: hidden;
-=======
     background-color: white;
     font-family: "Oswald";
->>>>>>> ab29bea01095c9003c048b64aa625d1436f84faf
 }
 
 .mainpost__author-avatar {
