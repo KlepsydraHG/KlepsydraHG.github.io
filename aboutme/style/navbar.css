@@ -223,6 +223,10 @@
   border-color: white;
 }
 
+.searched-post__link {
+  text-decoration: none;
+}
+
 .searched-post__author {
   margin-top: 5px;
   display: flex;

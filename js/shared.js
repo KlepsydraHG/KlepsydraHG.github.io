@@ -159,9 +159,9 @@ showMoreButton.addEventListener("click", () => {
     .then(() =>
       retrievePostsByKeyword(value, pageSearched + 1).then((page) => {
         if (page !== undefined && page.json.length !== 0) {
-          showMoreButton.classList.remove("searched-post__more--hidden");
+          showMoreButton.classList.remove("searched__more--hidden");
         } else {
-          showMoreButton.classList.add("searched-post__more--hidden");
+          showMoreButton.classList.add("searched__more--hidden");
         }
       })
     );
